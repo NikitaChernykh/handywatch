@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./App.css";
 import banner from "./Images/banner.jpg";
 import ClockFaces from "./Components/ClockFaces";
+import BannerButton from "./Components/BannerButton";
 
 class App extends Component {
   render() {
@@ -13,14 +14,17 @@ class App extends Component {
         <main className="main-grid">
           <section className="hero">
             <div className="hero-grid wrapper">
-              <div className="hero-text">
-                <h1>
-                  CLOCKFACES <br />
-                  FOR FITBIT
-                </h1>
-                <p>Use promo code “HANDYWATCH” at the checkout</p>
-                <p>To get 15% off your purchase.</p>
-                <button>SHOP NOW</button>
+              <div className="hero-content">
+                <div className="hero-text">
+                  <h1>
+                    CLOCKFACES <br />
+                    FOR FITBIT
+                  </h1>
+                  <p>Use promo code “HANDYWATCH” at the checkout</p>
+                  <p>To get 15% off your purchase.</p>
+                  {/* <button className="hero-button">SHOP NOW</button> */}
+                </div>
+                <BannerButton className="hero-button">SHOP NOW</BannerButton>
               </div>
               <div className="hero-image">
                 <img src={banner} alt="" />

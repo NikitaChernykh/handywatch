@@ -179,7 +179,6 @@ footer {
 }
 
 .hero-text {
-  width: 100%;
   text-align: left;
 }
 .hero-text p {
@@ -188,12 +187,25 @@ footer {
   margin-top: 5px;
   line-height: 1.5em;
 }
-.hero-text button {
+.hero-button {
   margin-top: 3%;
   border: 0;
   font-size: 24px;
   padding: 2% 20%;
+  text-align: center;
   font-family: "Viga", serif;
+  color: white;
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid white;
+}
+.hero-content {
+  text-align: left;
+}
+
+.hero-button:hover {
+  background-color: white;
+  color: black;
 }
 .clockfaces {
   margin-top: 30px;
@@ -247,22 +259,6 @@ footer {
   background-color: black;
   border: 1px solid white;
 }
-@media only screen and (max-width: 920px) {
-  .hero {
-    padding: 50px 0 50px 0;
-  }
-  .hero-text h1 {
-    font-size: 8vw;
-  }
-  .hero-text p {
-    font-size: 2.3vw;
-    margin-bottom: 5px;
-    margin-top: 5px;
-  }
-  .hero-text button {
-    font-size: 2vw;
-  }
-}
 
 @media only screen and (max-width: 920px) {
   .hero-text h1 {
@@ -273,13 +269,14 @@ footer {
     margin-bottom: 5px;
     margin-top: 5px;
   }
-  .hero-text button {
+  .hero-button {
     font-size: 2vw;
   }
 }
 @media only screen and (max-width: 450px) {
   .hero-grid {
     grid-template-columns: 1fr;
+    gap: 20px;
   }
   .hero-text h1 {
     font-size: 50px;
@@ -293,9 +290,11 @@ footer {
   .hero-image {
     display: none;
   }
-  .hero-text button {
-    width: 100%;
+  .hero-button {
     font-size: 24px;
+  }
+  .hero-content {
+    text-align: center;
   }
 }
 

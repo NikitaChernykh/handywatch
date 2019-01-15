@@ -1,32 +1,307 @@
+@import url("https://fonts.googleapis.com/css?family=Vidaloka|Viga");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+button {
+  cursor: pointer;
+}
+
 .App {
   text-align: center;
+  display: grid;
 }
 
+header,
+footer {
+  grid-column: 1 / span2;
+}
+.grid {
+  display: grid;
+}
+.main-grid {
+  display: grid;
+}
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+  font-family: "Vidaloka", serif;
+  font-size: 24px;
+  color: black;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.wrapper {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 960px;
+  padding-right: 10px;
+  padding-left: 10px;
+  /* outline: 1px solid red; */
+}
+.hero {
+  font-family: "Viga", serif;
+  width: 100%;
+  background-color: black;
   color: white;
+  padding: 5% 0 5% 0;
+}
+.hero-grid {
+  display: grid;
+  grid-gap: 5%;
+  grid-template-columns: 1fr 1fr;
+}
+.hero-image img {
+  width: 100%;
+  height: 100%;
+}
+.hero h1 {
+  font-size: 70px;
+  margin-top: 0px;
+  margin-bottom: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.hero-text {
+  width: 100%;
+  text-align: left;
+}
+.hero-text p {
+  font-size: 24px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  line-height: 1.5em;
+}
+.hero-text button {
+  margin-top: 3%;
+  border: 0;
+  font-size: 24px;
+  padding: 2% 20%;
+  font-family: "Viga", serif;
+}
+.clockfaces {
+  margin-top: 30px;
+  font-family: "Viga", serif;
+}
+.clockfaces button {
+  font-family: "Viga", serif;
+}
+.clockfaces-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 30px;
+}
+.clockface {
+  padding-top: 5px;
+  background-color: black;
+  color: white;
+  -webkit-box-shadow: 10px 10px 32px -17px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 32px -17px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 32px -17px rgba(0, 0, 0, 0.75);
+}
+.clockface-type {
+  margin-bottom: 5px;
+}
+.clockface img {
+  object-fit: cover;
+  width: 100%;
+}
+.clockface-type button {
+  background-color: none;
+  margin-left: 5px;
+  margin-right: 5px;
+  border: 0;
+  border-radius: 20px;
+}
+.clockface-content {
+  text-align: left;
+  margin: 5px;
+  font-size: 24px;
+}
+.clockface-downloadbtn {
+  width: 100%;
+  border: 0;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  font-size: 23px;
+  border: 1px solid black;
+}
+.clockface-downloadbtn:hover {
+  color: white;
+  background-color: black;
+  border: 1px solid white;
+}
+@media only screen and (max-width: 920px) {
+  .hero {
+    padding: 50px 0 50px 0;
+  }
+  .hero-text h1 {
+    font-size: 8vw;
+  }
+  .hero-text p {
+    font-size: 2.3vw;
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+  .hero-text button {
+    font-size: 2vw;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 920px) {
+  .hero-text h1 {
+    font-size: 8vw;
   }
-  to {
-    transform: rotate(360deg);
+  .hero-text p {
+    font-size: 2.3vw;
+    margin-bottom: 5px;
+    margin-top: 5px;
   }
+  .hero-text button {
+    font-size: 2vw;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+  .hero-text h1 {
+    font-size: 50px;
+  }
+  .hero-text p {
+    font-size: 24px;
+  }
+  .hero-text {
+    text-align: center;
+  }
+  .hero-image {
+    display: none;
+  }
+  .hero-text button {
+    width: 100%;
+    font-size: 24px;
+  }
+}
+
+footer {
+  margin-top: 50px;
+  background-color: black;
+  width: 100%;
+  height: 100px;
 }

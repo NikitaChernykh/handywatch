@@ -4,7 +4,7 @@ const Clockface = ({ clockface }) => {
   return (
     <div className="clockface">
       <div className="clockface-image">
-        <img src="http://placehold.jp/300x400.png" />
+        <img src={clockface.versaImage} />
         <div className="clockface-type">
           <BannerButton className="clock-button">VERSA</BannerButton>
           <BannerButton className="clock-button">IONIC</BannerButton>

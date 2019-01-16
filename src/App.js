@@ -22,7 +22,6 @@ class App extends Component {
                   </h1>
                   <p>Use promo code “HANDYWATCH” at the checkout</p>
                   <p>To get 15% off your purchase.</p>
-                  {/* <button className="hero-button">SHOP NOW</button> */}
                 </div>
                 <BannerButton className="hero-button">SHOP NOW</BannerButton>
               </div>

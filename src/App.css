@@ -232,7 +232,7 @@ footer {
 .clockface-image .clockface-type {
   position: absolute;
   width: 100%;
-  bottom: 30px;
+  bottom: 20px;
   left: 0;
 }
 .clockface img {
@@ -243,12 +243,12 @@ footer {
   background-color: transparent;
   margin-left: 5px;
   margin-right: 5px;
-  border: 1px solid white;
-  color: white;
+  border: 1px solid black;
+  color: black;
 }
 .clock-button:hover {
-  background-color: white;
-  color: black;
+  background-color: black;
+  color: white;
 }
 .clockface-content {
   padding: 20px;

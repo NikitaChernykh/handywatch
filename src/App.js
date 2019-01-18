@@ -2,7 +2,8 @@ import React, { Component } from "react";
 import "./App.css";
 import banner from "./Images/banner.jpg";
 import ClockFaces from "./Components/ClockFaces";
-import BannerButton from "./Components/BannerButton";
+import MyButton from "./Components/MyButton";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 class App extends Component {
   render() {
@@ -23,14 +24,16 @@ class App extends Component {
                   <p>Use promo code “HANDYWATCH” at the checkout</p>
                   <p>To get 15% off your purchase.</p>
                 </div>
-                <BannerButton className="hero-button">SHOP NOW</BannerButton>
+                <AnchorLink href="#clockfaces">
+                  <MyButton className="hero-button">SHOP NOW</MyButton>
+                </AnchorLink>
               </div>
               <div className="hero-image">
                 <img src={banner} alt="" />
               </div>
             </div>
           </section>
-          <section className="clockfaces">
+          <section id="clockfaces" className="clockfaces">
             <ClockFaces />
           </section>
         </main>

@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import posed from "react-pose";
 import "../App.css";
 
-const BannerButton = posed.button({
+const MyButton = posed.button({
   hoverable: true,
   pressable: true,
   init: {
@@ -20,4 +20,4 @@ const BannerButton = posed.button({
   }
 });
 
-export default BannerButton;
+export default MyButton;

@@ -1,5 +1,5 @@
 import React from "react";
-import BannerButton from "./BannerButton";
+import MyButton from "./MyButton";
 import ClockfaceSlider from "./ClockfaceSlider";
 const Clockface = ({ clockface }) => {
   return (
@@ -12,13 +12,13 @@ const Clockface = ({ clockface }) => {
           ionicImage={clockface.ionicImage}
         />
         <div className="clockface-type">
-          <BannerButton className="clock-button">VERSA</BannerButton>
-          <BannerButton className="clock-button">IONIC</BannerButton>
+          <MyButton className="clock-button">VERSA</MyButton>
+          <MyButton className="clock-button">IONIC</MyButton>
         </div>
       </div>
       <div className="clockface-content">
         <h3>{clockface.name}</h3>
-        <BannerButton className="clockface-downloadbtn">DOWNLOAD</BannerButton>
+        <MyButton className="clockface-downloadbtn">DOWNLOAD</MyButton>
       </div>
     </div>
   );

@@ -1,5 +1,3 @@
-import React from "react";
-
 export const firebaseLooper = snapshot => {
   const data = [];
   snapshot.forEach(childSnapshot => {

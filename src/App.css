@@ -232,7 +232,7 @@ footer {
 .clockface-image .clockface-type {
   position: absolute;
   width: 100%;
-  bottom: 20px;
+  bottom: 0px;
   left: 0;
 }
 .clockface img {

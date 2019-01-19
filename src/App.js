@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
-import banner from "./Images/banner.jpg";
+import banner from "./Images/banner.png";
 import ClockFaces from "./Components/ClockFaces";
 import MyButton from "./Components/MyButton";
 import AnchorLink from "react-anchor-link-smooth-scroll";

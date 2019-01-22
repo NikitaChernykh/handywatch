@@ -2,19 +2,10 @@ import React, { Component } from "react";
 import Slider from "react-slick";
 import MyButton from "./MyButton";
 export default class ClockfaceSlider extends Component {
-  state = {
-    slideIndex: 0,
-    updateCount: 0
-  };
   goToSlide(type) {
-    console.log(this.state.slideIndex);
-    if ("versa") {
-      this.slider.slickGoTo(0);
-      console.log(this.slider);
-    } else {
-      this.slider.slickGoTo(1);
-    }
+    this.slider.slickGoTo(type);
   }
+
   render() {
     const settings = {
       dots: false,
@@ -23,10 +14,7 @@ export default class ClockfaceSlider extends Component {
       arrows: false,
       slidesToShow: 1,
       slidesToScroll: 1,
-      focusOnSelect: true,
-      afterChange: () =>
-        this.setState(state => ({ updateCount: state.updateCount + 1 })),
-      beforeChange: (current, next) => this.setState({ slideIndex: next })
+      focusOnSelect: true
     };
     return (
       <div>
@@ -39,16 +27,10 @@ export default class ClockfaceSlider extends Component {
           </div>
         </Slider>
         <div className="clockface-type">
-          <MyButton
-            className="clock-button"
-            onClick={() => this.goToSlide("versa")}
-          >
+          <MyButton className="clock-button" onClick={() => this.goToSlide(0)}>
             VERSA
           </MyButton>
-          <MyButton
-            className="clock-button"
-            onClick={() => this.goToSlide("ionic")}
-          >
+          <MyButton className="clock-button" onClick={() => this.goToSlide(1)}>
             IONIC
           </MyButton>
         </div>

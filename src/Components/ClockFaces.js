@@ -19,7 +19,11 @@ class ClockFaces extends Component {
   showClockfaces = clockfaces =>
     clockfaces
       ? clockfaces.map(clockface => (
-          <Clockface clockface={clockface} key={clockface.id} />
+          <Clockface
+            clockface={clockface}
+            key={clockface.id}
+            linkto={clockface.downloadURL}
+          />
         ))
       : null;
   render() {

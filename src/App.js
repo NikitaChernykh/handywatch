@@ -25,7 +25,9 @@ class App extends Component {
                   <p>To get 15% off your purchase.</p>
                 </div>
                 <AnchorLink href="#clockfaces">
-                  <MyButton className="hero-button">SHOP NOW</MyButton>
+                  <MyButton className="hero-button" data-gtm="banner-btn">
+                    SHOP NOW
+                  </MyButton>
                 </AnchorLink>
               </div>
               <div className="hero-image">

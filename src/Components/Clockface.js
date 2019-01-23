@@ -14,7 +14,12 @@ class Clockface extends React.Component {
         </div>
         <div className="clockface-content">
           <h3>{this.props.clockface.name}</h3>
-          <MyButton className="clockface-downloadbtn">DOWNLOAD</MyButton>
+          <MyButton
+            className="clockface-downloadbtn"
+            href={this.props.clockface.downloadURL}
+          >
+            DOWNLOAD
+          </MyButton>
         </div>
       </div>
     );

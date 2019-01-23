@@ -18,3 +18,12 @@ export const reverseArray = actualArray => {
 
   return reversedArray;
 };
+
+export const gtmEvent = (category, action, label) => {
+  window.dataLayer.push({
+    event: "customEvent",
+    category: category,
+    action: action,
+    label: label
+  });
+};

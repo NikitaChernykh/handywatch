@@ -1,8 +1,14 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
 import MyButton from "./MyButton";
+import { gtmEvent } from "../Utils/utils";
 export default class ClockfaceSlider extends Component {
   goToSlide(type) {
+    gtmEvent(
+      "Clockface Slider",
+      "Slide Change",
+      type === 1 ? "Ionic: " + this.props.name : "Versa: " + this.props.name
+    );
     this.slider.slickGoTo(type);
   }
 
@@ -30,6 +36,7 @@ export default class ClockfaceSlider extends Component {
           <MyButton className="clock-button" onClick={() => this.goToSlide(0)}>
             VERSA
           </MyButton>
+
           <MyButton className="clock-button" onClick={() => this.goToSlide(1)}>
             IONIC
           </MyButton>

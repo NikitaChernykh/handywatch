@@ -28,6 +28,7 @@
     "react-id-swiper": "^1.6.8",
     "react-pose": "^4.0.5",
     "react-router-dom": "^4.3.1",
-    "react-slick": "^0.23.2"
+    "react-slick": "^0.23.2",
+    "rodal": "^1.6.3"
   }
 }

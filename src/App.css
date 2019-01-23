@@ -122,10 +122,24 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+a {
+  text-decoration: none;
+}
+a,
 button {
   cursor: pointer;
+  background: none;
+  border: none;
+}
+button:hover {
+  cursor: pointer;
+  background: none;
+  border: none;
 }
 
+.modal {
+  color: black;
+}
 .App {
   text-align: center;
   display: grid;
@@ -261,10 +275,10 @@ footer {
 }
 .clockface-downloadbtn {
   font-weight: bold;
+  text-align: center;
   width: 100%;
-  border: 0;
-  padding-top: 3px;
-  padding-bottom: 3px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   font-size: 23px;
   background-color: transparent;
   border: 1px solid white;

@@ -1,9 +1,10 @@
 import React from "react";
 import Rodal from "rodal";
 import MyLink from "./MyLink";
+import MyButton from "./MyButton";
 import ClockfaceSlider from "./ClockfaceSlider";
 import { gtmEvent } from "../Utils/utils";
-
+import { isMobile } from "react-device-detect";
 import "rodal/lib/rodal.css";
 
 class Clockface extends React.Component {
@@ -20,6 +21,35 @@ class Clockface extends React.Component {
   hide() {
     this.setState({ visible: false });
   }
+  renderDownlaodButton = () => {
+    console.log(isMobile);
+    if (isMobile) {
+      return (
+        <a
+          href={this.props.clockface.downloadURL}
+          target="_blank"
+          rel="noopener"
+        >
+          <MyLink
+            className="clockface-downloadbtn"
+            onClick={() =>
+              gtmEvent("Clockface", "Download", this.props.clockface.name)
+            }
+          >
+            DOWNLOAD
+          </MyLink>
+        </a>
+      );
+    }
+    return (
+      <MyButton
+        className="clockface-downloadbtn"
+        onClick={this.show.bind(this)}
+      >
+        DOWNLOAD
+      </MyButton>
+    );
+  };
   render() {
     return (
       <div className="clockface">
@@ -32,18 +62,8 @@ class Clockface extends React.Component {
         </div>
         <div className="clockface-content">
           <h3>{this.props.clockface.name}</h3>
-          <a
-          // href={this.props.clockface.downloadURL}
-          //target="_blank"
-          //rel="noopener"
-          >
-            <MyLink
-              className="clockface-downloadbtn"
-              onClick={this.show.bind(this)}
-            >
-              DOWNLOAD
-            </MyLink>
-          </a>
+
+          {this.renderDownlaodButton()}
         </div>
         <Rodal
           className="modal"

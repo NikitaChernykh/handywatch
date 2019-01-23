@@ -25,6 +25,7 @@
   "devDependencies": {
     "firebase": "^5.7.3",
     "react-anchor-link-smooth-scroll": "^1.0.11",
+    "react-device-detect": "^1.6.2",
     "react-id-swiper": "^1.6.8",
     "react-pose": "^4.0.5",
     "react-router-dom": "^4.3.1",

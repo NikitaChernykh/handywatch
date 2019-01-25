@@ -4,7 +4,8 @@ import banner from "./Images/banner.png";
 import ClockFaces from "./Components/ClockFaces";
 import MyButton from "./Components/MyButton";
 import AnchorLink from "react-anchor-link-smooth-scroll";
-
+import Zoom from "react-reveal/Zoom";
+import Jump from "react-reveal/Jump";
 class App extends Component {
   render() {
     return (
@@ -24,14 +25,18 @@ class App extends Component {
                   <p>Use promo code “HANDYWATCH” at the checkout</p>
                   <p>To get 15% off your purchase.</p>
                 </div>
-                <AnchorLink href="#clockfaces">
-                  <MyButton data-gtm="banner-btn" className="hero-button">
-                    SHOP NOW
-                  </MyButton>
-                </AnchorLink>
+                <Jump delay={3000}>
+                  <AnchorLink href="#clockfaces">
+                    <MyButton data-gtm="banner-btn" className="hero-button">
+                      SHOP NOW
+                    </MyButton>
+                  </AnchorLink>
+                </Jump>
               </div>
               <div className="hero-image">
-                <img src={banner} alt="" />
+                <Zoom>
+                  <img src={banner} alt="" />
+                </Zoom>
               </div>
             </div>
           </section>

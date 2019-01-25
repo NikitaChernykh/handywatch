@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { firebaseClockfaces } from "../firebase";
 import { firebaseLooper, reverseArray } from "../Utils/utils";
 import Clockface from "./Clockface";
+import Slide from "react-reveal/Slide";
 class ClockFaces extends Component {
   state = {
     clockfaces: []
@@ -19,11 +20,9 @@ class ClockFaces extends Component {
   showClockfaces = clockfaces =>
     clockfaces
       ? clockfaces.map(clockface => (
-          <Clockface
-            clockface={clockface}
-            key={clockface.id}
-            linkto={clockface.downloadURL}
-          />
+          <Slide bottom key={clockface.id}>
+            <Clockface clockface={clockface} linkto={clockface.downloadURL} />
+          </Slide>
         ))
       : null;
   render() {

@@ -10,25 +10,23 @@ import "rodal/lib/rodal.css";
 class Clockface extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { visible: false };
+    this.state = { downloadVisible: false };
   }
 
   show() {
-    console.log(this.state);
-    this.setState({ visible: true });
+    this.setState({ downloadVisible: true });
   }
 
   hide() {
-    this.setState({ visible: false });
+    this.setState({ downloadVisible: false });
   }
   renderDownlaodButton = () => {
-    console.log(isMobile);
     if (isMobile) {
       return (
         <a
           href={this.props.clockface.downloadURL}
           target="_blank"
-          rel="noopener"
+          rel="noopener noreferrer"
         >
           <MyLink
             className="clockface-downloadbtn"
@@ -67,25 +65,28 @@ class Clockface extends React.Component {
         </div>
         <Rodal
           className="modal"
-          visible={this.state.visible}
+          visible={this.state.downloadVisible}
           onClose={this.hide.bind(this)}
+          closeOnEsc={true}
           customStyles={{
             width: "auto",
             height: "auto",
             bottom: "auto",
-            left: "10px",
-            right: "10px",
+            left: window.innerWidth < 600 ? "5%" : "20%",
+            right: window.innerWidth < 600 ? "5%" : "20%",
             top: "50%",
+            padding: "50px 25px 25px 25px",
             transform: "translateY(-50%)"
           }}
         >
-          <div>Content</div>
-          <div>Content</div>
-          <div>Content</div>
-          <div>Content</div>
-          <div>Content</div>
-          <div>Content</div>
-          <div>Content</div>
+          <div className="modal-content">
+            <h3>To download, please open this website on mobile device.</h3>
+            <p>
+              Your phone must have <a>Fitbit App</a> installed and paired with
+              your watch.
+            </p>
+            <img src="https://via.placeholder.com/300x100" alt="" />
+          </div>
         </Rodal>
       </div>
     );

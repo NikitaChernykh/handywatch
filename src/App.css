@@ -140,6 +140,14 @@ button:hover {
 .modal {
   color: black;
 }
+.modal-content h3 {
+  font-size: 24px;
+}
+.modal-content p {
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 .App {
   text-align: center;
   display: grid;
@@ -300,7 +308,7 @@ footer {
     margin-top: 5px;
   }
   .hero-button {
-    font-size: 2vw;
+    font-size: 3.5vw;
   }
 }
 @media only screen and (max-width: 450px) {

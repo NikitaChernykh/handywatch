@@ -159,6 +159,8 @@ footer {
 }
 .grid {
   display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 100%;
 }
 .main-grid {
   display: grid;
@@ -169,6 +171,11 @@ footer {
   color: black;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+.App-header a:active,
+.App-header a:visited,
+.App-header a:hover {
+  color: black;
 }
 .white {
   color: white;

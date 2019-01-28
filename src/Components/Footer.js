@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <footer>
@@ -8,7 +8,7 @@ const Footer = () => {
           <a>Instagram</a>
         </li>
         <li target="_blank" rel="noopener noreferrer" href="#">
-          <a>FAQ</a>
+          <Link to="/faq">FAQ</Link>
         </li>
         <li>
           <a

@@ -6,6 +6,7 @@ import MyButton from "./Components/MyButton";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import Zoom from "react-reveal/Zoom";
 import Jump from "react-reveal/Jump";
+import Footer from "./Components/Footer";
 class App extends Component {
   render() {
     return (
@@ -44,7 +45,7 @@ class App extends Component {
             <ClockFaces />
           </section>
         </main>
-        <footer> heelo</footer>
+        <Footer />
       </div>
     );
   }

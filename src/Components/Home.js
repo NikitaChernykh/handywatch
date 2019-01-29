@@ -11,8 +11,14 @@ const Home = () => {
     <div>
       <Helmet>
         <title>
-          HANDY.WATCH - Clockfaces for Fitbit Versa and Fitbit Ionic
+          Best Fitbit clock face store for Versa and Ionic smart watches.
         </title>
+        <meta
+          name="description"
+          content="Install best clock faces for smart watches like Fitbit Versa and Fitbit Ionic."
+        />
+        <link rel="canonical" href="https://handy.watch/" />
+        <meta name="robots" content="index, follow" />
       </Helmet>
       <section className="hero">
         <div className="hero-grid wrapper">
@@ -35,7 +41,7 @@ const Home = () => {
           </div>
           <div className="hero-image">
             <Zoom>
-              <img src={banner} alt="" />
+              <img src={banner} alt="promo banner" />
             </Zoom>
           </div>
         </div>

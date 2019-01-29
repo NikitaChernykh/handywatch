@@ -35,7 +35,7 @@ class Clockface extends React.Component {
               gtmEvent("Download", "Click", this.props.clockface.name)
             }
           >
-            DOWNLOAD
+            INSTALL
           </MyLink>
         </a>
       );
@@ -45,7 +45,7 @@ class Clockface extends React.Component {
         className="clockface-downloadbtn"
         onClick={this.show.bind(this)}
       >
-        DOWNLOAD
+        INSTALL
       </MyButton>
     );
   };
@@ -86,7 +86,7 @@ class Clockface extends React.Component {
               Your phone must have <a>Fitbit App</a> installed and paired with
               your watch.
             </p>
-            <img src={modalImg} alt="" width="300" />
+            <img src={modalImg} alt="open on mobile device" width="300" />
           </div>
         </Rodal>
       </div>

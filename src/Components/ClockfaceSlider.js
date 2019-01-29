@@ -26,10 +26,16 @@ export default class ClockfaceSlider extends Component {
       <div>
         <Slider ref={slider => (this.slider = slider)} {...settings}>
           <div>
-            <img src={this.props.versaImage} alt="" />
+            <img
+              src={this.props.versaImage}
+              alt={this.props.name + " for Versa"}
+            />
           </div>
           <div>
-            <img src={this.props.ionicImage} alt="" />
+            <img
+              src={this.props.ionicImage}
+              alt={this.props.name + " for Versa"}
+            />
           </div>
         </Slider>
         <div className="clockface-type">

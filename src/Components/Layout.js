@@ -6,7 +6,9 @@ const Layout = props => {
     <div className="App grid">
       <header className="App-header">
         <div className="App-logo">
-          <Link to="/">HANDY.WATCH</Link>
+          <Link to="/">
+            <h1>HANDY.WATCH</h1>
+          </Link>
         </div>
       </header>
       <main className="main-grid">{props.children}</main>

@@ -378,6 +378,7 @@ footer li {
 }
 
 footer a:active,
+footer a:link,
 footer a:visited {
   color: white;
 }

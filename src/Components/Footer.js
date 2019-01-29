@@ -1,19 +1,30 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { gtmEvent, gtmVitrualPageView } from "../Utils/utils";
 const Footer = () => {
   return (
     <footer>
       <ul>
-        <li target="_blank" rel="noopener noreferrer" href="#">
-          <a>Instagram</a>
+        <li>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="#"
+            onClick={() => gtmEvent("Footer", "Click", "Instagram")}
+          >
+            Instagram
+          </a>
         </li>
-        <li target="_blank" rel="noopener noreferrer" href="#">
-          <Link to="/faq">FAQ</Link>
+        <li>
+          <Link to="/faq" onClick={() => gtmVitrualPageView(document.title)}>
+            FAQ
+          </Link>
         </li>
         <li>
           <a
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => gtmEvent("Footer", "Click", "Twitter")}
             href="https://twitter.com/handywatch"
           >
             Twitter

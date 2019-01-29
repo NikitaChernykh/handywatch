@@ -5,10 +5,15 @@ import MyButton from "./MyButton";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import Zoom from "react-reveal/Zoom";
 import Jump from "react-reveal/Jump";
-
+import { Helmet } from "react-helmet";
 const Home = () => {
   return (
     <div>
+      <Helmet>
+        <title>
+          HANDY.WATCH - Clockfaces for Fitbit Versa and Fitbit Ionic
+        </title>
+      </Helmet>
       <section className="hero">
         <div className="hero-grid wrapper">
           <div className="hero-content">

@@ -32,7 +32,7 @@ class Clockface extends React.Component {
           <MyLink
             className="clockface-downloadbtn"
             onClick={() =>
-              gtmEvent("Clockface", "Download", this.props.clockface.name)
+              gtmEvent("Download", "Click", this.props.clockface.name)
             }
           >
             DOWNLOAD

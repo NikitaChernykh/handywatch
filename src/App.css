@@ -174,6 +174,7 @@ footer {
 }
 .App-header a:active,
 .App-header a:visited,
+.App-header a:link,
 .App-header a:hover {
   color: black;
 }
@@ -292,6 +293,7 @@ footer {
 }
 .clockface-content h3 {
   margin-bottom: 20px;
+  text-align: center;
 }
 .clockface-downloadbtn {
   font-weight: bold;

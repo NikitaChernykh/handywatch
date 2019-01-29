@@ -5,6 +5,7 @@ import MyButton from "./MyButton";
 import ClockfaceSlider from "./ClockfaceSlider";
 import { gtmEvent } from "../Utils/utils";
 import { isMobile } from "react-device-detect";
+import modalImg from "../Images/modal.png";
 import "rodal/lib/rodal.css";
 
 class Clockface extends React.Component {
@@ -85,7 +86,7 @@ class Clockface extends React.Component {
               Your phone must have <a>Fitbit App</a> installed and paired with
               your watch.
             </p>
-            <img src="https://via.placeholder.com/300x100" alt="" />
+            <img src={modalImg} alt="" width="300" />
           </div>
         </Rodal>
       </div>

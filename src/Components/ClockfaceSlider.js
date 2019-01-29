@@ -7,7 +7,9 @@ export default class ClockfaceSlider extends Component {
     gtmEvent(
       "Clockface Slider",
       "Slide Change",
-      type === 1 ? "Ionic: " + this.props.name : "Versa: " + this.props.name
+      type === 1
+        ? "Slide to Ionic: " + this.props.name
+        : "Slide to Versa: " + this.props.name
     );
     this.slider.slickGoTo(type);
   }

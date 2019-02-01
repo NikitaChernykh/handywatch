@@ -58,8 +58,8 @@ class Clockface extends React.Component {
       <div className="clockface">
         <div className="clockface-image">
           <ClockfaceSlider
-            versaImage={this.props.clockface.versaImage}
-            ionicImage={this.props.clockface.ionicImage}
+            versaImage={this.props.clockface.versaAPNG}
+            ionicImage={this.props.clockface.ionicAPNG}
             name={this.props.clockface.name}
           />
         </div>

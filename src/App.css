@@ -281,7 +281,9 @@ footer {
   border: 1px solid black;
   color: black;
 }
-.clock-button:hover {
+
+.clock-button:hover,
+.clock-button--active {
   background-color: black;
   color: white;
 }
@@ -325,6 +327,52 @@ footer {
     font-size: 3.5vw;
   }
 }
+.clockface-over-image {
+  position: relative;
+}
+.clockface-over-image-1-container {
+  position: absolute;
+  top: 36.5%;
+  left: 38.3%;
+  width: 24.3%;
+}
+.clockface-over-image-2-container {
+  position: absolute;
+  top: 36.5%;
+  left: 68%;
+  width: 14%;
+}
+.clockcolors {
+  position: absolute;
+  color: black;
+  /* outline: 1px solid red; */
+  top: 3%;
+  left: 50%;
+  width: 97%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.clockcolors-ionic {
+  position: absolute;
+  color: black;
+  /* outline: 1px solid green; */
+  top: 3%;
+  left: 75%;
+  width: 49%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.clockcolors .clockcolors-color {
+  width: 25px;
+}
+.clockcolors button,
+.clockcolors-ionic button {
+  padding: 5px;
+}
+.clockcolors-ionic .clockcolors-color {
+  width: 25px;
+}
+
 @media only screen and (max-width: 450px) {
   .hero-grid {
     grid-template-columns: 1fr;

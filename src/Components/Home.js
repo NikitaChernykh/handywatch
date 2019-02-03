@@ -11,7 +11,7 @@ const Home = () => {
     <div>
       <Helmet>
         <title>
-          Best Fitbit clock face store for Versa and Ionic smart watches.
+          Best Fitbit clock face store for Versa and Ionic smartwatches.
         </title>
         <meta
           name="description"

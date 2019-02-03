@@ -3,7 +3,6 @@ import Slider from "react-slick";
 import MyButton from "./MyButton";
 import ClockColors from "./ClockColors";
 import { gtmEvent } from "../Utils/utils";
-import CrossfadeImage from "react-crossfade-image";
 import {
   Versa1,
   Versa2,

@@ -87,8 +87,16 @@ class Clockface extends React.Component {
           <div className="modal-content">
             <h3>To download, please open this website on mobile device.</h3>
             <p>
-              Your phone must have <a>Fitbit App</a> installed and paired with
-              your watch.
+              Your phone must have{" "}
+              <a
+                className="faqlink"
+                href="https://www.fitbit.com/au/app#download-now"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Fitbit App
+              </a>{" "}
+              installed and paired with your watch.
             </p>
             <img src={modalImg} alt="open on mobile device" width="300" />
           </div>

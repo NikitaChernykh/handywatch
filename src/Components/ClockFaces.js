@@ -21,7 +21,11 @@ class ClockFaces extends Component {
     clockfaces
       ? clockfaces.map(clockface => (
           <Slide bottom key={clockface.id}>
-            <Clockface clockface={clockface} linkto={clockface.downloadURL} />
+            <Clockface
+              clockface={clockface}
+              linkto={clockface.downloadURL}
+              type={clockface.type}
+            />
           </Slide>
         ))
       : null;

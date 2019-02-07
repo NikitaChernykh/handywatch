@@ -31,7 +31,7 @@ const Home = () => {
               <p>Use promo code “HANDYWATCH” at the checkout</p>
               <p>To get 15% off your purchase.</p>
             </div>
-            <Jump delay={3000}>
+            <Jump delay={5000}>
               <AnchorLink href="#clockfaces">
                 <MyButton data-gtm="banner-btn" className="hero-button">
                   SHOP NOW

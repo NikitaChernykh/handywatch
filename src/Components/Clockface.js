@@ -6,6 +6,7 @@ import ClockfaceSlider from "./ClockfaceSlider";
 import { gtmEvent } from "../Utils/utils";
 import { isMobile } from "react-device-detect";
 import modalImg from "../Images/modal.png";
+import New from "./New";
 import "rodal/lib/rodal.css";
 
 class Clockface extends React.Component {
@@ -56,6 +57,7 @@ class Clockface extends React.Component {
   render() {
     return (
       <div className="clockface">
+        {this.props.clockface.type === "new" ? <New /> : null}
         <div className="clockface-image">
           <ClockfaceSlider
             versaImage={this.props.clockface.versaAPNG}

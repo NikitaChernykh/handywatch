@@ -306,6 +306,7 @@ footer {
   grid-gap: 30px;
 }
 .clockface {
+  position: relative;
   color: white;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
@@ -379,6 +380,22 @@ footer {
 }
 .clockface-over-image {
   position: relative;
+}
+.new {
+  position: absolute;
+  z-index: 1;
+  top: -15px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  font-size: 1.3em;
+  background-color: #ff9505;
+  text-transform: uppercase;
+  border-radius: 10px;
+  width: 30%;
 }
 .clockface-over-image-1-container {
   position: absolute;

@@ -58,12 +58,14 @@ class ClockFaces extends React.Component {
           <div className="filters wrapper">
             Filter by:{" "}
             <button
+              data-gtm="filter-date"
               className={`${state.filterBy === "date" ? "option-active" : ""}`}
               onClick={() => this.filterBy("date")}
             >
               Release Date
             </button>{" "}
             <button
+              data-gtm="filter-featured"
               className={`${
                 state.filterBy === "featured" ? "option-active" : ""
               }`}

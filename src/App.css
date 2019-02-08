@@ -381,6 +381,24 @@ footer {
 .clockface-over-image {
   position: relative;
 }
+.filters {
+  text-align: right;
+  margin-bottom: 30px;
+  font-size: 1.5em;
+}
+.filters button {
+  font-family: "Viga", serif;
+  font-size: 0.7em;
+  padding: 0;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.option-active {
+  border-bottom: 5px solid black;
+}
+.filters button:hover {
+  border-bottom: 5px solid black;
+}
 .new {
   position: absolute;
   z-index: 1;

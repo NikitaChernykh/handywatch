@@ -9,7 +9,7 @@ const Footer = () => {
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://www.instagram.com/annoyingcoder/"
+            href="https://www.instagram.com/handy.watch/"
             onClick={() => gtmEvent("Footer", "Click", "Instagram")}
           >
             Instagram

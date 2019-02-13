@@ -135,7 +135,14 @@ button:hover {
   cursor: pointer;
   background: none;
 }
-
+.upBtn {
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  width: 50px;
+}
 .modal {
   color: black;
 }
@@ -207,7 +214,7 @@ footer {
   display: grid;
 }
 .faq-grid h1 {
-  margin-top: 50px;
+  margin-top: 10px;
   text-align: center;
   font-size: 28px;
   font-family: "Viga", serif;

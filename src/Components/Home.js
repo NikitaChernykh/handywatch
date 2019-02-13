@@ -6,6 +6,7 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 import Zoom from "react-reveal/Zoom";
 import Jump from "react-reveal/Jump";
 import { Helmet } from "react-helmet";
+
 class Home extends React.Component {
   render() {
     return (

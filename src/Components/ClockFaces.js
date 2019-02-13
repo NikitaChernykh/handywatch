@@ -49,7 +49,6 @@ class ClockFaces extends React.Component {
       : null;
   render() {
     const state = this.state;
-    console.log(state);
     if (this.state.loading) {
       return <div>Loading...</div>;
     } else {

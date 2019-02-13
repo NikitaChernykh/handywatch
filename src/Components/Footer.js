@@ -32,7 +32,14 @@ const Footer = () => {
         </li>
       </ul>
 
-      <div className="App-logo white font-18">HANDY.WATCH</div>
+      <div className="App-logo white font-18">
+        <Link
+          to="/"
+          onClick={() => gtmEvent("Footer", "Click", "Back Home Logo")}
+        >
+          HANDY.WATCH
+        </Link>
+      </div>
       <p className="copyrigth">© HANDY.WATCH 2019</p>
     </footer>
   );

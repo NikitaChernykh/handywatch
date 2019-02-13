@@ -2,7 +2,7 @@ import React from "react";
 
 const QuestionCard = props => {
   return (
-    <div className="questoncard">
+    <div className="questoncard" id={props.anchor}>
       <h2>{props.question}</h2>
       {props.answer()}
     </div>

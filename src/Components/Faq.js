@@ -2,6 +2,7 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import QuestionCard from "./QuestionCard";
+
 import Flip from "react-reveal/Flip";
 class Faq extends React.Component {
   render() {
@@ -22,6 +23,7 @@ class Faq extends React.Component {
                 <Flip top>
                   <QuestionCard
                     question="How do I pay?"
+                    anchor="howtopay"
                     answer={() => {
                       return (
                         <p>
@@ -49,6 +51,7 @@ class Faq extends React.Component {
                 <Flip top>
                   <QuestionCard
                     question="I already paid, but I'm being asked to pay again?"
+                    anchor="alreadypaid"
                     answer={() => {
                       return (
                         <p>
@@ -76,6 +79,7 @@ class Faq extends React.Component {
                 <Flip top>
                   <QuestionCard
                     question="How do I know which clock faces I purchased? Deleted, lost confirmation."
+                    anchor="mypurchases"
                     answer={() => {
                       return (
                         <p>
@@ -105,6 +109,7 @@ class Faq extends React.Component {
                 <Flip top>
                   <QuestionCard
                     question="I see 'Clock Error' on the screen."
+                    anchor="clockerror"
                     answer={() => {
                       return (
                         <p>
@@ -121,6 +126,7 @@ class Faq extends React.Component {
                 <Flip top>
                   <QuestionCard
                     question="Clock face error, choose another."
+                    anchor="clockerror2"
                     answer={() => {
                       return (
                         <p>

@@ -9,6 +9,7 @@ class Routes extends React.Component {
   componentDidUpdate() {
     window.scrollTo(0, 0);
   }
+
   componentDidMount() {
     window.addEventListener("hashchange", function() {
       window.scrollTo(window.scrollX, window.scrollY - 10);

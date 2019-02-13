@@ -29,8 +29,7 @@ class Faq extends React.Component {
                         <p>
                           Install the clock face that you like. Wait for the
                           screen with the code to show up. Follow the URL
-                          dispalyed above the code or just enter the code
-                          following{" "}
+                          dispalyed above the code or just enter the code{" "}
                           <a
                             className="faqlink"
                             href="https://k-pay.io/code/"
@@ -38,9 +37,9 @@ class Faq extends React.Component {
                             rel="noopener noreferrer"
                             data-gtm="look-up-code"
                           >
-                            (this)
-                          </a>{" "}
-                          link. After the purchase you will recive an email
+                            here
+                          </a>
+                          . After the purchase you will recive an email
                           confiration and the clock face will be unlocked for
                           you to use.
                         </p>
@@ -58,8 +57,7 @@ class Faq extends React.Component {
                           Everytime you change the clock face Fitbit treats it
                           as new one. That can also happen sometimes if you
                           reboot you device or loose the connection for too
-                          long. To prove your purchase and unlock it back
-                          following{" "}
+                          long. To prove your purchase and unlock it back{" "}
                           <a
                             className="faqlink"
                             href="https://k-pay.io/code/unlock"
@@ -67,9 +65,9 @@ class Faq extends React.Component {
                             rel="noopener noreferrer"
                             data-gtm="unlock-code"
                           >
-                            (this)
-                          </a>{" "}
-                          link. Just use the same email as when you purchased it
+                            here
+                          </a>
+                          . Just use the same email as when you purchased it
                           before and the code that you see on the watch.
                         </p>
                       );
@@ -83,7 +81,6 @@ class Faq extends React.Component {
                     answer={() => {
                       return (
                         <p>
-                          Follow{" "}
                           <a
                             className="faqlink"
                             href="https://k-pay.io/code/unlock"
@@ -91,9 +88,9 @@ class Faq extends React.Component {
                             rel="noopener noreferrer"
                             data-gtm="unlock-code"
                           >
-                            (this)
+                            Here
                           </a>{" "}
-                          link to see your purchase history and resend
+                          you can see your purchase history and resend
                           confirmation emails. Use the same email as when you
                           made your purchases. Follow the instruction on the
                           page there.
@@ -106,6 +103,40 @@ class Faq extends React.Component {
             </TabPanel>
             <TabPanel>
               <div>
+                <Flip top>
+                  <QuestionCard
+                    question="How do I change to a 12 or 24 hour clock?"
+                    anchor="militarytime"
+                    answer={() => {
+                      return (
+                        <p>
+                          <ul>
+                            <li>
+                              1) Log into your{" "}
+                              <a
+                                className="faqlink"
+                                href="https://k-pay.io/code/unlock"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                data-gtm="change-time"
+                              >
+                                fitbit.com
+                              </a>{" "}
+                              dashboard and click the gear icon.
+                            </li>
+                            <li>2) Choose Settings > Personal Info.</li>
+                            <li>
+                              3) Under Advanced Settings, find Clock Display
+                              Time and select whether you want the time shown in
+                              12-hour or 24-hour clock units.
+                            </li>
+                            <li>4) Click Submit and sync your device.</li>
+                          </ul>
+                        </p>
+                      );
+                    }}
+                  />
+                </Flip>
                 <Flip top>
                   <QuestionCard
                     question="I see 'Clock Error' on the screen."

@@ -143,6 +143,12 @@ button:hover {
   transform: rotate(-90deg);
   width: 50px;
 }
+.sub-title {
+  text-align: left;
+  font-size: 2em;
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
 .modal {
   color: black;
 }

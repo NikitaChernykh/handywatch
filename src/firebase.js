@@ -15,5 +15,6 @@ firebase.initializeApp(config);
 
 const firebaseDB = firebase.database();
 const firebaseClockfaces = firebaseDB.ref("clockfaces");
+const bestClockfaces = firebaseDB.ref("best");
 
-export { firebase, firebaseClockfaces };
+export { firebase, firebaseClockfaces, bestClockfaces };

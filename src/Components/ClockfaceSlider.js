@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import MyButton from "./MyButton";
 import ClockColors from "./ClockColors";
 import { gtmEvent } from "../Utils/utils";
+import LazyLoad from "react-lazyload";
 import {
   Versa1,
   Versa2,
@@ -88,12 +89,16 @@ export default class ClockfaceSlider extends Component {
               changeWatch={num => this.onWatchChange(num, "versa")}
             />
             <div className="clockface-over-image-1-container">
-              <img src={this.props.versaImage} alt={this.props.name} />
+              <LazyLoad offset={100}>
+                <img src={this.props.versaImage} alt={this.props.name} />
+              </LazyLoad>
             </div>
-            <img
-              src={this.state.versaColor}
-              alt={this.props.name + " for Versa"}
-            />
+            <LazyLoad offset={100}>
+              <img
+                src={this.state.versaColor}
+                alt={this.props.name + " for Versa"}
+              />
+            </LazyLoad>
           </div>
           <div>
             <ClockColors
@@ -103,14 +108,17 @@ export default class ClockfaceSlider extends Component {
               changeWatch={num => this.onWatchChange(num, "ionic")}
             />
             <div className="clockface-over-image-2-container">
-              <img src={this.props.ionicImage} alt={this.props.name} />
+              <LazyLoad offset={100}>
+                <img src={this.props.ionicImage} alt={this.props.name} />
+              </LazyLoad>
             </div>
-
-            <img
-              className="watch-image"
-              src={this.state.ionicColor}
-              alt={this.props.name + " for Versa"}
-            />
+            <LazyLoad offset={100}>
+              <img
+                className="watch-image"
+                src={this.state.ionicColor}
+                alt={this.props.name + " for Versa"}
+              />
+            </LazyLoad>
           </div>
         </Slider>
         <div className="clockface-type">

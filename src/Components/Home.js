@@ -27,7 +27,7 @@ class Home extends React.Component {
             <div className="hero-content">
               <div className="hero-text">
                 <h1>
-                  CLOCKFACES <br />
+                  CLOCK FACES <br />
                   FOR FITBIT
                 </h1>
                 <p>Use promo code “HANDYWATCH” at the checkout</p>
@@ -46,6 +46,9 @@ class Home extends React.Component {
                 <img src={banner} alt="promo banner" />
               </Zoom>
             </div>
+          </div>
+          <div className="banner-subtext">
+            <h2>Beautiful and animated clock faces for Fitbit Versa & Ionic</h2>
           </div>
         </section>
         <section id="clockfaces" className="clockfaces">

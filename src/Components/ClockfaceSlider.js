@@ -59,6 +59,7 @@ export default class ClockfaceSlider extends Component {
   }
 
   onWatchChange(number, type) {
+    gtmEvent("Clockface Slider", "Click", "Watch Color Change");
     if (type === "versa") {
       this.setState({
         versaColor: this.versaArray[number]

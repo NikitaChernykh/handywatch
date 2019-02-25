@@ -72,59 +72,61 @@ class Clockface extends React.Component {
   };
   render() {
     return (
-      <div className="clockface">
-        {this.props.clockface.type === "new" ? <New /> : null}
-        <div className="clockface-image">
-          <ClockfaceSlider
-            versaImage={this.props.clockface.versaAPNG}
-            ionicImage={this.props.clockface.ionicAPNG}
-            name={this.props.clockface.name}
-          />
-        </div>
-        <div className="clockface-content">
-          <h3>{this.props.clockface.name}</h3>
-          <button
-            className="description-btn"
-            onClick={() => this.show("detailsVisible")}
-          >
-            <img src={details} />
-            <span>DETAILS</span>
-          </button>
-          {this.renderDownlaodButton()}
-        </div>
-        <Rodal
-          className="modal"
-          visible={this.state.downloadVisible}
-          onClose={() => this.hide("downloadVisible")}
-          closeOnEsc={true}
-          customStyles={{
-            width: "auto",
-            height: "auto",
-            bottom: "auto",
-            left: window.innerWidth < 600 ? "5%" : "20%",
-            right: window.innerWidth < 600 ? "5%" : "20%",
-            top: "50%",
-            padding: "50px 25px 25px 25px",
-            transform: "translateY(-50%)"
-          }}
-        >
-          <div className="modal-content">
-            <h3>To download, please open this website on mobile device.</h3>
-            <p>
-              Your phone must have{" "}
-              <a
-                className="faqlink"
-                href="https://www.fitbit.com/au/app#download-now"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Fitbit App
-              </a>{" "}
-              installed and paired with your watch.
-            </p>
-            <img src={modalImg} alt="open on mobile device" width="300" />
+      <div>
+        <div className="clockface">
+          {this.props.clockface.type === "new" ? <New /> : null}
+          <div className="clockface-image">
+            <ClockfaceSlider
+              versaImage={this.props.clockface.versaAPNG}
+              ionicImage={this.props.clockface.ionicAPNG}
+              name={this.props.clockface.name}
+            />
           </div>
-        </Rodal>
+          <div className="clockface-content">
+            <h3>{this.props.clockface.name}</h3>
+            <button
+              className="description-btn"
+              onClick={() => this.show("detailsVisible")}
+            >
+              <img src={details} />
+              <span>DETAILS</span>
+            </button>
+            {this.renderDownlaodButton()}
+          </div>
+          <Rodal
+            className="modal"
+            visible={this.state.downloadVisible}
+            onClose={() => this.hide("downloadVisible")}
+            closeOnEsc={true}
+            customStyles={{
+              width: "auto",
+              height: "auto",
+              bottom: "auto",
+              left: window.innerWidth < 600 ? "5%" : "20%",
+              right: window.innerWidth < 600 ? "5%" : "20%",
+              top: "50%",
+              padding: "50px 25px 25px 25px",
+              transform: "translateY(-50%)"
+            }}
+          >
+            <div className="modal-content">
+              <h3>To download, please open this website on mobile device.</h3>
+              <p>
+                Your phone must have{" "}
+                <a
+                  className="faqlink"
+                  href="https://www.fitbit.com/au/app#download-now"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Fitbit App
+                </a>{" "}
+                installed and paired with your watch.
+              </p>
+              <img src={modalImg} alt="open on mobile device" width="300" />
+            </div>
+          </Rodal>
+        </div>
         <Rodal
           className="modal"
           visible={this.state.detailsVisible}

@@ -84,13 +84,13 @@ class Clockface extends React.Component {
           </div>
           <div className="clockface-content">
             <h3>{this.props.clockface.name}</h3>
-            <button
+            {/* <button
               className="description-btn"
               onClick={() => this.show("detailsVisible")}
             >
               <img src={details} />
               <span>DETAILS</span>
-            </button>
+            </button> */}
             {this.renderDownlaodButton()}
           </div>
           <Rodal

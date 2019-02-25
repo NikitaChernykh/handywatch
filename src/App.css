@@ -195,6 +195,7 @@ button:hover {
 }
 .modal {
   color: black;
+  position: relative;
   z-index: 999 !important;
 }
 .modal-content h3 {

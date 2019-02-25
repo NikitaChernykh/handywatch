@@ -195,6 +195,7 @@ button:hover {
 }
 .modal {
   color: black;
+  z-index: -1;
 }
 .modal-content h3 {
   font-size: 24px;

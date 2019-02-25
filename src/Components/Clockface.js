@@ -6,22 +6,38 @@ import ClockfaceSlider from "./ClockfaceSlider";
 import { gtmEvent } from "../Utils/utils";
 import { isMobile } from "react-device-detect";
 import modalImg from "../Images/modal.png";
+import details from "../Images/details.svg";
 import New from "./New";
 import "rodal/lib/rodal.css";
 
 class Clockface extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { downloadVisible: false };
+    this.state = { downloadVisible: false, detailsVisible: false };
   }
 
-  show() {
-    this.setState({ downloadVisible: true });
+  show(modal) {
+    if (modal === "detailsVisible") {
+      gtmEvent(
+        "Details Open",
+        "Click",
+        "Details Open for: " + this.props.clockface.name
+      );
+    }
+    this.setState({ [modal]: true });
   }
 
-  hide() {
-    this.setState({ downloadVisible: false });
+  hide(modal) {
+    this.setState({ [modal]: false });
   }
+
+  displayStats = stats => {
+    if (stats) {
+      const values = Object.values(stats);
+      return values.map(value => <li key={value}>{value}</li>);
+    }
+  };
+
   renderDownlaodButton = () => {
     if (isMobile) {
       return (
@@ -48,7 +64,7 @@ class Clockface extends React.Component {
     return (
       <MyButton
         className="clockface-downloadbtn"
-        onClick={this.show.bind(this)}
+        onClick={() => this.show("downloadVisible")}
       >
         INSTALL
       </MyButton>
@@ -67,13 +83,19 @@ class Clockface extends React.Component {
         </div>
         <div className="clockface-content">
           <h3>{this.props.clockface.name}</h3>
-
+          <button
+            className="description-btn"
+            onClick={() => this.show("detailsVisible")}
+          >
+            <img src={details} />
+            <span>DETAILS</span>
+          </button>
           {this.renderDownlaodButton()}
         </div>
         <Rodal
           className="modal"
           visible={this.state.downloadVisible}
-          onClose={this.hide.bind(this)}
+          onClose={() => this.hide("downloadVisible")}
           closeOnEsc={true}
           customStyles={{
             width: "auto",
@@ -101,6 +123,37 @@ class Clockface extends React.Component {
               installed and paired with your watch.
             </p>
             <img src={modalImg} alt="open on mobile device" width="300" />
+          </div>
+        </Rodal>
+        <Rodal
+          className="modal"
+          visible={this.state.detailsVisible}
+          onClose={() => this.hide("detailsVisible")}
+          closeOnEsc={true}
+          customStyles={{
+            width: "auto",
+            height: "auto",
+            bottom: "auto",
+            left: window.innerWidth < 600 ? "5%" : "30%",
+            right: window.innerWidth < 600 ? "5%" : "30%",
+            top: "50%",
+            padding: "25px 5px 25px 5px",
+            transform: "translateY(-50%)"
+          }}
+        >
+          <div className="description">
+            <h2>Description:</h2>
+            <p>
+              {this.props.clockface.description}
+              <br />
+              <br />
+            </p>
+            <p>
+              Available stats:
+              <br />
+              <br />
+            </p>
+            <ul>{this.displayStats(this.props.clockface.stats)}</ul>
           </div>
         </Rodal>
       </div>

@@ -76,24 +76,57 @@ class Faq extends React.Component {
                 </Flip>
                 <Flip top>
                   <QuestionCard
-                    question="How do I know which clock faces I purchased? Deleted, lost confirmation."
-                    anchor="mypurchases"
+                    question="I purchased a Bundle. How do I access all the clock faces from there?"
+                    anchor="bundle"
                     answer={() => {
                       return (
                         <p>
+                          If you purchased Bundle you should recive the email
+                          with links to clock faces. To install just open the
+                          links on trough your phone and it will forward you to
+                          fitbit app and install them. In case if you see the
+                          code on the clock watch that you already purchsed. The
+                          way Fitbit is handalining that for now is not the best
+                          so to get rid of the code screen go to this page and
+                          enter that code{` `}
                           <a
                             className="faqlink"
                             href="https://k-pay.io/code/unlock"
                             target="_blank"
                             rel="noopener noreferrer"
-                            data-gtm="unlock-code"
+                            data-gtm="bundle-code"
                           >
-                            Here
-                          </a>{" "}
-                          you can see your purchase history and resend
-                          confirmation emails. Use the same email as when you
-                          made your purchases. Follow the instruction on the
-                          page there.
+                            here
+                          </a>
+                          {` `}
+                          and your email and it should unlock it for you.
+                        </p>
+                      );
+                    }}
+                  />
+                </Flip>
+                <Flip top>
+                  <QuestionCard
+                    question="How can I find what I purchased?"
+                    anchor="lookup"
+                    answer={() => {
+                      return (
+                        <p>
+                          After each purchase, you receive a "Purchase Success"
+                          e-mail from K-pay. This e-mail shows you exactly what
+                          you purchased and how you can install those apps. In
+                          case you lost those e-mails, you can lookup your
+                          purchases {` `}
+                          <a
+                            className="faqlink"
+                            href="https://k-pay.io/lookup"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            data-gtm="purchaseHistory-code"
+                          >
+                            here
+                          </a>
+                          .
                         </p>
                       );
                     }}

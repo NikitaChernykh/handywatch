@@ -9,7 +9,7 @@ const Footer = () => {
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://www.instagram.com/annoyingcoder/"
+            href="https://www.instagram.com/_handywatch_/"
             onClick={() => gtmEvent("Footer", "Click", "Instagram")}
           >
             Instagram
@@ -28,6 +28,16 @@ const Footer = () => {
             href="https://twitter.com/handywatch"
           >
             Twitter
+          </a>
+        </li>
+        <li>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => gtmEvent("Footer", "Click", "Facebook")}
+            href="https://www.facebook.com/handy.watch/"
+          >
+            Facebook
           </a>
         </li>
       </ul>

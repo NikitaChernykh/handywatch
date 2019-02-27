@@ -13,7 +13,8 @@ class Home extends React.Component {
       <div>
         <Helmet>
           <title>
-            HANDY.WATCH - Best Fitbit clock face store for Versa and Ionic watch
+            HANDY.WATCH - Best Fitbit Clock Face Store for Versa and Ionic Smart
+            Watches
           </title>
           <meta
             name="description"

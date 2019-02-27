@@ -25,6 +25,12 @@ class Routes extends React.Component {
       <Layout>
         <Switch>
           <Route {...this.props} exact component={Faq} path="/faq" />
+          <Route
+            {...this.props}
+            exact
+            component={Home}
+            path="/fitbitsettings"
+          />
           <Route {...this.props} exact component={Home} path="/" />
         </Switch>
       </Layout>

@@ -6,7 +6,7 @@ import ClockfaceSlider from "./ClockfaceSlider";
 import { gtmEvent } from "../Utils/utils";
 import { isMobile } from "react-device-detect";
 import modalImg from "../Images/modal.png";
-import details from "../Images/details.svg";
+// import details from "../Images/details.svg";
 import New from "./New";
 import "rodal/lib/rodal.css";
 

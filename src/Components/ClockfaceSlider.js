@@ -131,7 +131,7 @@ export default class ClockfaceSlider extends Component {
             }
             onClick={() => this.goToSlide(0)}
           >
-            VERSA
+            VERSA/LITE
           </MyButton>
 
           <MyButton

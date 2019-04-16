@@ -251,10 +251,18 @@ footer {
 }
 .hero {
   font-family: "Viga", serif;
-  background-size: cover;
-  background: url("https://images.unsplash.com/photo-1451956632809-303a9f8c92d6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1876&q=80");
-  color: white;
+  background-size: contain;
+  background-image: url("./Images/SummerBanner.png");
   padding: 5% 0 5% 0;
+  color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.hero h1 {
+  color: white;
+}
+.hero-content {
+  color: white;
 }
 .hero-grid {
   display: grid;
@@ -313,11 +321,12 @@ footer {
   font-weight: bold;
 }
 .hero-image img {
+  margin-top: 0;
   width: 100%;
   height: 100%;
 }
 .hero h1 {
-  font-size: 70px;
+  font-size: 50px;
   margin-top: 0px;
   margin-bottom: 10px;
 }
@@ -340,8 +349,8 @@ footer {
   font-family: "Viga", serif;
   color: white;
   cursor: pointer;
-  background-color: transparent;
-  border: 1px solid white;
+  background-color: #ffc226;
+  border: 0px solid black;
 }
 .hero-content {
   text-align: left;
@@ -424,6 +433,9 @@ footer {
 }
 
 @media only screen and (max-width: 920px) {
+  .hero {
+    background-size: cover;
+  }
   .hero-text h1 {
     font-size: 8vw;
   }
@@ -434,6 +446,10 @@ footer {
   }
   .hero-button {
     font-size: 3.5vw;
+  }
+  .hero-image {
+    margin-top: 22%;
+    height: fit-content;
   }
 }
 .clockface-over-image {
@@ -536,6 +552,9 @@ footer {
   }
   .hero-content {
     text-align: center;
+  }
+  .hero-image {
+    margin-top: 0;
   }
 }
 

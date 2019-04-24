@@ -6,7 +6,8 @@ import ClockfaceSlider from "./ClockfaceSlider";
 import { gtmEvent } from "../Utils/utils";
 import { isMobile } from "react-device-detect";
 import modalImg from "../Images/modal.png";
-// import details from "../Images/details.svg";
+import details from "../Images/details.svg";
+import { Link } from "react-router-dom";
 import New from "./New";
 import "rodal/lib/rodal.css";
 
@@ -84,13 +85,14 @@ class Clockface extends React.Component {
           </div>
           <div className="clockface-content">
             <h3>{this.props.clockface.name}</h3>
-            {/* <button
-              className="description-btn"
-              onClick={() => this.show("detailsVisible")}
-            >
-              <img src={details} />
-              <span>DETAILS</span>
-            </button> */}
+              <Link
+                to={`details/${this.props.clockface.id}`}
+                className="description-btn"
+                //onClick={() => gtmVitrualPageView(document.title)}
+              >
+                <img src={details} alt=""/>
+                <span>DETAILS</span>
+              </Link>
             {this.renderDownlaodButton()}
           </div>
           <Rodal

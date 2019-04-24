@@ -138,7 +138,7 @@ class Faq extends React.Component {
               <div>
                 <Flip top>
                   <QuestionCard
-                    question="How do I change to a 12 or 24 hour clock?"
+                    question="How do I change to 24 or 12 hour clock?"
                     anchor="militarytime"
                     answer={() => {
                       return (

@@ -1,5 +1,5 @@
 import React from "react";
-import { firebaseClockfaces, bestClockfaces } from "../firebase";
+import { firebaseClockfaces} from "../firebase";
 import { firebaseLooper, reverseArray } from "../Utils/utils";
 import Clockface from "./Clockface";
 import Slide from "react-reveal/Slide";
@@ -8,36 +8,35 @@ class ClockFaces extends React.Component {
     loading: true,
     clockfaces: [],
     bestClockfaces: [],
-    filteredClockfases: [],
+    otherClockfaces: [],
+    filteredClockfaces: [],
     filterBy: "featured"
   };
   componentDidMount() {
     firebaseClockfaces.once("value").then(snapshot => {
       const clockfaces = firebaseLooper(snapshot);
+      const bestClockfaces = clockfaces.filter(clockface => clockface.category === "best");
+      const otherClockfaces = clockfaces.filter(clockface => clockface.category !== "best");
       this.setState({
         clockfaces: reverseArray(clockfaces),
-        filteredClockfases: reverseArray(clockfaces)
-      });
-    });
-    bestClockfaces.once("value").then(snapshot => {
-      const bestClockfaces = firebaseLooper(snapshot);
-      this.setState({
-        loading: false,
-        bestClockfaces: reverseArray(bestClockfaces)
+        bestClockfaces: reverseArray(bestClockfaces),
+        otherClockfaces: reverseArray(otherClockfaces),
+        filteredClockfaces: reverseArray(otherClockfaces),
+        loading: false
       });
     });
   }
   componentDidUpdate() {
-    this.showClockfaces(this.state.filteredClockfases);
+    this.showClockfaces(this.state.otherClockfaces);
     this.showClockfaces(this.state.bestClockfaces);
   }
   filterBy = type => {
-    const list = [...this.state.clockfaces].sort((a, b) => {
+    const list = [...this.state.filteredClockfaces].sort((a, b) => {
       return b.uploadDate - a.uploadDate;
     });
 
     this.setState({
-      filteredClockfases: type === "date" ? list : this.state.clockfaces,
+      otherClockfaces: type === "date" ? list : this.state.filteredClockfaces,
       filterBy: type
     });
   };
@@ -87,7 +86,7 @@ class ClockFaces extends React.Component {
             </button>
           </div>
           <div className="clockfaces-grid wrapper">
-            {this.showClockfaces(this.state.filteredClockfases)}
+            {this.showClockfaces(this.state.otherClockfaces)}
           </div>
         </div>
       );

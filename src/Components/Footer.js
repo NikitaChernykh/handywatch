@@ -16,6 +16,7 @@ const Footer = () => {
           </a>
         </li>
         <li>
+          {/* not a correct way of sending page views. Needs refactor */}
           <Link to="/faq" onClick={() => gtmVitrualPageView(document.title)}>
             FAQ
           </Link>

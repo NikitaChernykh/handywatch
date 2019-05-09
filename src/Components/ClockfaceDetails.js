@@ -27,7 +27,7 @@ class ClockfaceDetails extends Component {
         if (isMobile) {
           return (
             <a
-              href={this.props.clockface.downloadURL}
+              href={this.state.clockface.downloadURL}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -37,7 +37,7 @@ class ClockfaceDetails extends Component {
                   gtmEvent(
                     "Download",
                     "Click",
-                    "Download: " + this.props.clockface.name
+                    "Download: " + this.state.clockface.name
                   )
                 }
               >

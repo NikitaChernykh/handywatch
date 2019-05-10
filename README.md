@@ -1,4 +1,4 @@
-HANDY.WATCH - For Fitbit
+HANDY.WATCH
 
 ## Available Scripts
 

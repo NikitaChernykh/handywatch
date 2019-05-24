@@ -51,7 +51,7 @@ const Footer = () => {
           HANDY.WATCH
         </Link>
       </div>
-      <p className="copyrigth">© HANDY.WATCH 2019</p>
+      <p className="copyrigth">© 2019 Explicit Dot. All rights reserved.</p>
     </footer>
   );
 };

@@ -26,23 +26,27 @@ export default class ClockfaceSlider extends Component {
   versaArray = [Versa1, Versa2, Versa3, Versa4, Versa5, Versa6, Versa7];
   ionicArray = [Ionic1, Ionic2, Ionic3, Ionic4, Ionic5, Ionic6, Ionic7];
   state = {
+    type: 0,
     versaColor: Versa1,
     ionicColor: Ionic1,
     isActive: true
   };
 
-  goToSlide(type) {
-    gtmEvent(
-      "Clockface Slider",
-      "Slide Change",
-      type === 1
-        ? "Slide to Ionic: " + this.props.name
-        : "Slide to Versa: " + this.props.name
-    );
-    this.slider.slickGoTo(type);
-    this.setState({
-      isActive: !this.state.isActive
-    });
+  goToSlide = (type) => {
+    if(type !== this.state.type){
+      gtmEvent(
+        "Clockface Slider",
+        "Slide Change",
+        type === 1
+          ? "Slide to Ionic: " + this.props.name
+          : "Slide to Versa: " + this.props.name
+      );
+      this.slider.slickGoTo(type);
+      this.setState({
+        isActive: !this.state.isActive,
+        type: type
+      });
+    }
   }
   componentDidMount() {
     this.selectRundomImage();
@@ -75,13 +79,15 @@ export default class ClockfaceSlider extends Component {
       dots: false,
       infinite: false,
       speed: 500,
+      accessibility: true,
+      focusOnSelect: true,
       arrows: false,
       slidesToShow: 1,
       slidesToScroll: 1
     };
     return (
       <div>
-        <Slider ref={slider => (this.slider = slider)} {...settings}>
+        <Slider ref={slider => (this.slider = slider)} {...settings} afterChange={type => this.goToSlide(type)} >
           <div className="clockface-over-image">
             <ClockColors
               type="clockcolors"

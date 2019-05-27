@@ -88,9 +88,8 @@ class Clockface extends React.Component {
               <Link
                 to={`details/${this.props.clockface.id}`}
                 className="description-btn"
-                //onClick={() => gtmVitrualPageView(document.title)}
               >
-                <img src={details} alt=""/>
+                <img src={details} alt="see more clockface details"/>
                 <span>DETAILS</span>
               </Link>
             {this.renderDownlaodButton()}

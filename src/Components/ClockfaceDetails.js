@@ -144,7 +144,7 @@ class ClockfaceDetails extends Component {
                                     "Share Facebook"
                                   )
                                 }>
-                              <FacebookShareButton  url={"window.location.href"} quote={`Download ${this.state.clockface.name} for your Fitbit Watch!`} hashtag="#handywatch" >
+                              <FacebookShareButton  url={window.location.href} quote={`Download ${this.state.clockface.name} for your Fitbit Watch!`} hashtag="#handywatch" >
                                 <FacebookIcon />
                               </FacebookShareButton>
                             </div>
@@ -155,7 +155,7 @@ class ClockfaceDetails extends Component {
                                     "Share Twitter"
                                   )
                                 }>
-                              <TwitterShareButton  hashtags={["handywatch","fitbitversa","fitbitionic"]} url={window.location.href} title="HANDY.WATCH - Beautiful Clockfaces for your Fitbit" via="HANDY.WATCH">
+                              <TwitterShareButton  hashtags={["handywatch","fitbitversa","fitbitionic"]} url={window.location.href} title="HANDY.WATCH - Beautiful Clockfaces for your Fitbit" via="handywatch">
                                 <TwitterIcon />
                               </TwitterShareButton>
                             </div>

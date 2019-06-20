@@ -122,7 +122,20 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
+.nav-section {
+  margin-bottom: 10px;
+  color: black;
+  font-family: "Viga", serif;
+}
+.nav-link {
+  cursor: pointer;
+  margin-left: 5px;
+  margin-right: 5px;
+  color: black;
+}
+.selected {
+  border-bottom: 3px solid black;
+}
 .banner-subtext h2 {
   text-align: center;
   width: 80%;

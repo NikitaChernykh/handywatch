@@ -5,6 +5,7 @@ import { Switch, Route } from "react-router-dom";
 import Home from "./Components/Home";
 import Faq from "./Components/Faq";
 import ClockfaceDetails from "./Components/ClockfaceDetails";
+import Bundles from "./Components/Bundles";
 
 class Routes extends React.Component {
   componentDidUpdate() {
@@ -32,6 +33,7 @@ class Routes extends React.Component {
             component={Home}
             path="/fitbitsettings"
           />
+          <Route {...this.props} exact component={Bundles} path="/bundles" />
           <Route {...this.props} exact component={ClockfaceDetails} path="/details/:id" />
           <Route {...this.props} exact component={Home} path="/" />
         </Switch>

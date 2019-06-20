@@ -14,7 +14,7 @@ const Layout = props => {
           </Link>
         </div>
       </header>
-      <main className="main-grid">{props.children}</main>
+      <main>{props.children}</main>
       <ScrollToTop showUnder={500}>
         <img
           onClick={() => gtmEvent("Scroll Up", "Click", "Scroll Up Button")}

@@ -16,4 +16,5 @@ firebase.initializeApp(config);
 const firebaseDB = firebase.database();
 
 const firebaseClockfaces = firebaseDB.ref("clockfaces");
-export { firebaseDB, firebaseClockfaces};
+const firebaseBundles = firebaseDB.ref("bundles");
+export { firebaseDB, firebaseClockfaces, firebaseBundles};

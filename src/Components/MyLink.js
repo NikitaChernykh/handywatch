@@ -1,5 +1,5 @@
 import posed from "react-pose";
-import "../App.css";
+import "../App.scss";
 
 const MyLink = posed.div({
   hoverable: true,

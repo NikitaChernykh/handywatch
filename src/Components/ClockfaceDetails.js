@@ -93,6 +93,7 @@ class ClockfaceDetails extends Component {
                             <ClockfaceSlider
                             versaImage={this.state.clockface.versaAPNG}
                             ionicImage={this.state.clockface.ionicAPNG}
+                            name={this.state.clockface.name}
                             />
                         </div>
                         <Rodal
@@ -155,7 +156,7 @@ class ClockfaceDetails extends Component {
                                     "Share Twitter"
                                   )
                                 }>
-                              <TwitterShareButton  hashtags={["handywatch","fitbitversa","fitbitionic"]} url={window.location.href} title="HANDY.WATCH - Beautiful Clockfaces for your Fitbit" via="handywatch">
+                              <TwitterShareButton  hashtags={["handywatch","fitbitversa","fitbitionic"]} url={window.location.href} title="HANDY.WATCH - Beautiful Clock Faces for your Fitbit" via="handywatch">
                                 <TwitterIcon />
                               </TwitterShareButton>
                             </div>
@@ -166,7 +167,7 @@ class ClockfaceDetails extends Component {
                                     "Share Reddit"
                                   )
                                 }>
-                              <RedditShareButton  url={window.location.href} title="HANDY.WATCH - Beautiful Clockfaces for your Fitbit">
+                              <RedditShareButton  url={window.location.href} title="HANDY.WATCH - Beautiful Clock Faces for your Fitbit">
                                 <RedditIcon />
                               </RedditShareButton>
                             </div>
@@ -177,7 +178,7 @@ class ClockfaceDetails extends Component {
                                     "Share Pinteres"
                                   )
                                 }>
-                              <PinterestShareButton url={window.location.href} description="HANDY.WATCH - Beautiful Clockfaces for your Fitbit" media={this.state.clockface.versaAPNG}>
+                              <PinterestShareButton url={window.location.href} description="HANDY.WATCH - Beautiful Clock Faces for your Fitbit" media={this.state.clockface.versaAPNG}>
                                 <PinterestIcon />
                               </PinterestShareButton>
                             </div>

@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Vidaloka|Viga");
+@import "./colors";
+@import "./variables";
 html,
 body,
 div,
@@ -102,6 +104,7 @@ section {
 }
 body {
   line-height: 1;
+  background-color: $hw-white-color;
 }
 ol,
 ul {
@@ -433,6 +436,7 @@ footer {
   color: black;
 }
 .clockfaces {
+  background-color: transparent;
   margin-top: 30px;
   font-family: "Viga", serif;
 }
@@ -453,7 +457,7 @@ footer {
 }
 .clockface-image {
   padding: 20px;
-  background-color: white;
+  // background-color: white;
   position: relative;
 }
 .clockface-image .clockface-type {

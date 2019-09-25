@@ -61,12 +61,12 @@ class ClockFaces extends React.Component {
     } else {
       return (
         <div>
-          <h2 className="sub-title wrapper">Halloween Picks</h2>
-          <div className="clockfaces-grid wrapper">
+          <h2 className="sub-title ">Halloween Picks</h2>
+          <div className="clockfaces-grid ">
             {this.showClockfaces(this.state.bestClockfaces)}
           </div>
-          <h2 className="sub-title wrapper">More from collection</h2>
-          <div className="filters wrapper">
+          <h2 className="sub-title ">More from collection</h2>
+          <div className="filters ">
             Filter by:{" "}
             <button
               data-gtm="filter-featured"
@@ -85,7 +85,7 @@ class ClockFaces extends React.Component {
               Release Date
             </button>
           </div>
-          <div className="clockfaces-grid wrapper">
+          <div className="clockfaces-grid ">
             {this.showClockfaces(this.state.otherClockfaces)}
           </div>
         </div>

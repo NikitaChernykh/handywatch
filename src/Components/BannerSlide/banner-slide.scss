@@ -2,11 +2,53 @@
 @import "../../variables";
 
 .slide {
-  border-radius: 8px;
-  box-shadow: 0 2px 6px 0 rgba($hw-shadow, 0.2);
+  border-radius: $hw-border-radius;
+  box-shadow: $hw-box-shadow-lvl-2;
   background-color: white;
   margin: 10px;
-  min-height: 500px;
+  min-height: 300px;
+  display: block;
   padding: 30px;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  text-align: left;
+
+  .slide-content {
+    align-self: center;
+  }
+}
+
+.slide-50-50 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 30px;
+  height: auto;
+}
+
+.slide-title {
+  font-weight: 900;
+  font-size: 5vw;
+  color: $hw-black-color;
+}
+.slide-subtitle {
+  font-weight: bold;
+  font-size: 1.8vw;
+  color: $hw-black-color;
+  color: $hw-black-tint-lvl-3;
+}
+
+.slide-description {
+  color: $hw-black-color;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 1.4vw;
+  font-weight: bold;
+}
+.slide-image-container {
+  display: flex;
+  align-self: center;
+}
+.slide-image {
+  width: 100%;
+  height: auto;
 }

@@ -61,7 +61,7 @@ class ClockFaces extends React.Component {
     } else {
       return (
         <div>
-          <h2 className="sub-title wrapper">Best sellers</h2>
+          <h2 className="sub-title wrapper">Halloween</h2>
           <div className="clockfaces-grid wrapper">
             {this.showClockfaces(this.state.bestClockfaces)}
           </div>

@@ -51,7 +51,10 @@ const Footer = () => {
           HANDY.WATCH
         </Link>
       </div>
-      <p className="copyrigth">© 2019 Explicit Dot. All rights reserved.</p>
+      <p className="legal">© 2019 Explicit Dot. All rights reserved.</p>
+      <Link to="/privacy-policy" onClick={() => gtmVitrualPageView(document.title)}>
+        <p className="legal">Privacy Policy</p>
+      </Link>
     </footer>
   );
 };

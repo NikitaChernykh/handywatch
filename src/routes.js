@@ -5,6 +5,7 @@ import { Switch, Route } from "react-router-dom";
 import Home from "./Components/Home";
 import Faq from "./Components/Faq";
 import ClockfaceDetails from "./Components/ClockfaceDetails";
+import Privacy from "./Components/Privacy";
 
 class Routes extends React.Component {
   componentDidUpdate() {
@@ -25,6 +26,7 @@ class Routes extends React.Component {
     return (
       <Layout>
         <Switch>
+          <Route {...this.props} exact component={Privacy} path="/privacy-policy" />
           <Route {...this.props} exact component={Faq} path="/faq" />
           <Route
             {...this.props}

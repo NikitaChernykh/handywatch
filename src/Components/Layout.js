@@ -1,19 +1,13 @@
 import React from "react";
 import Footer from "./Footer";
-import { Link } from "react-router-dom";
 import ScrollToTop from "react-scroll-up";
 import upBtn from "../Images/up.svg";
 import { gtmEvent } from "../Utils/utils";
+import Header from "./Header";
 const Layout = props => {
   return (
     <div className="App grid">
-      <header className="App-header">
-        <div className="App-logo">
-          <Link to="/">
-            <h1>HANDY.WATCH</h1>
-          </Link>
-        </div>
-      </header>
+      <Header/>
       <main>{props.children}</main>
       <ScrollToTop showUnder={500}>
         <img

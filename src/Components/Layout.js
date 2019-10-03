@@ -1,5 +1,5 @@
 import React from "react";
-import Footer from "./Footer";
+import Footer from "./Footer/";
 import ScrollToTop from "react-scroll-up";
 import upBtn from "../Images/up.svg";
 import { gtmEvent } from "../Utils/utils";

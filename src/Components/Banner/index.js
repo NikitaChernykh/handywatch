@@ -37,7 +37,7 @@ class Banner extends Component {
 
     render() {
         const { width } = this.state;
-        const isMobile = width <= 500;
+        const isMobile = width <= 650;
         
         // Slider Settings
         const settings = {
@@ -64,6 +64,7 @@ class Banner extends Component {
               description="All 16 Clock Faces in one bundle!"
               imageUrl={require('../../Images/banner.png')}
               imageAlt="All in bundle"
+              isMobile={isMobile}
               />
             <BannerSlide/>
             <BannerSlide/>

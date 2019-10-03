@@ -4,8 +4,9 @@ import "./banner-slide.scss";
 import Button from '../Button';
 class BannerSlide extends Component {
     render() {
+        console.log(this.props.isMobile);
         return (
-            <div className='slide slide-50-50'>
+            <div className={this.props.isMobile ? 'slide slide-100': 'slide slide-50-50'}>
               <Card>
                 <div className="slide-content">
                   <h1 className="slide-title">{this.props.title}</h1>

@@ -1,0 +1,13 @@
+@import "../../colors";
+@import "../../variables";
+
+.privacy {
+  font-family: $hw-font-text;
+  p {
+    font-family: "Open Sans";
+    font-weight: 200;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}

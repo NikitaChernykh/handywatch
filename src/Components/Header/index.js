@@ -4,10 +4,10 @@ import "./header.scss";
 class Header extends Component {
     render() {
         return (
-            <header className="App-header">
-                <div className="App-logo">
+            <header className="hw-header">
+                <div >
                 <Link to="/">
-                    <h1 class="header-logo">HANDY.WATCH</h1>
+                    <h1 className="header-logo">HANDY.WATCH</h1>
                 </Link>
                 </div>
             </header>

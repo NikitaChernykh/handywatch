@@ -4,7 +4,7 @@ import "./card.scss";
 class Card extends Component {
     render() {
         return (
-            <div className="card">
+            <div className={`${this.props.isMobile ? "card-mob": "card"}`}>
                 {this.props.children}
             </div>
         );

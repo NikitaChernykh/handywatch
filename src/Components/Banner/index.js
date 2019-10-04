@@ -37,7 +37,7 @@ class Banner extends Component {
 
     render() {
         const { width } = this.state;
-        const isMobile = width <= 650;
+        const isMobile = width <= 768;
         
         // Slider Settings
         const settings = {
@@ -58,19 +58,27 @@ class Banner extends Component {
         return (
         <section className="banner-section">
           <Slider {...settings}>
+            <BannerSlide
+              title="Halloween is Here!"
+              subtitle="Bundle"
+              fullScreen={true}
+              description="Your Fitbit watch needs new scary Clock Face."
+              imageUrl={require('../../Images/Hallweeen-Babber-Website.png')}
+              imageAlt="Holloween Bundle"
+              url="https://k-pay.io/code/?s=21128EF3-D81C-C4A4-6B21-82C482CD1C6E&dsu=158823&p=1064-4204-981-1056-1087-1111"
+              isMobile={isMobile}
+            />
             <BannerSlide 
               title="Get Them All"
               subtitle="Bundle"
+              fullScreen={false}
               description="All 16 Clock Faces in one bundle!"
-              imageUrl={require('../../Images/banner.png')}
+              imageUrl={require('../../Images/All-banner.png')}
               imageAlt="All in bundle"
+              url="https://k-pay.io/code/?s=21128EF3-D81C-C4A4-6B21-82C482CD1C6E&dsu=158823&p=1721-1190-1023-1064-1427-2318"
               isMobile={isMobile}
+
               />
-            <BannerSlide/>
-            <BannerSlide/>
-            <BannerSlide/>
-            <BannerSlide/>
-            <BannerSlide/>
           </Slider>
         </section>
         );

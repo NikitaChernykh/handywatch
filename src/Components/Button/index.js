@@ -1,9 +1,13 @@
 import React, { Component } from 'react';
 import "./button.scss";
+import { gtmEvent } from "../../Utils/utils";
 class Button extends Component {
+    goToURL (url) {
+        window.location = url;
+    }
     render() {
         return (
-            <button className="hw-button">{this.props.buttonText}</button>
+            <button onClick={() =>{gtmEvent("Banner CTA", "Click", `Download ${this.props.bannerTitle}`); this.goToURL(`${this.props.url}`)}} className="hw-button">{this.props.buttonText}</button>
         );
     }
 }

@@ -10,7 +10,7 @@
   box-sizing: border-box;
   font-family: $hw-font-text;
   text-align: left;
-
+  margin-bottom: 25px;
   .slide-content {
     align-self: center;
   }
@@ -32,12 +32,12 @@
 
 .slide-100:active {
   cursor: pointer;
-  box-shadow: $hw-box-shadow-lvl-2;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
 .slide-100:hover {
   cursor: pointer;
-  box-shadow: $hw-box-shadow-lvl-2;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
 .slide-title {

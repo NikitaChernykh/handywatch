@@ -22,7 +22,9 @@ class Home extends React.Component {
         </Helmet>
         <div className="wrapper">
           <Navigation selectedClocks="selected"/>
+        </div>
           <Banner/>
+        <div className="wrapper">
           <section id="clockfaces" className="clockfaces">
             <ClockFaces />
           </section>

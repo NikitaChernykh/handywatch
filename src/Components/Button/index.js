@@ -7,7 +7,7 @@ class Button extends Component {
     }
     render() {
         return (
-            <button onClick={() =>{gtmEvent("Banner CTA", "Click", `Download ${this.props.bannerTitle}`); this.goToURL(`${this.props.url}`)}} className="hw-button">{this.props.buttonText}</button>
+            <button onClick={() =>{gtmEvent("Banner CTA Button", "Click", `Download ${this.props.bannerTitle}`); this.goToURL(`${this.props.url}`)}} className="hw-button">{this.props.buttonText}</button>
         );
     }
 }

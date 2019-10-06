@@ -2,9 +2,12 @@ import React, { Component } from 'react';
 import Card from '../Card';
 import "./banner-slide.scss";
 import Button from '../Button';
+import { gtmEvent } from "../../Utils/utils";
 
 class BannerSlide extends Component {
-  
+    goToURL (url) {
+      window.location = url;
+    }
     render() {
         const imgStyle = {
           backgroundImage: `url(${this.props.imageUrl})`,
@@ -12,10 +15,17 @@ class BannerSlide extends Component {
           backgroundRepeat: 'no-repeat',
           backgroundPosition: 'center',
           height: 'inherit',
-          borderBottom: '2px solid black'
+          borderBottom: '1px solid black'
         };
         return (
-            <div className={`slide ${this.props.isMobile ? 'slide-100': 'slide-50-50'}`}>
+            <div onClick={() =>{
+                if(this.props.isMobile){
+                  gtmEvent("Banner CTA Card", "Tap", `Download ${this.props.title}`);
+                  this.goToURL(`${this.props.url}`);
+                }
+                return null;
+              }} 
+              className={`slide ${this.props.isMobile ? 'slide-100': 'slide-50-50'}`}>
               <Card isMobile={this.props.isMobile}>
                 <div className={`${!this.props.isMobile ? 'slide-content': ''}`}>
                   <h1 className={`${this.props.isMobile ? 'slide-title-mob' : 'slide-title'}`}>{this.props.title}</h1>

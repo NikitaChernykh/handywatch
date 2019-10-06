@@ -43,7 +43,8 @@ class Banner extends Component {
         const settings = {
             className: "center",
             centerMode: isMobile? true : false,
-            infinite: false,
+            infinite: isMobile? false : true,
+            lazyLoad: 'ondemand',
             centerPadding: "30px",
             slidesToShow: 1,
             nextArrow: <SampleNextArrow />,
@@ -69,15 +70,24 @@ class Banner extends Component {
               isMobile={isMobile}
             />
             <BannerSlide 
+              title="Dark Ghost"
+              subtitle="Clock Face"
+              fullScreen={false}
+              description="Ghost that lives in your watch."
+              imageUrl={require('../../Images/Webp.net-gifmaker.gif')}
+              imageAlt="Dark Ghost Clock Face"
+              url="https://gallery.fitbit.com/details/997e00fe-788d-49d2-9ee3-de3887c027bb/openapp"
+              isMobile={isMobile}
+              />
+            <BannerSlide 
               title="Get Them All"
               subtitle="Bundle"
               fullScreen={false}
-              description="All 16 Clock Faces in one bundle!"
+              description="All 18 Clock Faces in one bundle!"
               imageUrl={require('../../Images/All-banner.png')}
               imageAlt="All in bundle"
               url="https://k-pay.io/code/?s=21128EF3-D81C-C4A4-6B21-82C482CD1C6E&dsu=158823&p=1721-1190-1023-1064-1427-2318"
               isMobile={isMobile}
-
               />
           </Slider>
         </section>

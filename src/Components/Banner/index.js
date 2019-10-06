@@ -63,9 +63,9 @@ class Banner extends Component {
               title="Halloween is Here!"
               subtitle="Bundle"
               fullScreen={true}
-              description="Your Fitbit watch needs new scary Clock Face."
+              description="Five perfect Clock Faces for your Fitbit watch."
               imageUrl={require('../../Images/Hallweeen-Babber-Website.png')}
-              imageAlt="Holloween Bundle"
+              imageAlt="Halloween Bundle"
               url="https://k-pay.io/code/?s=21128EF3-D81C-C4A4-6B21-82C482CD1C6E&dsu=158823&p=1064-4204-981-1056-1087-1111"
               isMobile={isMobile}
             />

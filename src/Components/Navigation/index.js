@@ -11,7 +11,7 @@ class Navigation extends Component {
             to="/"
             onClick={() => gtmEvent("Navigation", "Click", "Navigate to Clocks")}
             >
-            CLOCKS
+            CLOCKS & APPS
             </Link>
             /
             <Link

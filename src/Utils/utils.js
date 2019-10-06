@@ -27,6 +27,8 @@ export const gtmEvent = (category, action, label) => {
     label: label
   });
 };
+
+
 export const gtmVitrualPageView = pageName => {
   window.dataLayer.push({
     event: "virtualPageView",

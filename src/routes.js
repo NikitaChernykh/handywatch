@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "./Components/Layout";
 import { Switch, Route } from "react-router-dom";
 
-import Home from "./Components/Home";
+import Home from "./Components/Home/";
 import Faq from "./Components/Faq";
 import ClockfaceDetails from "./Components/ClockfaceDetails";
 import Privacy from "./Components/Privacy";

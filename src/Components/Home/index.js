@@ -1,9 +1,9 @@
 import React from "react";
-import ClockFaces from "./ClockFaces";
+import ClockFaces from "../ClockFaces";
 import { Helmet } from "react-helmet";
-import Banner from "./Banner";
-import Navigation from "./Navigation";
-
+import Banner from "../Banner";
+import Navigation from "../Navigation";
+import "./home.scss";
 class Home extends React.Component {
   render() {
     return (
@@ -20,11 +20,15 @@ class Home extends React.Component {
           <link rel="canonical" href="https://handy.watch/" />
           <meta name="robots" content="index, follow" />
         </Helmet>
-        <Navigation selectedClocks="selected"/>
-        <Banner/>
-        <section id="clockfaces" className="clockfaces">
-          <ClockFaces />
-        </section>
+        <div className="wrapper">
+          <Navigation selectedClocks="selected"/>
+        </div>
+          <Banner/>
+        <div className="wrapper">
+          <section id="clockfaces" className="clockfaces">
+            <ClockFaces />
+          </section>
+        </div>
       </div>
     );
   }

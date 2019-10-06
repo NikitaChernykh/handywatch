@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Vidaloka|Viga");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:500,700,900&display=swap");
+@import "./colors";
+@import "./variables";
 html,
 body,
 div,
@@ -6,12 +9,10 @@ span,
 applet,
 object,
 iframe,
-h2,
 h3,
 h4,
 h5,
 h6,
-p,
 blockquote,
 pre,
 a,
@@ -66,7 +67,6 @@ details,
 embed,
 figure,
 figcaption,
-footer,
 header,
 hgroup,
 menu,
@@ -91,7 +91,6 @@ aside,
 details,
 figcaption,
 figure,
-footer,
 header,
 hgroup,
 menu,
@@ -101,6 +100,7 @@ section {
 }
 body {
   line-height: 1;
+  background-color: $hw-white-color;
 }
 ol,
 ul {
@@ -148,10 +148,6 @@ button {
   cursor: pointer;
   background: none;
   border: none;
-}
-button:hover {
-  cursor: pointer;
-  background: none;
 }
 
 .clockface-details-grid {
@@ -259,6 +255,7 @@ button:hover {
   font-size: 2em;
   margin-bottom: 30px;
   margin-top: 50px;
+  font-weight: normal;
 }
 .modal {
   color: black;
@@ -277,8 +274,7 @@ button:hover {
   display: grid;
 }
 
-header,
-footer {
+header {
   grid-column: 1 / span2;
 }
 .grid {
@@ -289,33 +285,14 @@ footer {
 .main-grid {
   display: grid;
 }
-.App-logo {
-  font-family: "Vidaloka", serif;
-  font-size: 24px;
-  color: black;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-.App-header a:active,
-.App-header a:visited,
-.App-header a:link,
-.App-header a:hover {
-  color: black;
-}
+
 .white {
   color: white;
 }
 .font-18 {
   font-size: 18px;
 }
-.wrapper {
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 960px;
-  padding-right: 10px;
-  padding-left: 10px;
-  /* outline: 1px solid red; */
-}
+
 .wrapper-details {
   margin-right: auto;
   margin-left: auto;
@@ -431,13 +408,10 @@ footer {
   background-color: white;
   color: black;
 }
-.clockfaces {
-  margin-top: 30px;
-  font-family: "Viga", serif;
-}
 
 .clock-button {
   font-family: "Viga", serif;
+  border-radius: 10px;
 }
 
 .clockfaces-grid {
@@ -448,11 +422,11 @@ footer {
 .clockface {
   position: relative;
   color: white;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  border-radius: $hw-border-radius;
+  box-shadow: $hw-box-shadow-lvl-2;
 }
 .clockface-image {
   padding: 20px;
-  background-color: white;
   position: relative;
 }
 .clockface-image .clockface-type {
@@ -498,6 +472,7 @@ footer {
   background-color: transparent;
   border: 1px solid white;
   color: white;
+  border-radius: 10px;
 }
 
 .clockface-downloadbtn:hover {
@@ -590,7 +565,7 @@ footer {
 .filters button:hover {
   border-bottom: 5px solid black;
 }
-.new {
+.new p {
   position: absolute;
   z-index: 1;
   top: -15px;
@@ -673,42 +648,4 @@ footer {
   .hero-image {
     margin-top: 0;
   }
-}
-
-footer {
-  font-family: Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-weight: 300;
-  letter-spacing: 0.01em;
-  line-height: 1.6;
-  color: white;
-  margin-top: 50px;
-  background-color: black;
-  width: 100%;
-  padding-top: 30px;
-  padding-bottom: 10px;
-}
-footer p {
-  font-style: normal;
-}
-.legal {
-  font-size: 10px;
-}
-footer ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-footer li {
-  margin-left: 5px;
-  margin-right: 5px;
-  display: inline;
-}
-
-footer a:active,
-footer a:link,
-footer a:visited {
-  color: white;
-}
-footer a:hover {
-  text-decoration: underline;
 }

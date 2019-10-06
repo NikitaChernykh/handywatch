@@ -1,8 +1,13 @@
+@import "../../variables";
+@import "../../colors";
+.hw-header {
+  grid-column: 1 / span2;
+}
 .header-logo {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+  font-family: $hw-font;
+  font-weight: 400;
+  font-size: 24px;
+  color: $hw-black-color;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }

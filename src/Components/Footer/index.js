@@ -1,9 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { gtmEvent, gtmVitrualPageView } from "../Utils/utils";
+import { gtmEvent, gtmVitrualPageView } from "../../Utils/utils";
+import "./footer.scss";
 const Footer = () => {
   return (
-    <footer>
+    <footer className="hw-footer">
       <ul>
         <li>
           <a

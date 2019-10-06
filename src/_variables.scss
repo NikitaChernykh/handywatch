@@ -1,0 +1,12 @@
+@import "./colors";
+
+$hw-box-shadow-lvl-1: 0 2px 6px 0 rgba($hw-shadow, 0.2);
+$hw-box-shadow-lvl-2: 0 3px 6px rgba(0, 0, 0, 0.16),
+  0 3px 6px rgba(0, 0, 0, 0.23);
+$hw-box-shadow-lvl-3: 0 10px 20px rgba(0, 0, 0, 0.19),
+  0 6px 6px rgba(0, 0, 0, 0.23);
+
+$hw-border-radius: 10px;
+
+$hw-font: "Vidaloka", serif;
+$hw-font-text: "Roboto", sans-serif;

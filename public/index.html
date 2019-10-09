@@ -108,4 +108,19 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
   </body>
+  <script
+    type="text/javascript"
+    src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js"
+    data-dojo-config="usePlainJson: true, isDebug: false"
+  ></script>
+  <script type="text/javascript">
+    window.dojoRequire(["mojo/signup-forms/Loader"], function(L) {
+      L.start({
+        baseUrl: "mc.us20.list-manage.com",
+        uuid: "a653c9880a19ce04293c6c22e",
+        lid: "87a7b55038",
+        uniqueMethods: true
+      });
+    });
+  </script>
 </html>

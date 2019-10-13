@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import { gtmEvent } from "../../Utils/utils";
-import "./seemore.css";
+import "./see-more.scss";
 
 class SeeMore extends Component {
     render() {

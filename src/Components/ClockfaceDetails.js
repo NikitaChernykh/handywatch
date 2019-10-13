@@ -9,19 +9,6 @@ import { gtmEvent } from "../Utils/utils";
 import modalImg from "../Images/modal.png";
 import "rodal/lib/rodal.css";
 import SeeMore from './SeeMoreComponent/SeeMore';
-import {
-  FacebookShareButton,
-  TwitterShareButton,
-  RedditShareButton,
-  PinterestShareButton
-} from 'react-share';
-
-import {
-  FacebookIcon,
-  TwitterIcon,
-  RedditIcon,
-  PinterestIcon
-} from 'react-share';
 
 class ClockfaceDetails extends Component {
     state ={
@@ -135,55 +122,6 @@ class ClockfaceDetails extends Component {
                     <div className="clockface-details">
                         <h2>{this.state.clockface.name}</h2>
                         {this.renderDownlaodButton()}
-                        <div className="share-buttons-container">
-                          <h3>Share the link:</h3>
-                          <div className="share-buttons">
-                            <div className="share-button" onClick={() =>
-                                  gtmEvent(
-                                    "Share Buttons",
-                                    "Click",
-                                    "Share Facebook"
-                                  )
-                                }>
-                              <FacebookShareButton  url={window.location.href} quote={`Download ${this.state.clockface.name} for your Fitbit Watch!`} hashtag="#handywatch" >
-                                <FacebookIcon />
-                              </FacebookShareButton>
-                            </div>
-                            <div className="share-button" onClick={() =>
-                                  gtmEvent(
-                                    "Share Buttons",
-                                    "Click",
-                                    "Share Twitter"
-                                  )
-                                }>
-                              <TwitterShareButton  hashtags={["handywatch","fitbitversa","fitbitionic"]} url={window.location.href} title="HANDY.WATCH - Beautiful Clock Faces for your Fitbit" via="handywatch">
-                                <TwitterIcon />
-                              </TwitterShareButton>
-                            </div>
-                            <div className="share-button" onClick={() =>
-                                  gtmEvent(
-                                    "Share Buttons",
-                                    "Click",
-                                    "Share Reddit"
-                                  )
-                                }>
-                              <RedditShareButton  url={window.location.href} title="HANDY.WATCH - Beautiful Clock Faces for your Fitbit">
-                                <RedditIcon />
-                              </RedditShareButton>
-                            </div>
-                            <div className="share-button" onClick={() =>
-                                  gtmEvent(
-                                    "Share Buttons",
-                                    "Click",
-                                    "Share Pinteres"
-                                  )
-                                }>
-                              <PinterestShareButton url={window.location.href} description="HANDY.WATCH - Beautiful Clock Faces for your Fitbit" media={this.state.clockface.versaAPNG}>
-                                <PinterestIcon />
-                              </PinterestShareButton>
-                            </div>
-                          </div>
-                        </div>
                     </div>
                 </div>
               </div>

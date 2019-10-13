@@ -504,6 +504,43 @@ header {
   color: white;
 }
 
+.ghost-loading {
+  .ghost-loading-box {
+    border-radius: $hw-border-radius;
+    box-shadow: $hw-box-shadow-lvl-2;
+    width: 100%;
+    height: 300px;
+    animation: pulse 1s infinite ease-in-out;
+    background-color: $hw-grey-shade-lvl-2;
+    opacity: 0.3;
+    margin-bottom: 30px;
+  }
+  @media only screen and (min-width: 920px) {
+    .ghost-loading-box {
+      width: 30%;
+      display: inline-block;
+      margin-left: 30px;
+    }
+  }
+}
+
+@keyframes pulse {
+  0% {
+    background: $hw-grey-shade-lvl-2;
+    opacity: 0.3;
+  }
+
+  25% {
+    background: darken($hw-grey-shade-lvl-2, 40%);
+    opacity: 0.3;
+  }
+
+  50% {
+    background: $hw-grey-shade-lvl-2;
+    opacity: 0.3;
+  }
+}
+
 @media only screen and (max-width: 920px) {
   .clockface-details h2 {
     text-align: center;
@@ -591,7 +628,6 @@ header {
 .clockcolors {
   position: absolute;
   color: black;
-  /* outline: 1px solid red; */
   top: 3%;
   left: 50%;
   width: 97%;
@@ -601,7 +637,6 @@ header {
 .clockcolors-ionic {
   position: absolute;
   color: black;
-  /* outline: 1px solid green; */
   top: 3%;
   left: 75%;
   width: 49%;
@@ -617,30 +652,4 @@ header {
 }
 .clockcolors-ionic .clockcolors-color {
   width: 25px;
-}
-
-@media only screen and (max-width: 450px) {
-  .hero-grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-  .hero-text h1 {
-    font-size: 50px;
-  }
-  .hero-text p {
-    font-size: 24px;
-  }
-  .hero-text {
-    text-align: center;
-  }
-
-  .hero-button {
-    font-size: 24px;
-  }
-  .hero-content {
-    text-align: center;
-  }
-  .hero-image {
-    margin-top: 0;
-  }
 }

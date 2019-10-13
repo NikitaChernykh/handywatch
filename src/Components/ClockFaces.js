@@ -57,7 +57,15 @@ class ClockFaces extends React.Component {
   render() {
     const state = this.state;
     if (this.state.loading) {
-      return <div>Loading...</div>;
+      return <div className="ghost-loading">
+        <div className="ghost-loading-box"></div>
+        <div className="ghost-loading-box"></div>
+        <div className="ghost-loading-box"></div>
+        <div className="ghost-loading-box"></div>
+        <div className="ghost-loading-box"></div>
+        <div className="ghost-loading-box"></div>
+
+      </div>;
     } else {
       return (
         <div>

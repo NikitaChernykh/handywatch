@@ -64,7 +64,9 @@ class ClockFaces extends React.Component {
         <div className="ghost-loading-box"></div>
         <div className="ghost-loading-box"></div>
         <div className="ghost-loading-box"></div>
-
+        <div className="ghost-loading-box"></div>
+        <div className="ghost-loading-box"></div>
+        <div className="ghost-loading-box"></div>
       </div>;
     } else {
       return (

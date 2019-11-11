@@ -31,7 +31,7 @@ class BannerSlide extends Component {
                   <h1 className={`${this.props.isMobile ? 'slide-title-mob' : 'slide-title'}`}>{this.props.title}</h1>
                   <h2 className={`${this.props.isMobile ? 'slide-subtitle-mob' : 'slide-subtitle'}`}>{this.props.subtitle}</h2>
                   <p className={`${this.props.isMobile ? 'slide-description-mob': 'slide-description'}`}>{this.props.description}</p>
-                  {this.props.isMobile? null : <Button url={this.props.url} bannerTitle={this.props.title} className="slide-button" buttonText="Download Now" />}
+                  {this.props.isMobile? null : <Button url={this.props.url} bannerTitle={this.props.title} className="slide-button" buttonText={this.props.buttonText} />}
                 </div>
               </Card>
               <div style={imgStyle}></div>

@@ -8,6 +8,8 @@ class ClockFaces extends React.Component {
     loading: true,
     clockfaces: [],
     bestClockfaces: [],
+    xmasClockfaces: [],
+    halloweenClockfaces: [],
     otherClockfaces: [],
     filteredClockfaces: [],
     filterBy: "featured"
@@ -16,10 +18,14 @@ class ClockFaces extends React.Component {
     firebaseClockfaces.once("value").then(snapshot => {
       const clockfaces = firebaseLooper(snapshot);
       const bestClockfaces = clockfaces.filter(clockface => clockface.category === "best");
-      const otherClockfaces = clockfaces.filter(clockface => clockface.category !== "best");
+      const xmasClockfaces = clockfaces.filter(clockface => clockface.category === "xmas");
+      const halloweenClockfaces = clockfaces.filter(clockface => clockface.category === "halloween");
+      const otherClockfaces = clockfaces.filter(clockface => !clockface.category);
       this.setState({
         clockfaces: reverseArray(clockfaces),
         bestClockfaces: reverseArray(bestClockfaces),
+        xmasClockfaces: reverseArray(xmasClockfaces),
+        halloweenClockfaces: reverseArray(halloweenClockfaces),
         otherClockfaces: reverseArray(otherClockfaces),
         filteredClockfaces: reverseArray(otherClockfaces),
         loading: false
@@ -71,7 +77,15 @@ class ClockFaces extends React.Component {
     } else {
       return (
         <div>
+          <h2 className="sub-title ">Christmas Picks</h2>
+          <div className="clockfaces-grid ">
+            {this.showClockfaces(this.state.xmasClockfaces)}
+          </div>
           <h2 className="sub-title ">Halloween Picks</h2>
+          <div className="clockfaces-grid ">
+            {this.showClockfaces(this.state.halloweenClockfaces)}
+          </div>
+          <h2 className="sub-title ">Best Picks</h2>
           <div className="clockfaces-grid ">
             {this.showClockfaces(this.state.bestClockfaces)}
           </div>

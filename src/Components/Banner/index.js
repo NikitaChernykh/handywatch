@@ -89,7 +89,7 @@ class Banner extends Component {
               imageUrl={require('../../Images/All-banner.webp')}
               imageAlt="All in bundle"
               buttonText="DOWNLOAD NOW"
-              url="https://k-pay.io/code/?s=21128EF3-D81C-C4A4-6B21-82C482CD1C6E&dsu=158823&p=1721-1190-1023-1064-1427-2318"
+              url="https://k-pay.io/code/?s=21128EF3-D81C-C4A4-6B21-82C482CD1C6E&dsu=158823&p=2318-1064-1413-1023-1721"
               isMobile={isMobile}
               />
           </Slider>

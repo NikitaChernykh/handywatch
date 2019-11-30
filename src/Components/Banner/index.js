@@ -64,7 +64,7 @@ class Banner extends Component {
               subtitle="Promo"
               fullScreen={false}
               description="Get 50% off with code 'LUCKY50'"
-              imageUrl={require('../../Images/bf-banner.png')}
+              imageUrl={require('../../Images/bf-banner.webp')}
               buttonText="SHOP NOW"
               imageAlt="Black Friday Week"
               url="https://k-pay.io/code/?s=21128EF3-D81C-C4A4-6B21-82C482CD1C6E&dsu=158823&p=2318-1413-1023-1721"
@@ -75,7 +75,7 @@ class Banner extends Component {
               subtitle="Bundle"
               fullScreen={true}
               description="Five perfect Clock Faces for your Fitbit watch."
-              imageUrl={require('../../Images/Hallweeen-Babber-Website.png')}
+              imageUrl={require('../../Images/Hallweeen-Babber-Website.webp')}
               buttonText="DOWNLOAD NOW"
               imageAlt="Halloween Bundle"
               url="https://k-pay.io/code/?s=21128EF3-D81C-C4A4-6B21-82C482CD1C6E&dsu=158823&p=1064-4204-981-1056-1087-1111"
@@ -86,7 +86,7 @@ class Banner extends Component {
               subtitle="Bundle"
               fullScreen={false}
               description="All 18 Clock Faces in one bundle!"
-              imageUrl={require('../../Images/All-banner.png')}
+              imageUrl={require('../../Images/All-banner.webp')}
               imageAlt="All in bundle"
               buttonText="DOWNLOAD NOW"
               url="https://k-pay.io/code/?s=21128EF3-D81C-C4A4-6B21-82C482CD1C6E&dsu=158823&p=1721-1190-1023-1064-1427-2318"

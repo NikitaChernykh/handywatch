@@ -6,7 +6,7 @@ import MyButton from "./MyButton";
 import { isMobile } from "react-device-detect";
 import MyLink from "./MyLink";
 import { gtmEvent } from "../Utils/utils";
-import modalImg from "../Images/modal.png";
+import modalImg from "../Images/modal.webp";
 import "rodal/lib/rodal.css";
 import SeeMore from './SeeMoreComponent/SeeMore';
 

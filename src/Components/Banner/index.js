@@ -60,14 +60,25 @@ class Banner extends Component {
         <section className="banner-section">
           <Slider {...settings}>
             <BannerSlide 
-              title="Black Friday Week"
-              subtitle="Promo"
+              title="Merry Christmas"
+              subtitle="Bundle"
               fullScreen={false}
-              description="Get 50% off with code 'LUCKY50'"
-              imageUrl={require('../../Images/bf-banner.webp')}
+              description="Get this Holiday Collection of Clock Faces now!"
+              imageUrl={require('../../Images/xmas-banner.webp')}
               buttonText="SHOP NOW"
-              imageAlt="Black Friday Week"
-              url="https://k-pay.io/code/?s=21128EF3-D81C-C4A4-6B21-82C482CD1C6E&dsu=158823&p=2318-1413-1023-1721"
+              imageAlt="Christmas collection"
+              url="https://k-pay.io/code/?s=21128EF3-D81C-C4A4-6B21-82C482CD1C6E&dsu=158823&p=2318-1064-1413-1023-1721"
+              isMobile={isMobile}
+              />
+            <BannerSlide 
+              title="Christmas Cocoa"
+              subtitle="Clock Face"
+              fullScreen={false}
+              description="New Christmas Clock Face out now!"
+              imageUrl={require('../../Images/cocoa-banner.webp')}
+              buttonText="DOWNLOAD NOW"
+              imageAlt="Christmas collection"
+              url="https://handy.watch/details/-L7EmKuSIgqThGGgaN34"
               isMobile={isMobile}
               />
             {/* <BannerSlide
@@ -85,7 +96,7 @@ class Banner extends Component {
               title="Get Them All"
               subtitle="Bundle"
               fullScreen={false}
-              description="All 18 Clock Faces in one bundle!"
+              description="All 20 Clock Faces in one bundle!"
               imageUrl={require('../../Images/All-banner.webp')}
               imageAlt="All in bundle"
               buttonText="DOWNLOAD NOW"

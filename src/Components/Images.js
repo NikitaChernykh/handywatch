@@ -24,25 +24,25 @@ export {
 // IONIC IMAGES
 export {
   default as Ionic1
-} from "../Images/Ionic/Fitbit_Ionic_Front_Sport_Adidas-min.webp";
+} from "../Images/Ionic/Fitbit_Ionic_Front_Sport_Adidas-min.png";
 export {
   default as Ionic2
-} from "../Images/Ionic/Fitbit_Ionic_Front_Sport_Black_Charcoal_Clock-min.webp";
+} from "../Images/Ionic/Fitbit_Ionic_Front_Sport_Black_Charcoal_Clock-min.png";
 export {
   default as Ionic3
-} from "../Images/Ionic/Fitbit_Ionic_Front_Sport_Cobalt_Lime_Clock-min.webp";
+} from "../Images/Ionic/Fitbit_Ionic_Front_Sport_Cobalt_Lime_Clock-min.png";
 export {
   default as Ionic4
-} from "../Images/Ionic/Fitbit_Ionic_Front_Sport_Coral_Blue_Gray_Clock-min.webp";
+} from "../Images/Ionic/Fitbit_Ionic_Front_Sport_Coral_Blue_Gray_Clock-min.png";
 export {
   default as Ionic5
-} from "../Images/Ionic/Ionic_Front_Blue_Gray_AdventureClock-min.webp";
+} from "../Images/Ionic/Ionic_Front_Blue_Gray_AdventureClock-min.png";
 export {
   default as Ionic6
-} from "../Images/Ionic/Ionic_Front_Burnt_Orange_Stale_Blue_Grey_Clock-min.webp";
+} from "../Images/Ionic/Ionic_Front_Burnt_Orange_Stale_Blue_Grey_Clock-min.png";
 export {
   default as Ionic7
-} from "../Images/Ionic/Ionic_Front_Charcoal_AdventureClock-min.webp";
+} from "../Images/Ionic/Ionic_Front_Charcoal_AdventureClock-min.png";
 
 // COLOR IONIC IMAGES
 export { default as IonicAdidas } from "../Images/Colors/ionic/adidas-min.webp";

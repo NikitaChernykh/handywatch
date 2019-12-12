@@ -1,25 +1,25 @@
 // VERSA IMAGES
 export {
   default as Versa1
-} from "../Images/Versa/Fitbit_Versa_Front_Black_Clock-min.webp";
+} from "../Images/Versa/Fitbit_Versa_Front_Black_Clock-min.png";
 export {
   default as Versa2
-} from "../Images/Versa/Fitbit_Versa_Front_Gray_Clock-min.webp";
+} from "../Images/Versa/Fitbit_Versa_Front_Gray_Clock-min.png";
 export {
   default as Versa3
-} from "../Images/Versa/Fitbit_Versa_Front_Leather_Cognac_Clock-min.webp";
+} from "../Images/Versa/Fitbit_Versa_Front_Leather_Cognac_Clock-min.png";
 export {
   default as Versa4
-} from "../Images/Versa/Fitbit_Versa_Front_Peach_Clock-min.webp";
+} from "../Images/Versa/Fitbit_Versa_Front_Peach_Clock-min.png";
 export {
   default as Versa5
-} from "../Images/Versa/Fitbit_Versa_Front_SE_Charcoal_Clock-min.webp";
+} from "../Images/Versa/Fitbit_Versa_Front_SE_Charcoal_Clock-min.png";
 export {
   default as Versa6
-} from "../Images/Versa/Fitbit_Versa_Front_SE_Lavender_Clock-min.webp";
+} from "../Images/Versa/Fitbit_Versa_Front_SE_Lavender_Clock-min.png";
 export {
   default as Versa7
-} from "../Images/Versa/Fitbit_Versa_Front_Tri-Link_Silver_Clock-min.webp";
+} from "../Images/Versa/Fitbit_Versa_Front_Tri-Link_Silver_Clock-min.png";
 
 // IONIC IMAGES
 export {

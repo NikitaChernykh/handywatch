@@ -5,7 +5,7 @@ import MyButton from "./MyButton";
 import ClockfaceSlider from "./ClockfaceSlider";
 import { gtmEvent } from "../Utils/utils";
 import { isMobile } from "react-device-detect";
-import modalImg from "../Images/modal.webp";
+import modalImg from "../Images/modal.png";
 import details from "../Images/details.svg";
 import { Link } from "react-router-dom";
 import New from "./New";

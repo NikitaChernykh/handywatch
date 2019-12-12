@@ -64,7 +64,7 @@ class Banner extends Component {
               subtitle="Bundle"
               fullScreen={false}
               description="Get this Holiday Collection of Clock Faces now!"
-              imageUrl={require('../../Images/xmas-banner.webp')}
+              imageUrl={require('../../Images/xmas-banner.png')}
               buttonText="SHOP NOW"
               imageAlt="Christmas collection"
               url="https://k-pay.io/code/?s=21128EF3-D81C-C4A4-6B21-82C482CD1C6E&dsu=158823&p=2318-1064-1413-1023-1721"
@@ -75,7 +75,7 @@ class Banner extends Component {
               subtitle="Clock Face"
               fullScreen={false}
               description="New Christmas Clock Face out now!"
-              imageUrl={require('../../Images/cocoa-banner.webp')}
+              imageUrl={require('../../Images/cocoa-banner.png')}
               buttonText="DOWNLOAD NOW"
               imageAlt="Christmas collection"
               url="https://handy.watch/details/-L7EmKuSIgqThGGgaN34"
@@ -97,7 +97,7 @@ class Banner extends Component {
               subtitle="Bundle"
               fullScreen={false}
               description="All 20 Clock Faces in one bundle!"
-              imageUrl={require('../../Images/All-banner.webp')}
+              imageUrl={require('../../Images/All-banner.png')}
               imageAlt="All in bundle"
               buttonText="DOWNLOAD NOW"
               url="https://k-pay.io/code/?s=21128EF3-D81C-C4A4-6B21-82C482CD1C6E&dsu=158823&p=2318-1064-1413-1023-1721"

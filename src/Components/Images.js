@@ -45,29 +45,29 @@ export {
 } from "../Images/Ionic/Ionic_Front_Charcoal_AdventureClock-min.png";
 
 // COLOR IONIC IMAGES
-export { default as IonicAdidas } from "../Images/Colors/ionic/adidas-min.webp";
+export { default as IonicAdidas } from "../Images/Colors/ionic/adidas-min.png";
 export {
   default as IonicSport
-} from "../Images/Colors/ionic/black_sport-min.webp";
+} from "../Images/Colors/ionic/black_sport-min.png";
 export {
   default as IonicCharcoal
-} from "../Images/Colors/ionic/charcoal-min.webp";
-export { default as IonicCobalt } from "../Images/Colors/ionic/cobalt-min.webp";
-export { default as IonicCoral } from "../Images/Colors/ionic/coral-min.webp";
-export { default as IonicGrey } from "../Images/Colors/ionic/grey-min.webp";
-export { default as IonicOrange } from "../Images/Colors/ionic/orange-min.webp";
+} from "../Images/Colors/ionic/charcoal-min.png";
+export { default as IonicCobalt } from "../Images/Colors/ionic/cobalt-min.png";
+export { default as IonicCoral } from "../Images/Colors/ionic/coral-min.png";
+export { default as IonicGrey } from "../Images/Colors/ionic/grey-min.png";
+export { default as IonicOrange } from "../Images/Colors/ionic/orange-min.png";
 
 // COLOR VERSA IMAGES
-export { default as VersaBlack } from "../Images/Colors/versa/black-min.webp";
+export { default as VersaBlack } from "../Images/Colors/versa/black-min.png";
 export {
   default as VersaCharcoal
-} from "../Images/Colors/versa/charcoal-min.webp";
-export { default as VersaGrey } from "../Images/Colors/versa/grey-min.webp";
+} from "../Images/Colors/versa/charcoal-min.png";
+export { default as VersaGrey } from "../Images/Colors/versa/grey-min.png";
 export {
   default as VersaLavender
-} from "../Images/Colors/versa/lavender-min.webp";
+} from "../Images/Colors/versa/lavender-min.png";
 export {
   default as VersaLeather
-} from "../Images/Colors/versa/leather-min.webp";
-export { default as VersaPeach } from "../Images/Colors/versa/peach-min.webp";
-export { default as VersaSilver } from "../Images/Colors/versa/silver-min.webp";
+} from "../Images/Colors/versa/leather-min.png";
+export { default as VersaPeach } from "../Images/Colors/versa/peach-min.png";
+export { default as VersaSilver } from "../Images/Colors/versa/silver-min.png";

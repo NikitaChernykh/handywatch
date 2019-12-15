@@ -27,9 +27,7 @@ class Faq extends React.Component {
                     answer={() => {
                       return (
                         <p>
-                          Install the clock face that you like. Wait for the
-                          screen with the code to show up. Follow the URL
-                          dispalyed above the code or just enter the code{" "}
+                          Install the Clock Face that you like. Wait for the screen with the code to show up. Follow the URL displayed above the code or enter the code{" "}
                           <a
                             className="faqlink"
                             href="https://k-pay.io/code/"
@@ -39,9 +37,7 @@ class Faq extends React.Component {
                           >
                             here
                           </a>
-                          . After the purchase you will recive an email
-                          confiration and the clock face will be unlocked for
-                          you to use.
+                          . After the purchase, you will receive an email confirmation, and the Clock Face will be unlocked for you to use.
                         </p>
                       );
                     }}
@@ -53,11 +49,9 @@ class Faq extends React.Component {
                     anchor="alreadypaid"
                     answer={() => {
                       return (
-                        <p>
-                          Everytime you change the clock face Fitbit treats it
-                          as new one. That can also happen sometimes if you
-                          reboot you device or loose the connection for too
-                          long. To prove your purchase and unlock it back{" "}
+                        <p>Every time you change the Clock Face, 
+Fitbit treats it as a new one. That can also happen sometimes if you reboot your device or lose the connection for too long. 
+To prove your purchase and unlock it back you can use this link{" "}
                           <a
                             className="faqlink"
                             href="https://k-pay.io/code/unlock"
@@ -67,8 +61,7 @@ class Faq extends React.Component {
                           >
                             here
                           </a>
-                          . Just use the same email as when you purchased it
-                          before and the code that you see on the watch.
+                          . Just use the same email as to when you purchased it before and the code that you see on the watch.
                         </p>
                       );
                     }}
@@ -81,14 +74,14 @@ class Faq extends React.Component {
                     answer={() => {
                       return (
                         <p>
-                          If you purchased Bundle you should recive the email
-                          with links to clock faces. To install just open the
-                          links on trough your phone and it will forward you to
-                          fitbit app and install them. In case if you see the
-                          code on the clock watch that you already purchsed. The
-                          way Fitbit is handalining that for now is not the best
-                          so to get rid of the code screen go to this page and
-                          enter that code{` `}
+
+
+If you purchased Bundle, you should receive the email with the links to Clock Faces. 
+To install them, open the links on the email through your phone, and it will forward you to the Clock Face in the Fitbit app. 
+After installing the Clock Face from the bundle if you see the code on the screen, don't panic. The way Fitbit is handling that,
+ for now, is not the best,
+  so to get rid of the code on the screen,
+   go to this page and enter that code{` `}
                           <a
                             className="faqlink"
                             href="https://k-pay.io/code/unlock"
@@ -99,7 +92,7 @@ class Faq extends React.Component {
                             here
                           </a>
                           {` `}
-                          and your email and it should unlock it for you.
+                          and your email, and that should unlock the Clock Face for you.
                         </p>
                       );
                     }}
@@ -111,12 +104,9 @@ class Faq extends React.Component {
                     anchor="lookup"
                     answer={() => {
                       return (
-                        <p>
-                          After each purchase, you receive a "Purchase Success"
-                          e-mail from K-pay. This e-mail shows you exactly what
-                          you purchased and how you can install those apps. In
-                          case you lost those e-mails, you can lookup your
-                          purchases {` `}
+                        <p>After each purchase, you receive a "Purchase Success" e-mail from K-pay.
+                           This e-mail shows you exactly what you purchased and how you can install those Clock Faces and apps at any time in the future.
+                            In case you lost those e-mails, you can look up your purchases here{` `}
                           <a
                             className="faqlink"
                             href="https://k-pay.io/lookup"

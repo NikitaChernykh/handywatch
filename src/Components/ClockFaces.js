@@ -77,14 +77,7 @@ class ClockFaces extends React.Component {
     } else {
       return (
         <div>
-          <h2 className="sub-title ">Christmas Picks</h2>
-          <div className="clockfaces-grid ">
-            {this.showClockfaces(this.state.xmasClockfaces)}
-          </div>
-          <h2 className="sub-title ">Halloween Picks</h2>
-          <div className="clockfaces-grid ">
-            {this.showClockfaces(this.state.halloweenClockfaces)}
-          </div>
+          
           <h2 className="sub-title ">Best Picks</h2>
           <div className="clockfaces-grid ">
             {this.showClockfaces(this.state.bestClockfaces)}
@@ -111,6 +104,14 @@ class ClockFaces extends React.Component {
           </div>
           <div className="clockfaces-grid ">
             {this.showClockfaces(this.state.otherClockfaces)}
+          </div>
+          <h2 className="sub-title ">Christmas Picks</h2>
+          <div className="clockfaces-grid ">
+            {this.showClockfaces(this.state.xmasClockfaces)}
+          </div>
+          <h2 className="sub-title ">Halloween Picks</h2>
+          <div className="clockfaces-grid ">
+            {this.showClockfaces(this.state.halloweenClockfaces)}
           </div>
         </div>
       );

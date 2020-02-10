@@ -59,39 +59,40 @@ class Banner extends Component {
         return (
         <section className="banner-section">
           <Slider {...settings}>
-            <BannerSlide 
-              title="Merry Christmas"
+          <BannerSlide 
+              title="Valentine's Day Exclusive"
               subtitle="Bundle"
               fullScreen={false}
-              description="Get this Holiday Collection of Clock Faces now!"
-              imageUrl={require('../../Images/xmas-banner.png')}
-              buttonText="SHOP NOW"
-              imageAlt="Christmas collection"
-              url="https://k-pay.io/code/?s=21128EF3-D81C-C4A4-6B21-82C482CD1C6E&dsu=158823&p=2318-1064-1413-1023-1721"
+              description="Includes One Love and Days Together App"
+              imageUrl={require('../../Images/Love-Bundle-min.png')}
+              buttonText="DOWNLOAD NOW"
+              imageAlt="Love bundle"
+              url="https://k-pay.io/code/?s=21128EF3-D81C-C4A4-6B21-82C482CD1C6E&dsu=158823&p=7405"
               isMobile={isMobile}
               />
-            <BannerSlide 
-              title="Christmas Cocoa"
+          <BannerSlide
+              title="One Love"
               subtitle="Clock Face"
-              fullScreen={false}
-              description="New Christmas Clock Face out now!"
-              imageUrl={require('../../Images/cocoa-banner.png')}
+              fullScreen={true}
+              description="Beautiful Clock Face for Valentine's Day"
+              imageUrl={require('../../Images/One-Love-min.png')}
               buttonText="DOWNLOAD NOW"
-              imageAlt="Christmas collection"
-              url="https://handy.watch/details/-L7EmKuSIgqThGGgaN34"
+              imageAlt="One love clock face"
+              url="https://handy.watch/details/-LEmaPHWXzdUZ_5ohJjj"
+              isMobile={isMobile}
+            />
+            <BannerSlide 
+              title="Days Together"
+              subtitle="App"
+              fullScreen={false}
+              description="This Valentines Day count how long you are together!"
+              imageUrl={require('../../Images/Days-Together-min.png')}
+              buttonText="DOWNLOAD NOW"
+              imageAlt="days together fitbit app"
+              url="https://handy.watch/details/LEmaPHHgI3SgqTKu9f9"
               isMobile={isMobile}
               />
-            {/* <BannerSlide
-              title="Halloween is Here!"
-              subtitle="Bundle"
-              fullScreen={true}
-              description="Five perfect Clock Faces for your Fitbit watch."
-              imageUrl={require('../../Images/Hallweeen-Babber-Website.webp')}
-              buttonText="DOWNLOAD NOW"
-              imageAlt="Halloween Bundle"
-              url="https://k-pay.io/code/?s=21128EF3-D81C-C4A4-6B21-82C482CD1C6E&dsu=158823&p=1064-4204-981-1056-1087-1111"
-              isMobile={isMobile}
-            /> */}
+            
             <BannerSlide 
               title="Get Them All"
               subtitle="Bundle"

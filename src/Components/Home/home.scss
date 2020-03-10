@@ -14,3 +14,18 @@
   margin-top: 30px;
   font-family: "Viga", serif;
 }
+
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 180px));
+  grid-gap: 24px;
+}
+
+.category-title {
+  text-align: left;
+  font-size: 2em;
+  margin-bottom: 30px;
+  font-family: $hw-font-text;
+  font-weight: 900;
+  color: $hw-black-color;
+}

@@ -74,8 +74,6 @@ To prove your purchase and unlock it back you can use this link{" "}
                     answer={() => {
                       return (
                         <p>
-
-
 If you purchased Bundle, you should receive the email with the links to Clock Faces. 
 To install them, open the links on the email through your phone, and it will forward you to the Clock Face in the Fitbit app. 
 After installing the Clock Face from the bundle if you see the code on the screen, don't panic. The way Fitbit is handling that,

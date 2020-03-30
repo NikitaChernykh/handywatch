@@ -5,7 +5,7 @@ class Header extends Component {
     render() {
         return (
             <header className="hw-header">
-                <div >
+                <div>
                 <Link to="/">
                     <h1 className="header-logo">HANDY.WATCH</h1>
                 </Link>

@@ -17,32 +17,12 @@ function SamplePrevArrow(props) {
   );
 }
 class Banner extends Component {
-    constructor() {
-      super();
-      this.state = {
-        width: window.innerWidth,
-      };
-    }
-    componentWillMount() {
-      window.addEventListener('resize', this.handleWindowSizeChange);
-    }
-
-    componentWillUnmount() {
-      window.removeEventListener('resize', this.handleWindowSizeChange);
-    }
-
-    handleWindowSizeChange = () => {
-      this.setState({ width: window.innerWidth });
-    };
-
+    
     render() {
-        const { width } = this.state;
-        const isMobile = width <= 768;
-        
         // Slider Settings
         const settings = {
             className: "center",
-            centerMode: isMobile? true : false,
+            centerMode: this.props.isMobile? true : false,
             infinite: true,
             lazyLoad: 'ondemand',
             centerPadding: "30px",
@@ -52,8 +32,8 @@ class Banner extends Component {
             autoplay: true,
             autoplaySpeed: 5000,
             pauseOnHover: true,
-            arrows: isMobile? false : true,
-            dots: isMobile? true : false,
+            arrows: this.props.isMobile? false : true,
+            dots: this.props.isMobile? true : false,
             speed: 500
           };
         return (
@@ -68,7 +48,7 @@ class Banner extends Component {
               buttonText="DOWNLOAD NOW"
               imageAlt="Love bundle"
               url="https://k-pay.io/code/?s=21128EF3-D81C-C4A4-6B21-82C482CD1C6E&dsu=158823&p=7405"
-              isMobile={isMobile}
+              isMobile={this.props.isMobile}
               />
           <BannerSlide
               title="One Love"
@@ -79,7 +59,7 @@ class Banner extends Component {
               buttonText="DOWNLOAD NOW"
               imageAlt="One love clock face"
               url="https://handy.watch/details/-LEmaPHWXzdUZ_5ohJjj"
-              isMobile={isMobile}
+              isMobile={this.props.isMobile}
             />
             <BannerSlide 
               title="Days Together"
@@ -90,9 +70,8 @@ class Banner extends Component {
               buttonText="DOWNLOAD NOW"
               imageAlt="days together fitbit app"
               url="https://handy.watch/details/LEmaPHHgI3SgqTKu9f9"
-              isMobile={isMobile}
+              isMobile={this.props.isMobile}
               />
-            
             <BannerSlide 
               title="Get Them All"
               subtitle="Bundle"
@@ -102,7 +81,7 @@ class Banner extends Component {
               imageAlt="All in bundle"
               buttonText="DOWNLOAD NOW"
               url="https://k-pay.io/code/?s=21128EF3-D81C-C4A4-6B21-82C482CD1C6E&dsu=158823&p=2318-1064-1413-1023-1721"
-              isMobile={isMobile}
+              isMobile={this.props.isMobile}
               />
           </Slider>
         </section>

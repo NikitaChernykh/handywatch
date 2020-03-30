@@ -6,7 +6,7 @@ import { firebaseLooper, reverseArray } from "../../Utils/utils";
 import Banner from "../Banner";
 import Navigation from "../Navigation";
 import "./home.scss";
-import MiniCard from "../MiniCard";
+import ScrollableCategory from "../ScrollableCategory";
 class Home extends React.Component {
   state = {
     loading: true,
@@ -16,7 +16,8 @@ class Home extends React.Component {
     halloweenClockfaces: [],
     otherClockfaces: [],
     filteredClockfaces: [],
-    filterBy: "featured"
+    filterBy: "featured",
+    width: window.innerWidth
   };
   componentDidMount() {
     firebaseClockfaces.once("value").then(snapshot => {
@@ -36,21 +37,22 @@ class Home extends React.Component {
       });
     });
   }
-  showClockfaces = clockfaces =>
-    clockfaces
-      ? clockfaces.map(clockface => (
-          <div bottom key={clockface.id}>
-            <MiniCard
-              clockface={clockface}
-              versaImage={clockface.versaAPNG}
-              ionicImage={clockface.ionicAPNG}
-              linkto={clockface.downloadURL}
-              type={clockface.type}
-            />
-          </div>
-        ))
-      : null;
+
+  componentWillMount() {
+    window.addEventListener('resize', this.handleWindowSizeChange);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.handleWindowSizeChange);
+  }
+
+  handleWindowSizeChange = () => {
+    this.setState({ width: window.innerWidth });
+  };
+
   render() {
+    const { width } = this.state;
+    const isMobile = width <= 768;
     return (
       <div>
         <Helmet>
@@ -65,21 +67,47 @@ class Home extends React.Component {
           <link rel="canonical" href="https://handy.watch/" />
           <meta name="robots" content="index, follow" />
         </Helmet>
-        <div className="wrapper">
-          <Navigation selectedClocks="selected"/>
-        </div>
-        <Banner/>
-        <div className="wrapper">
-          <h2 className="category-title">Best Picks</h2>
-          <div className="home-grid">
-            {this.showClockfaces(this.state.bestClockfaces)}
+        <section>
+          <div className="wrapper">
+            <Navigation selectedClocks="selected"/>
           </div>
-        </div>
-        <div className="wrapper">
+        </section>
+        <Banner isMobile={isMobile}/>
+        {/* BEST  CATEGORY */}
+        
+        <section className="category-section">
+          <div className="wrapper">
+            <h2 className="category-title">Best Picks</h2>
+            <ScrollableCategory isMobile={isMobile} list={this.state.bestClockfaces}/>
+          </div>
+        </section>
+
+        <section className="category-section">
+          <div className="wrapper">
+            <h2 className="category-title">More from collection</h2>
+            <ScrollableCategory isMobile={isMobile} list={this.state.otherClockfaces}/>
+          </div>
+        </section>
+
+        <section className="category-section">
+          <div className="wrapper">
+            <h2 className="category-title">Christmas Picks</h2>
+            <ScrollableCategory isMobile={isMobile} list={this.state.xmasClockfaces}/>
+          </div>
+        </section>
+
+        <section className="category-section">
+          <div className="wrapper">
+            <h2 className="category-title">Halloween Picks</h2>
+            <ScrollableCategory isMobile={isMobile} list={this.state.halloweenClockfaces}/>
+          </div>
+        </section>
+
+        {/* <div className="wrapper">
           <section id="clockfaces" className="clockfaces">
             <ClockFaces />
           </section>
-        </div>
+        </div> */}
       </div>
     );
   }

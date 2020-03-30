@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import "./minicard.scss";
+import "./product-tile.scss";
 import MyLink from "../MyLink";
 import { gtmEvent } from "../../Utils/utils";
-class MiniCard extends Component {
-    // TODO rename to Tile
+class ProductTile extends Component {
     render() {
         const style = {
             backgroundImage: `url(${this.props.clockface.versaAPNG})`,
@@ -13,8 +12,11 @@ class MiniCard extends Component {
             height: '180px'
         }
         return (
-            
-            <MyLink
+          <a
+            href={this.props.clockface.downloadURL}
+            target="_blank"
+            rel="noopener noreferrer">
+          <MyLink
             onClick={() =>
               gtmEvent(
                 "Download",
@@ -23,14 +25,15 @@ class MiniCard extends Component {
               )
             }
           >
-            <div className="minicard">
+            <div className="product-tile">
                 <div style={style}></div>
-                <div className="minicard-details" >{this.props.clockface.name}</div>
+                <div className="product-tile-details">{this.props.clockface.name}</div>
             </div>
           </MyLink>
+          </a>
         );
     }
 }
 
 
-export default MiniCard;
+export default ProductTile;

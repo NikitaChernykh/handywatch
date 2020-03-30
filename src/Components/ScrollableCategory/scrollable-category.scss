@@ -1,0 +1,24 @@
+:root {
+  --gutter: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+.app {
+  overflow-y: scroll;
+}
+.horizontal-scroll-container {
+  display: grid;
+  grid-gap: calc(var(--gutter));
+  grid-template-columns: repeat(5, 180px);
+  grid-template-rows: minmax(50px, 1fr);
+  overflow-x: scroll;
+  scroll-snap-type: x proximity;
+  height: 250px;
+}
+
+.hide-scroll-bar {
+  overflow-x: unset;
+}

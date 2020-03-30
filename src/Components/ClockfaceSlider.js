@@ -139,7 +139,6 @@ export default class ClockfaceSlider extends Component {
           >
             VERSA/LITE
           </MyButton>
-
           <MyButton
             className={
               !this.state.isActive

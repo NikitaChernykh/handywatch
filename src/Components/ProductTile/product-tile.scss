@@ -1,16 +1,16 @@
 @import "../../colors";
 @import "../../variables";
 
-.minicard {
+.product-tile {
   border-radius: 15px;
   background-color: white;
   box-shadow: rgba(64, 95, 107, 0.15) 0px 0px 10px 0px;
   overflow: hidden;
 }
-.minicard:hover {
+.product-tile:hover {
   cursor: pointer;
 }
-.minicard-details {
+.product-tile-details {
   box-sizing: border-box;
   padding: 15px;
   text-align: left;

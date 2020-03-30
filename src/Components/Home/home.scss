@@ -29,3 +29,18 @@
   font-weight: 900;
   color: $hw-black-color;
 }
+
+.category-section {
+  margin-top: 50px;
+}
+
+.slick-dots {
+  text-align: left;
+  li {
+    width: 30px;
+    button:before {
+      font-size: 15px;
+      line-height: 15px;
+    }
+  }
+}

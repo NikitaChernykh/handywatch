@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import "./product-tile.scss";
-import MyLink from "../MyLink";
 import { gtmEvent } from "../../Utils/utils";
 class ProductTile extends Component {
     render() {
@@ -16,7 +15,7 @@ class ProductTile extends Component {
             href={this.props.clockface.downloadURL}
             target="_blank"
             rel="noopener noreferrer">
-          <MyLink
+          <button
             onClick={() =>
               gtmEvent(
                 "Download",
@@ -27,9 +26,9 @@ class ProductTile extends Component {
           >
             <div className="product-tile">
                 <div style={style}></div>
-                <div className="product-tile-details">{this.props.clockface.name}</div>
+                <div className="product-tile-name">{this.props.clockface.name}</div>
             </div>
-          </MyLink>
+          </button>
           </a>
         );
     }

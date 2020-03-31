@@ -1,5 +1,4 @@
 import React from "react";
-import ClockFaces from "../ClockFaces";
 import { Helmet } from "react-helmet";
 import { firebaseClockfaces} from "../../firebase";
 import { firebaseLooper, reverseArray } from "../../Utils/utils";
@@ -77,8 +76,22 @@ class Home extends React.Component {
         
         <section className="category-section">
           <div className="wrapper">
-            <h2 className="category-title">Best Picks</h2>
+            <h2 className="category-title">Best Clock Faces and Apps</h2>
             <ScrollableCategory isMobile={isMobile} list={this.state.bestClockfaces}/>
+          </div>
+        </section>
+
+        <section className="category-section">
+          <div className="wrapper">
+            <h2 className="category-title">Christmas Clock Faces</h2>
+            <ScrollableCategory isMobile={isMobile} list={this.state.xmasClockfaces}/>
+          </div>
+        </section>
+
+        <section className="category-section">
+          <div className="wrapper">
+            <h2 className="category-title">Halloween Clock Faces</h2>
+            <ScrollableCategory isMobile={isMobile} list={this.state.halloweenClockfaces}/>
           </div>
         </section>
 
@@ -88,26 +101,6 @@ class Home extends React.Component {
             <ScrollableCategory isMobile={isMobile} list={this.state.otherClockfaces}/>
           </div>
         </section>
-
-        <section className="category-section">
-          <div className="wrapper">
-            <h2 className="category-title">Christmas Picks</h2>
-            <ScrollableCategory isMobile={isMobile} list={this.state.xmasClockfaces}/>
-          </div>
-        </section>
-
-        <section className="category-section">
-          <div className="wrapper">
-            <h2 className="category-title">Halloween Picks</h2>
-            <ScrollableCategory isMobile={isMobile} list={this.state.halloweenClockfaces}/>
-          </div>
-        </section>
-
-        {/* <div className="wrapper">
-          <section id="clockfaces" className="clockfaces">
-            <ClockFaces />
-          </section>
-        </div> */}
       </div>
     );
   }

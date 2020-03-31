@@ -17,32 +17,12 @@ function SamplePrevArrow(props) {
   );
 }
 class Banner extends Component {
-    constructor() {
-      super();
-      this.state = {
-        width: window.innerWidth,
-      };
-    }
-    componentWillMount() {
-      window.addEventListener('resize', this.handleWindowSizeChange);
-    }
-
-    componentWillUnmount() {
-      window.removeEventListener('resize', this.handleWindowSizeChange);
-    }
-
-    handleWindowSizeChange = () => {
-      this.setState({ width: window.innerWidth });
-    };
-
+    
     render() {
-        const { width } = this.state;
-        const isMobile = width <= 768;
-        
         // Slider Settings
         const settings = {
             className: "center",
-            centerMode: isMobile? true : false,
+            centerMode: this.props.isMobile? true : false,
             infinite: true,
             lazyLoad: 'ondemand',
             centerPadding: "30px",
@@ -52,36 +32,36 @@ class Banner extends Component {
             autoplay: true,
             autoplaySpeed: 5000,
             pauseOnHover: true,
-            arrows: isMobile? false : true,
-            dots: isMobile? true : false,
+            arrows: this.props.isMobile? false : true,
+            dots: this.props.isMobile? true : false,
             speed: 500
           };
         return (
         <section className="banner-section">
           <Slider {...settings}>
           <BannerSlide 
-              title="Valentine's Day Exclusive"
+              title="Happy Easter Exclusive"
               subtitle="Bundle"
               fullScreen={false}
-              description="Includes One Love and Days Together App"
-              imageUrl={require('../../Images/Love-Bundle-min.png')}
+              description="Mr. Family Bundle Includes Mr. Pug and Mr. Bunny"
+              imageUrl={require('../../Images/mrfamily.png')}
               buttonText="DOWNLOAD NOW"
-              imageAlt="Love bundle"
-              url="https://k-pay.io/code/?s=21128EF3-D81C-C4A4-6B21-82C482CD1C6E&dsu=158823&p=7405"
-              isMobile={isMobile}
+              imageAlt="🐶 Mr. Family Fitbit Bundle"
+              url="https://kiezelpay.com/code/?s=21128EF3-D81C-C4A4-6B21-82C482CD1C6E&dsu=158823&p=8892-1721"
+              isMobile={this.props.isMobile}
               />
           <BannerSlide
-              title="One Love"
+              title="Mr. Bunny"
               subtitle="Clock Face"
               fullScreen={true}
-              description="Beautiful Clock Face for Valentine's Day"
-              imageUrl={require('../../Images/One-Love-min.png')}
+              description="Have Your Own Bunny on Your Watch This Easter"
+              imageUrl={require('../../Images/mrbunny.png')}
               buttonText="DOWNLOAD NOW"
-              imageAlt="One love clock face"
-              url="https://handy.watch/details/-LEmaPHWXzdUZ_5ohJjj"
-              isMobile={isMobile}
+              imageAlt="Mr. Bunny Fitbit Clock Face"
+              url="https://gallery.fitbit.com/details/7b2fad1e-5a29-4531-aa49-3554e8a629a0"
+              isMobile={this.props.isMobile}
             />
-            <BannerSlide 
+            {/* <BannerSlide 
               title="Days Together"
               subtitle="App"
               fullScreen={false}
@@ -90,19 +70,18 @@ class Banner extends Component {
               buttonText="DOWNLOAD NOW"
               imageAlt="days together fitbit app"
               url="https://handy.watch/details/LEmaPHHgI3SgqTKu9f9"
-              isMobile={isMobile}
-              />
-            
+              isMobile={this.props.isMobile}
+              /> */}
             <BannerSlide 
               title="Get Them All"
               subtitle="Bundle"
               fullScreen={false}
-              description="All 20 Clock Faces in one bundle!"
+              description="All 20+ Clock Faces in One Bundle"
               imageUrl={require('../../Images/All-banner.png')}
               imageAlt="All in bundle"
               buttonText="DOWNLOAD NOW"
-              url="https://k-pay.io/code/?s=21128EF3-D81C-C4A4-6B21-82C482CD1C6E&dsu=158823&p=2318-1064-1413-1023-1721"
-              isMobile={isMobile}
+              url="https://kiezelpay.com/code/?s=21128EF3-D81C-C4A4-6B21-82C482CD1C6E&dsu=158823&p=7405-2318-1064-1413-8892-1023-1721"
+              isMobile={this.props.isMobile}
               />
           </Slider>
         </section>

@@ -13,11 +13,12 @@
 .product-tile:active {
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
-.product-tile-details {
+.product-tile-name {
   box-sizing: border-box;
   padding: 15px;
   text-align: left;
   font-family: $hw-font-text;
+  font-size: 1.2em;
   font-weight: 900;
   color: $hw-black-color;
 }

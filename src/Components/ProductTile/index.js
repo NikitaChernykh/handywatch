@@ -26,7 +26,7 @@ class ProductTile extends Component {
           >
             <div className="product-tile">
                 <div style={style}></div>
-                <div className="product-tile-details">{this.props.clockface.name}</div>
+                <div className="product-tile-name">{this.props.clockface.name}</div>
             </div>
           </button>
           </a>

@@ -1,5 +1,4 @@
 import React from "react";
-import ClockFaces from "../ClockFaces";
 import { Helmet } from "react-helmet";
 import { firebaseClockfaces} from "../../firebase";
 import { firebaseLooper, reverseArray } from "../../Utils/utils";
@@ -102,12 +101,6 @@ class Home extends React.Component {
             <ScrollableCategory isMobile={isMobile} list={this.state.halloweenClockfaces}/>
           </div>
         </section>
-
-        {/* <div className="wrapper">
-          <section id="clockfaces" className="clockfaces">
-            <ClockFaces />
-          </section>
-        </div> */}
       </div>
     );
   }

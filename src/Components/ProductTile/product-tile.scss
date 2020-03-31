@@ -4,11 +4,14 @@
 .product-tile {
   border-radius: 15px;
   background-color: white;
-  box-shadow: rgba(64, 95, 107, 0.15) 0px 0px 10px 0px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
   overflow: hidden;
 }
 .product-tile:hover {
   cursor: pointer;
+}
+.product-tile:active {
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 .product-tile-details {
   box-sizing: border-box;

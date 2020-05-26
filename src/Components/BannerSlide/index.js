@@ -14,8 +14,7 @@ class BannerSlide extends Component {
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat',
           backgroundPosition: 'center',
-          height: 'inherit',
-          borderBottom: '1px solid black'
+          height: 'inherit'
         };
         return (
             <div onClick={() =>{

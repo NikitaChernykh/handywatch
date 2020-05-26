@@ -39,39 +39,50 @@ class Banner extends Component {
         return (
         <section className="banner-section">
           <Slider {...settings}>
-          <BannerSlide 
-              title="Happy Easter Exclusive"
+          {/* <BannerSlide 
+              title="Valentine's Day Exclusive"
               subtitle="Bundle"
               fullScreen={false}
-              description="Mr. Family Bundle Includes Mr. Pug and Mr. Bunny"
-              imageUrl={require('../../Images/mrfamily.png')}
+              description="Includes One Love and Days Together App"
+              imageUrl={require('../../Images/Love-Bundle-min.png')}
               buttonText="DOWNLOAD NOW"
-              imageAlt="🐶 Mr. Family Fitbit Bundle"
-              url="https://kiezelpay.com/code/?s=21128EF3-D81C-C4A4-6B21-82C482CD1C6E&dsu=158823&p=8892-1721"
+              imageAlt="Love bundle"
+              url="https://k-pay.io/code/?s=21128EF3-D81C-C4A4-6B21-82C482CD1C6E&dsu=158823&p=7405"
               isMobile={this.props.isMobile}
-              />
-          <BannerSlide
-              title="Mr. Bunny"
+              /> */}
+          {/* <BannerSlide
+              title="One Love"
               subtitle="Clock Face"
               fullScreen={true}
-              description="Have Your Own Bunny on Your Watch This Easter"
-              imageUrl={require('../../Images/mrbunny.png')}
+              description="Beautiful Clock Face for Valentine's Day"
+              imageUrl={require('../../Images/One-Love-min.png')}
               buttonText="DOWNLOAD NOW"
-              imageAlt="Mr. Bunny Fitbit Clock Face"
-              url="https://gallery.fitbit.com/details/7b2fad1e-5a29-4531-aa49-3554e8a629a0"
+              imageAlt="One love clock face"
+              url="https://handy.watch/details/-LEmaPHWXzdUZ_5ohJjj"
+              isMobile={this.props.isMobile}
+            /> */}
+            <BannerSlide
+              title="Mr. Giraffe"
+              subtitle="Clock Face"
+              fullScreen={true}
+              description="New Cute Addition to Mr. Family Bundle"
+              imageUrl={require('../../Images/gir.png')}
+              buttonText="DOWNLOAD NOW"
+              imageAlt="Mr. Giraffe Clock Gace"
+              url="https://gallery.fitbit.com/details/e7cf2216-f5ad-4749-839c-99bd13947cd9"
               isMobile={this.props.isMobile}
             />
-            {/* <BannerSlide 
+            <BannerSlide 
               title="Days Together"
               subtitle="App"
               fullScreen={false}
-              description="This Valentines Day count how long you are together!"
+              description="Count how long you are together!"
               imageUrl={require('../../Images/Days-Together-min.png')}
               buttonText="DOWNLOAD NOW"
               imageAlt="days together fitbit app"
               url="https://handy.watch/details/LEmaPHHgI3SgqTKu9f9"
               isMobile={this.props.isMobile}
-              /> */}
+              />
             <BannerSlide 
               title="Get Them All"
               subtitle="Bundle"

@@ -73,13 +73,14 @@ class Home extends React.Component {
         </section>
         <Banner isMobile={isMobile}/>
         {/* BEST  CATEGORY */}
-        
+        <div className="desktop-center">
         <section className="category-section">
           <div className="wrapper">
             <h2 className="category-title">Best Clock Faces and Apps</h2>
             <ScrollableCategory isMobile={isMobile} list={this.state.bestClockfaces}/>
           </div>
         </section>
+        </div>
 
         <section className="category-section">
           <div className="wrapper">

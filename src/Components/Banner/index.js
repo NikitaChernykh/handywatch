@@ -87,11 +87,11 @@ class Banner extends Component {
               title="Get Them All"
               subtitle="Bundle"
               fullScreen={false}
-              description="All 20 Clock Faces in one bundle!"
+              description="All 20+ Clock Faces in One Bundle"
               imageUrl={require('../../Images/All-banner.png')}
               imageAlt="All in bundle"
               buttonText="DOWNLOAD NOW"
-              url="https://k-pay.io/code/?s=21128EF3-D81C-C4A4-6B21-82C482CD1C6E&dsu=158823&p=2318-1064-1413-1023-1721"
+              url="https://kiezelpay.com/code/?s=21128EF3-D81C-C4A4-6B21-82C482CD1C6E&dsu=158823&p=7405-2318-1064-1413-8892-1023-1721"
               isMobile={this.props.isMobile}
               />
           </Slider>

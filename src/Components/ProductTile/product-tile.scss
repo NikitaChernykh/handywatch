@@ -4,17 +4,21 @@
 .product-tile {
   border-radius: 15px;
   background-color: white;
-  box-shadow: rgba(64, 95, 107, 0.15) 0px 0px 10px 0px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
   overflow: hidden;
 }
 .product-tile:hover {
   cursor: pointer;
 }
-.product-tile-details {
+.product-tile:active {
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+.product-tile-name {
   box-sizing: border-box;
   padding: 15px;
   text-align: left;
   font-family: $hw-font-text;
+  font-size: 1.2em;
   font-weight: 900;
   color: $hw-black-color;
 }

@@ -39,7 +39,7 @@ class Banner extends Component {
         return (
         <section className="banner-section">
           <Slider {...settings}>
-          <BannerSlide 
+          {/* <BannerSlide 
               title="Valentine's Day Exclusive"
               subtitle="Bundle"
               fullScreen={false}
@@ -49,8 +49,8 @@ class Banner extends Component {
               imageAlt="Love bundle"
               url="https://k-pay.io/code/?s=21128EF3-D81C-C4A4-6B21-82C482CD1C6E&dsu=158823&p=7405"
               isMobile={this.props.isMobile}
-              />
-          <BannerSlide
+              /> */}
+          {/* <BannerSlide
               title="One Love"
               subtitle="Clock Face"
               fullScreen={true}
@@ -60,12 +60,23 @@ class Banner extends Component {
               imageAlt="One love clock face"
               url="https://handy.watch/details/-LEmaPHWXzdUZ_5ohJjj"
               isMobile={this.props.isMobile}
+            /> */}
+            <BannerSlide
+              title="Mr. Giraffe"
+              subtitle="Clock Face"
+              fullScreen={true}
+              description="New Cute Addition to Mr. Family Bundle"
+              imageUrl={require('../../Images/gir.png')}
+              buttonText="DOWNLOAD NOW"
+              imageAlt="Mr. Giraffe Clock Gace"
+              url="https://gallery.fitbit.com/details/e7cf2216-f5ad-4749-839c-99bd13947cd9"
+              isMobile={this.props.isMobile}
             />
             <BannerSlide 
               title="Days Together"
               subtitle="App"
               fullScreen={false}
-              description="This Valentines Day count how long you are together!"
+              description="Count how long you are together!"
               imageUrl={require('../../Images/Days-Together-min.png')}
               buttonText="DOWNLOAD NOW"
               imageAlt="days together fitbit app"

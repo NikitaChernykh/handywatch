@@ -3,6 +3,13 @@ import { Link } from "react-router-dom";
 import { gtmEvent, gtmVitrualPageView } from "../../Utils/utils";
 import "./footer.scss";
 const Footer = () => {
+
+  function getFullYear () {
+    var d = new Date();
+    var fullYear = d.getFullYear();
+    return fullYear;
+  }
+
   return (
     <footer className="hw-footer">
       <ul>
@@ -52,7 +59,7 @@ const Footer = () => {
           HANDY.WATCH
         </Link>
       </div>
-      <p className="legal">© 2019 Explicit Dot. All rights reserved.</p>
+      <p className="legal">© {getFullYear()} Explicit Dot. All rights reserved.</p>
       <Link to="/privacy-policy" onClick={() => gtmVitrualPageView(document.title)}>
         <p className="legal">Privacy Policy</p>
       </Link>

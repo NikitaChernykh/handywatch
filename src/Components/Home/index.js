@@ -76,7 +76,7 @@ class Home extends React.Component {
         <div className="desktop-center">
         <section className="category-section">
           <div className="wrapper">
-            <h2 className="category-title">Best Picks</h2>
+            <h2 className="category-title">Best Clock Faces and Apps</h2>
             <ScrollableCategory isMobile={isMobile} list={this.state.bestClockfaces}/>
           </div>
         </section>
@@ -84,22 +84,22 @@ class Home extends React.Component {
 
         <section className="category-section">
           <div className="wrapper">
-            <h2 className="category-title">More from collection</h2>
-            <ScrollableCategory isMobile={isMobile} list={this.state.otherClockfaces}/>
-          </div>
-        </section>
-
-        <section className="category-section">
-          <div className="wrapper">
-            <h2 className="category-title">Christmas Picks</h2>
+            <h2 className="category-title">Christmas Clock Faces</h2>
             <ScrollableCategory isMobile={isMobile} list={this.state.xmasClockfaces}/>
           </div>
         </section>
 
         <section className="category-section">
           <div className="wrapper">
-            <h2 className="category-title">Halloween Picks</h2>
+            <h2 className="category-title">Halloween Clock Faces</h2>
             <ScrollableCategory isMobile={isMobile} list={this.state.halloweenClockfaces}/>
+          </div>
+        </section>
+
+        <section className="category-section">
+          <div className="wrapper">
+            <h2 className="category-title">More from collection</h2>
+            <ScrollableCategory isMobile={isMobile} list={this.state.otherClockfaces}/>
           </div>
         </section>
       </div>

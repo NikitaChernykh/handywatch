@@ -34,7 +34,7 @@ class Routes extends React.Component {
             path="/fitbitsettings"
           />
           <Route exact path="/bundles" render={() => {
-            window.location.href = "https://k-pay.io/code/?s=21128EF3-D81C-C4A4-6B21-82C482CD1C6E&dsu=158823&p=7405-2318-1064-1413-1023-1721";
+            window.location.href = "https://kiezelpay.com/code/?s=21128EF3-D81C-C4A4-6B21-82C482CD1C6E&dsu=158823&p=7405-2318-1064-1413-8892-1023-1721";
             return null;
           }} />
           <Route {...this.props} exact component={Home} path="/" />

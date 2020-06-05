@@ -61,6 +61,17 @@ class Banner extends Component {
               url="https://handy.watch/details/-LEmaPHWXzdUZ_5ohJjj"
               isMobile={this.props.isMobile}
             /> */}
+            <BannerSlide 
+              title="Pride Update"
+              subtitle="Days Together App"
+              fullScreen={false}
+              description="Update your 'Days Togehter' if you alrady own it!"
+              imageUrl={require('../../Images/pride.png')}
+              buttonText="More Details"
+              imageAlt="days together fitbit app"
+              url="https://gallery.fitbit.com/details/8abf3e53-2a34-4cce-b45c-2542615f9762"
+              isMobile={this.props.isMobile}
+              />
             <BannerSlide
               title="Mr. Giraffe"
               subtitle="Clock Face"

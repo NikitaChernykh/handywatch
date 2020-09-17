@@ -1,1 +1,41 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* handy.watch colors */
+$primary-color: hsl(232, 93%, 63%);
+$primary-white: hsl(0, 0%, 100%);
+$primary-black: hsl(0, 0%, 0%);
+$primary-fitbit: hsl(180, 100%, 30%);
+
+/* handy.watch fonts */
+$primary-font: 'Montserrat', sans-serif;
+
+/* handy.watch breakpoints */
+$breakpoint-small-device: 576px;
+$breakpoint-medium-device: 769px;
+$breakpoint-large-device: 1025px;
+$breakpoint-extra-large-device: 1440px;
+
+* {
+    margin:0;
+    padding:0;
+}
+
+// Small devices (landscape phones)
+@media (min-width: $breakpoint-small-device) { 
+
+}
+
+// Medium devices (tablets)
+@media (min-width: $breakpoint-medium-device) { 
+    
+}
+
+// Large devices (desktops)
+@media (min-width: $breakpoint-large-device) { 
+    
+}
+
+// Extra large devices (large desktops, 1440px and up)
+@media (min-width: $breakpoint-extra-large-device) { 
+    
+}

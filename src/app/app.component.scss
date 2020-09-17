@@ -1,0 +1,20 @@
+@import './../styles.scss';
+
+:host {
+    .main-container{
+        max-width: 1440px;
+        min-width: 320px;
+        margin: auto;
+    }
+    
+}
+.navigation{
+    text-align: center;
+    font-family: "Vidaloka";
+    text-transform: uppercase;
+    height: 50px;
+    line-height: 50px;
+    font-size: 22px;
+}
+
+

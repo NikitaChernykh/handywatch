@@ -1,0 +1,117 @@
+@import './../../../styles.scss';
+.questions{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    position: relative;
+
+    .title {
+        text-transform: uppercase;
+        font-family: $primary-font;
+        font-weight: 900;
+        //font-size: 3.12rem;
+        font-size: 3.82rem;
+        color: $primary-color;
+        margin: 0;
+        margin-bottom: 20px;
+        text-align: center;
+       
+    }
+
+    .half-half {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 1fr;
+    }
+
+    .left-half{
+        //outline: 1px solid red;
+        img {
+            display: block;
+            width: 60%;
+            margin: auto;
+        }
+    }
+
+    .right-half {
+        //outline: 1px solid red;
+    }
+
+    .question{
+        margin-bottom: 20px;
+    }
+
+    .link-faq{
+        font-family: $primary-font;
+        text-align: center;
+        color:$primary-color;
+        font-weight: 900;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    .link-hr{
+        width: 120px;
+        margin: auto;
+        height: 5px;
+        background-color: $primary-color;
+        border: none;
+        border-radius: 40px;
+        margin-top: 10px;
+    }
+
+    .link-to-faq-mob{
+        text-align: center;
+    }
+
+    .question-title{
+        display: flex;
+        max-width: 360px;
+        .question-q {
+            font-family: $primary-font;
+            font-weight: 900;
+            font-size: 50px;
+            margin-right: 10px;
+        }
+        h2 {
+            font-family: $primary-font;
+            font-weight: 900;
+            font-size: 20px;
+            align-self: center;
+        }
+    }
+
+    .question-text {
+        margin-top: 10px;
+        font-family: $primary-font;
+        max-width: 360px;
+    }
+
+    .link-to-faq {
+        display: none;
+    }
+
+    // Medium devices (tablets)
+    @media (min-width: $breakpoint-medium-device) { 
+        
+        .title {
+            font-size: 4.4rem;
+        }
+
+        .half-half {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .question-q{
+            display: none;
+        }
+
+        .link-to-faq {
+            text-align: center;
+            display: block;
+        }
+
+        .link-to-faq-mob{
+            display: none;
+        }
+    }
+}

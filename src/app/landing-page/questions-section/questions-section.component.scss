@@ -33,7 +33,7 @@
     }
 
     .right-half {
-        //outline: 1px solid red;
+        margin: auto;
     }
 
     .question{
@@ -90,6 +90,9 @@
         display: none;
     }
 
+    .question-q-large {
+        display: none;
+    }
     // Medium devices (tablets)
     @media (min-width: $breakpoint-medium-device) { 
         
@@ -108,10 +111,24 @@
         .link-to-faq {
             text-align: center;
             display: block;
+            margin-top: 5%;
         }
 
         .link-to-faq-mob{
             display: none;
+        }
+
+        .question-container {
+            display: flex;
+        }
+
+        .question-q-large {
+            display: block;
+            font-family: $primary-font;
+            font-weight: 900;
+            font-size: 70px;
+            align-self: center;
+            width: 170px;
         }
     }
 }

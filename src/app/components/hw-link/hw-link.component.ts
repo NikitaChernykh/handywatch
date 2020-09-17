@@ -7,6 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class HwLinkComponent implements OnInit {
   @Input() linkText;
+  @Input() url;
   constructor() { }
 
   ngOnInit() {

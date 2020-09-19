@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'hw-button',
@@ -7,20 +7,21 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class HwButtonComponent implements OnInit {
   @Input() buttonText;
-  @Input() buttonType = 'dark';
-  @Input() link = 'https://gallery.fitbit.com/developer/12152438-2164-45e6-8de8-e408fb54f9a6';
+  @Input() buttonColorType = 'dark';
+  @Input() type = 'button';
+  @Input() disabled = false;
+
+  @Output() clickAction = new EventEmitter<boolean>();
+
   constructor() { }
 
   ngOnInit() {
 
   }
 
-  setButtonType() {
-
-  }
-
-  onClick() {
-    document.location.href = this.link;
+  triggerEvent() {
+    this.clickAction.emit();
+    //document.location.href = this.link;
   }
 
 }

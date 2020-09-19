@@ -1,0 +1,18 @@
+<section class="subscribe">
+  <hw-container>
+    <div class="container">
+      <p class="above-title">Get Latest News In your Inbox</p>
+      <h1 class="title">Subscribe Now</h1>
+      <h2 class="sub-title">and get <span class="discount"> 50% </span> discount promo code</h2>
+      <form class="email-form" [formGroup]="emailForm" (ngSubmit)="onSubmit()">
+        <input type="email" name="email" formControlName="email" class="input" placeholder="Your Email">
+        <!-- <button type="submit" [disabled]="!emailForm.valid">Submit</button> -->
+        <hw-button class="button" buttonText="Submit" buttonColorType="ligth" type="submit"
+          disabled=`${!emailForm.valid}`></hw-button>
+      </form>
+      <p class="privacy"><img class="lock-icon" src="./../../../../assets/icons/padlock.svg" /> we never share your
+        email
+        with others</p>
+    </div>
+  </hw-container>
+</section>

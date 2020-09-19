@@ -1,0 +1,56 @@
+@import './../../../../styles.scss';
+
+.subscribe {
+    background-color: $primary-color;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    margin-top: -4px;
+
+    .above-title{
+        text-transform: uppercase;
+        font-family: $primary-font;
+        font-weight: 800;
+        font-size: 0.9rem;
+        color: $primary-white;
+        margin-bottom: 10px;
+    }
+
+    .title {
+        text-transform: uppercase;
+        font-family: $primary-font;
+        font-weight: 900;
+        font-size: 2.6rem;
+        color: $primary-white;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+
+    .sub-title{
+        text-transform: uppercase;
+        font-family: $primary-font;
+        font-weight: 800;
+        font-size: 0.9rem;
+        color: $primary-white;
+        margin-bottom: 10px;
+    }
+
+    .discount{
+        font-size: 2rem;
+        font-weight: 900;
+        
+    }
+    .privacy {
+        font-family: $primary-font;
+        opacity: 0.31;
+        color: $primary-white;
+        font-size: 1rem;
+    }
+    .lock-icon{
+        width: 15px;
+        color: white;
+    }
+}

@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -10,7 +11,10 @@ import { HwSwiperComponent } from './components/hw-swiper/hw-swiper.component';
 import { HwContainerComponent } from './components/hw-container/hw-container.component';
 import { QualitySectionComponent } from './landing-page/quality-section/quality-section.component';
 import { QuestionsSectionComponent } from './landing-page/questions-section/questions-section.component';
+import { SubscribeSectionComponent } from './landing-page/subscribe-section/subscribe-section/subscribe-section.component';
+
 import { HwLinkComponent } from './components/hw-link/hw-link.component';
+
 
 @NgModule({
    declarations: [
@@ -21,12 +25,14 @@ import { HwLinkComponent } from './components/hw-link/hw-link.component';
       HwLinkComponent,
       HeroSectionComponent,
       QualitySectionComponent,
-      QuestionsSectionComponent
+      QuestionsSectionComponent,
+      SubscribeSectionComponent
    ],
    imports: [
       BrowserModule,
       AppRoutingModule,
-      BrowserAnimationsModule
+      BrowserAnimationsModule,
+      ReactiveFormsModule
    ],
    providers: [],
    bootstrap: [

@@ -8,8 +8,7 @@
         text-transform: uppercase;
         font-family: $primary-font;
         font-weight: 900;
-        //font-size: 3.12rem;
-        font-size: 3.82rem;
+        font-size: 2.4rem;
         color: $primary-color;
         margin: 0;
         margin-bottom: 20px;
@@ -19,8 +18,8 @@
 
     .half-half {
         display: grid;
-        grid-gap: 20px;
         grid-template-columns: 1fr;
+        grid-gap: 20px
     }
 
     .left-half{
@@ -69,13 +68,13 @@
         .question-q {
             font-family: $primary-font;
             font-weight: 900;
-            font-size: 50px;
+            font-size: 40px;
             margin-right: 10px;
         }
         h2 {
             font-family: $primary-font;
             font-weight: 900;
-            font-size: 20px;
+            font-size: 16px;
             align-self: center;
         }
     }
@@ -93,6 +92,9 @@
     .question-q-large {
         display: none;
     }
+
+    
+
     // Medium devices (tablets)
     @media (min-width: $breakpoint-medium-device) { 
         
@@ -120,14 +122,27 @@
 
         .question-container {
             display: flex;
+            margin-bottom: 40px;
         }
 
         .question-q-large {
             display: block;
             font-family: $primary-font;
             font-weight: 900;
+            font-size: 55px;
+            align-self: flex-start;
+            width: 150px;
+        }
+    }
+
+    // Extra large devices (large desktops, 1440px and up)
+    @media (min-width: $breakpoint-extra-large-device) { 
+        .question-q-large {
+            display: block;
+            font-family: $primary-font;
+            font-weight: 900;
             font-size: 70px;
-            align-self: center;
+            align-self: flex-start;
             width: 170px;
         }
     }

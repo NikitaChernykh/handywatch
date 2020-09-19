@@ -39,21 +39,12 @@
         width: 100%;
         .container {
             position: relative;
-            width: 360px;
-            min-width: 320px;
+            width: 100%;
+            min-width: 300px;
             height: 100%;
             margin: auto;
             .watch {
                 width: 100%;
-                height: 100%;
-                margin-bottom: -4px;
-            }
-            .crossfade {
-                left: 50%;
-                transform: translate( -50%);
-                position: absolute;
-                max-width: 360px;
-                min-width: 320px;
                 height: 100%;
             }
         }
@@ -71,10 +62,39 @@
         padding-right: 60px;
     }
 
+    // Small devices (landscape phones)
+    @media (min-width: $breakpoint-small-device) { 
+        .clock-face-slider {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            .container {
+                position: relative;
+                width: 360px;
+                min-width: 320px;
+                height: 100%;
+                margin: auto;
+                
+            }
+        }
+    }
+
     // Medium devices (tablets)
     @media (min-width: $breakpoint-medium-device) { 
         .title {
             font-size: 4.4rem;
+        }
+        .clock-face-slider {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            .container {
+                position: relative;
+                width: 360px;
+                min-width: 320px;
+                height: 100%;
+                margin: auto;
+            }
         }
     }
 }

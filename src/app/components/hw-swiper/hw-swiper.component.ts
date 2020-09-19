@@ -17,6 +17,7 @@ export class HwSwiperComponent implements OnInit {
       fadeEffect: {
         crossFade: true
       },
+      slidesPerView: 'auto',
       autoplay: {
         delay: 7000,
         disableOnInteraction: false,

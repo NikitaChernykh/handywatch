@@ -16,10 +16,10 @@ export class HwButtonComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-
   }
 
   triggerEvent() {
+    console.log(this.disabled);
     this.clickAction.emit();
     //document.location.href = this.link;
   }

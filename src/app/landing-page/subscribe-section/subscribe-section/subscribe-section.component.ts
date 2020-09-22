@@ -13,9 +13,12 @@ export class SubscribeSectionComponent implements OnInit {
   });
 
   ngOnInit() {
+
   }
+
   onSubmit() {
     const allInfo = `My email is ${this.emailForm.value.email}`;
     alert(allInfo);
   }
+
 }

@@ -1,0 +1,36 @@
+@import './../../../styles.scss';
+
+:host{
+    button{
+        border: none;
+        min-width: 260px;
+        background-color: $primary-color;
+        border-radius: 40px;
+        padding: 22px 25px 22px;
+        font-family: $primary-font;
+        letter-spacing: 1px;
+        font-weight: 700;
+        color: $primary-white;
+        text-transform: uppercase;
+        font-size: 0.9em;
+        cursor: pointer;
+    }
+
+    .ligth {
+        background-color:  $primary-white;
+        color: $primary-color;
+    }
+
+    .dark {
+        background-color: $primary-color;
+        color: $primary-white;
+    }
+    
+    // Small devices (landscape phones)
+    @media (min-width: $breakpoint-small-device) { 
+        button {
+            font-size: 1.1em;
+            padding: 24px 28px 24px;
+        }
+    }   
+}

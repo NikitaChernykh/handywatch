@@ -19,9 +19,7 @@ export class HwButtonComponent implements OnInit {
   }
 
   triggerEvent() {
-    console.log(this.disabled);
     this.clickAction.emit();
-    //document.location.href = this.link;
   }
 
 }

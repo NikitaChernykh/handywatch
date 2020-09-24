@@ -14,6 +14,7 @@ import { QuestionsSectionComponent } from './landing-page/questions-section/ques
 import { SubscribeSectionComponent } from './landing-page/subscribe-section/subscribe-section/subscribe-section.component';
 
 import { HwLinkComponent } from './components/hw-link/hw-link.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { HwLinkComponent } from './components/hw-link/hw-link.component';
       BrowserModule,
       AppRoutingModule,
       BrowserAnimationsModule,
-      ReactiveFormsModule
+      ReactiveFormsModule,
+      HttpClientModule
    ],
    providers: [],
    bootstrap: [

@@ -94,7 +94,7 @@
     
         .email-input{
             box-sizing: border-box;
-            background-color: #3D51D3;
+            background-color: #3D51D3 !important;
             flex-grow:2;
             border: none;
             margin-left: 4%;
@@ -104,10 +104,8 @@
             font-size: 1rem;
             color: $primary-white;
             margin-bottom: 0;
-            padding: 0;
             margin-top: 0;
         }
-
         .button{
             margin-left: 0;
         }

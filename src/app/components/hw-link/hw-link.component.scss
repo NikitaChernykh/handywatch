@@ -1,0 +1,9 @@
+
+@import './../../../styles.scss';
+
+:host {
+ a {
+    color:$primary-color;
+    font-weight: 700;
+ }
+}

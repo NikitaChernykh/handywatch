@@ -14,12 +14,14 @@ export class HwSwiperComponent implements OnInit {
     const mySwiper = new Swiper('.swiper-container', {
       // Optional parameters
       loop: true,
+      effect: 'fade',
       fadeEffect: {
         crossFade: true
       },
       slidesPerView: 'auto',
+      speed: 2000,
       autoplay: {
-        delay: 7000,
+        delay: 5000,
         disableOnInteraction: false,
       },
     })

@@ -1,0 +1,139 @@
+@import './../../../styles.scss';
+
+.quality{
+    background-color: $primary-color;
+    text-align: left;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    margin-top: -4px;
+    .title {
+        text-transform: uppercase;
+        font-family: $primary-font;
+        font-weight: 900;
+        font-size: 3.4rem;
+        max-width: 572px;
+        color: $primary-white;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    .sub-title {
+        font-family: $primary-font;
+        font-weight: 700;
+        font-size: 1.3rem;
+        max-width: 470px;
+        text-transform: uppercase;
+        color: $primary-white;
+    }
+
+    .button {
+        display: flex;
+        margin-top: 30px;
+        justify-content: center;
+        margin-left: -15px;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+      
+    .left-half {
+        grid-column: 1;
+        align-self: center;
+    }
+    
+    .right-half {
+        grid-column: 2;
+        height: 600px;
+    }
+
+    .promo-image{
+        width: 100%;
+    }
+
+    .image-layer {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-position-y: 55px;
+        background-position-x: 300px;
+        background-size: 110%;
+        width: 750px;
+        height: 850px;
+        background-image: url("/assets/images/onelove-versa2.png");
+        position: absolute;
+        right: 0;
+        top:0;
+        z-index: -1;
+    }
+
+    .invisible-block{
+        height: 400px;
+    }
+  
+    .pregress-bar-animation {
+        position: absolute;
+        bottom: -40px;
+        width: 300%;
+        height: 300px;
+        z-index: -2;
+        background: url("/assets/images/landing-pattern.png");
+            animation: slideshow 30s linear infinite;
+    }
+
+    @keyframes slideshow {
+        0%    { left: 0; }
+        100%  { left: -200%; }
+    }
+
+    // Small devices (landscape phones)
+    @media (min-width: $breakpoint-small-device) { 
+        .image-layer{
+            background-position-x: 140px;
+            background-position-y: -50px;
+            background-size: 125%;
+            height: 850px;
+        }
+        
+    }
+
+    // Medium devices (tablets)
+    @media (min-width: $breakpoint-medium-device) { 
+        .title {
+            font-size: 4.4rem;
+        }
+        .invisible-block{
+            display: none;
+        }
+        .image-layer {
+            background-position-y: -120px;
+            background-position-x: 110px;
+            background-size: 120%;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        .button {
+            justify-content: start;
+            margin-left:0;
+        }
+    }
+
+    // Large devices (desktops)
+    @media (min-width: $breakpoint-large-device) { 
+        .image-layer {
+            background-position-y: -120px;
+            background-position-x: -50px;
+            background-size: 120%;
+        }
+    }
+
+    // Extra large devices (large desktops)
+    @media (min-width: $breakpoint-extra-large-device) { 
+        
+    }
+    
+}

@@ -1,0 +1,15 @@
+@import './../../../styles.scss';
+
+:host {
+    font-family: $primary-font;
+    h1 {
+        margin: 30px auto; 
+    }
+
+    h2 {
+        margin: 20px auto;
+    }
+    p {
+        margin: 10px auto;
+    }
+}

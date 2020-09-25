@@ -1,0 +1,56 @@
+@import './../../../../styles.scss';
+
+.footer{
+  border-top: 2px solid $primary-grey; 
+  padding-top: 30px;
+  margin-bottom: 10px;
+  font-family: $primary-font;
+}
+
+.footer-container {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr;
+    margin-bottom: 20px;
+}
+
+
+// Small devices (landscape phones)
+@media (min-width: $breakpoint-small-device) { 
+    .footer-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+// Medium devices (tablets)
+@media (min-width: $breakpoint-medium-device) {
+    .footer-container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+.col {
+    h3 {
+        font-weight: 900;
+        margin-bottom: 20px;
+    }
+    ul{
+        list-style: none;
+    }
+    li{
+        margin-bottom: 5px;
+        
+        a {
+            color: $primary-grey; 
+            text-decoration: none;
+            font-weight: 800;
+        }
+    }
+}
+.cc {
+    text-align: center;
+    font-family: $primary-font;
+    color: $primary-grey;
+    font-size: 12px;
+    font-weight: 700;
+}

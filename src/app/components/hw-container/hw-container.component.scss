@@ -1,0 +1,17 @@
+@import './../../../styles.scss';
+
+:host {
+    display: block;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+// Medium devices (tablets)
+@media (min-width: $breakpoint-medium-device) { 
+    :host {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+
+

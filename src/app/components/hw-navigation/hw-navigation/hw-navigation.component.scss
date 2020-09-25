@@ -1,0 +1,15 @@
+@import './../../../../styles.scss';
+
+.navigation{
+    text-align: center;
+    font-family: "Vidaloka";
+    text-transform: uppercase;
+    height: 70px;
+    line-height: 80px;
+    font-size: 22px;
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+}

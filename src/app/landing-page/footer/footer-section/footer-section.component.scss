@@ -1,8 +1,9 @@
 @import './../../../../styles.scss';
 
 .footer{
-  margin-top: 30px;
-  margin-bottom: 30px;
+  border-top: 2px solid $primary-grey; 
+  padding-top: 30px;
+  margin-bottom: 10px;
   font-family: $primary-font;
 }
 

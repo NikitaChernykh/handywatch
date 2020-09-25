@@ -15,6 +15,10 @@ import { SubscribeSectionComponent } from './landing-page/subscribe-section/subs
 
 import { HwLinkComponent } from './components/hw-link/hw-link.component';
 import { HttpClientModule } from '@angular/common/http';
+import { FooterSectionComponent } from './landing-page/footer/footer-section/footer-section.component';
+import { PrivacyComponent } from './privacy-page/privacy/privacy.component';
+import { LandingComponent } from './landing-page/landing.component';
+import { HwNavigationComponent } from './components/hw-navigation/hw-navigation/hw-navigation.component';
 
 
 @NgModule({
@@ -24,10 +28,14 @@ import { HttpClientModule } from '@angular/common/http';
       HwButtonComponent,
       HwSwiperComponent,
       HwLinkComponent,
+      HwNavigationComponent,
       HeroSectionComponent,
       QualitySectionComponent,
       QuestionsSectionComponent,
-      SubscribeSectionComponent
+      SubscribeSectionComponent,
+      FooterSectionComponent,
+      PrivacyComponent,
+      LandingComponent
    ],
    imports: [
       BrowserModule,

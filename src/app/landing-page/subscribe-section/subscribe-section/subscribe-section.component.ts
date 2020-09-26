@@ -34,7 +34,11 @@ export class SubscribeSectionComponent implements OnInit {
   onSubmit() {
     const body = { "email": this.emailForm.value.email }
     this.httpClient
-      .post("https://api.mailerlite.com/api/v2/subscribers", body, this.httpOptions).subscribe(data => { },
+      .post("https://api.mailerlite.com/api/v2/subscribers", body, this.httpOptions).subscribe(data => {
+
+        alert("Thank you! You should recive an email with the promo code shortly.");
+
+      },
         error => { console.log(JSON.stringify(error)) }
       );
 

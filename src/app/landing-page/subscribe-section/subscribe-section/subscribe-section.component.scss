@@ -28,6 +28,12 @@
         font-size: 0.8rem;
         color: $primary-white;
         margin: 10px auto;
+
+        
+    }
+    ::placeholder {
+        color: $primary-white;
+        opacity: 0.51;
     }
     
     .above-title{

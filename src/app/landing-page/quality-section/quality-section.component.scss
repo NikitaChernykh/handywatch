@@ -13,7 +13,7 @@
         text-transform: uppercase;
         font-family: $primary-font;
         font-weight: 900;
-        font-size: 3.4rem;
+        font-size: 2.5rem;
         max-width: 572px;
         color: $primary-white;
         margin: 0;
@@ -22,7 +22,7 @@
     .sub-title {
         font-family: $primary-font;
         font-weight: 700;
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         max-width: 470px;
         text-transform: uppercase;
         color: $primary-white;
@@ -47,7 +47,6 @@
     
     .right-half {
         grid-column: 2;
-        height: 600px;
     }
 
     .promo-image{
@@ -57,7 +56,7 @@
     .image-layer {
         background-repeat: no-repeat;
         background-position: center;
-        background-position-y: 145px;
+        background-position-y: 55px;
         background-position-x: 400px;
         background-size: 80%;
         width: 750px;
@@ -91,11 +90,12 @@
     // Small devices (landscape phones)
     @media (min-width: $breakpoint-small-device) { 
         .image-layer{
-            background-position-x: 140px;
-            background-position-y: -50px;
-            background-size: 125%;
+            background-position-x: 290px;
+            background-position-y: -70px;
+            background-size: 90%;
             height: 850px;
         }
+        
         
     }
 
@@ -119,6 +119,11 @@
         .button {
             justify-content: start;
             margin-left:0;
+        }
+
+        .right-half {
+            grid-column: 2;
+            height: 600px;
         }
     }
 

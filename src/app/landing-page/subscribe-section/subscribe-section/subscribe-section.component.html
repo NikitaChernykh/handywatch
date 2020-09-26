@@ -1,13 +1,13 @@
 <section class="subscribe">
   <hw-container>
     <div class="container">
-      <p class="above-title">Get Latest News In your Inbox</p>
-      <h1 class="title">Subscribe Now</h1>
-      <h2 class="sub-title">and get <span class="discount"> 50% </span> discount promo code</h2>
+      <p class="above-title noselect">Get Latest News In your Inbox</p>
+      <h1 class="title noselect">Subscribe Now</h1>
+      <h2 class="sub-title noselect">and get<span class="discount"> 50% </span>discount promo code</h2>
       <form class="email-form" [formGroup]="emailForm" (ngSubmit)="onSubmit()">
         <input type="email" name="email" formControlName="email" class="email-input"
           placeholder="ENTER YOUR EMAIL ADDRESS" required>
-        <hw-button class="button" buttonText="Submit" buttonColorType="ligth" type="submit">
+        <hw-button class="button noselect" buttonText="Submit" buttonColorType="ligth" type="submit">
         </hw-button>
       </form>
       <p class="privacy"><img class="lock-icon" src="./../../../../assets/icons/padlock.svg" /> we never share your

@@ -19,6 +19,7 @@ export class SubscribeSectionComponent implements OnInit {
       'access-control-allow-credentials': 'true',
       'access-control-allow-headers': 'Authorization,Content-Type,Accept,Origin,User-Agent,DNT,Cache-Control,X-Mx-ReqToken,Keep-Alive,X-Requested-With,If-Modified-Since,X-MailerLite-Account,X-MailerLite-Token',
       'access-control-allow-methods': 'GET, POST, PUT, DELETE, OPTIONS',
+      'origin': 'https://handy.watch',
       'access-control-allow-origin': 'https://handy.watch',
       'content-type': 'application/json',
     })

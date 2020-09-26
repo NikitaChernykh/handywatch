@@ -18,14 +18,30 @@
 
     .ligth {
         background-color:  $primary-white;
+        background-blend-mode: floor($number: 1);
         color: $primary-color;
-    }
-
-    .dark {
-        background-color: $primary-color;
-        color: $primary-white;
+        &:hover, &:active {
+            background-color: $primary-color;
+            box-shadow: 0 0 0 1pt $primary-white;
+            color: $primary-white;
+            transition: all 1s ease;
+        }
     }
     
+    
+
+    .dark-light {
+        background-color: $primary-white;
+        color: $primary-color;
+        box-shadow: 0 0 0 1pt $primary-color;
+       
+        &:hover, &:active {
+            background-color: $primary-color;
+            color: $primary-white;
+            transition: all 1s ease;
+        }
+    }
+
     // Small devices (landscape phones)
     @media (min-width: $breakpoint-small-device) { 
         button {

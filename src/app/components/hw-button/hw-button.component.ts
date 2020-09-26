@@ -7,7 +7,7 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 })
 export class HwButtonComponent implements OnInit {
   @Input() buttonText;
-  @Input() buttonColorType = 'dark';
+  @Input() buttonColorType = 'dark-light';
   @Input() type = 'button';
   @Input() disabled = false;
 

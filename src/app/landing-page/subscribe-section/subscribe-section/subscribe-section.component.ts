@@ -21,7 +21,6 @@ export class SubscribeSectionComponent implements OnInit {
       'access-control-allow-methods': 'GET, POST, PUT, DELETE, OPTIONS',
       'access-control-allow-origin': 'https://handy.watch',
       'content-type': 'application/json',
-      'x-mailerlite-apikey': 'e6911a74fac1c23c5ac3903fb2fd33f3'
     })
   };
 

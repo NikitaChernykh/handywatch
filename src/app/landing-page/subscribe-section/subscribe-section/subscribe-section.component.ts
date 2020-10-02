@@ -26,12 +26,10 @@ export class SubscribeSectionComponent implements OnInit {
       body: JSON.stringify({ email: this.emailForm.value.email }),
       headers: { 'Content-Type': 'application/json' }
     }
-    this.httpClient.post('https://handywatch-service.herokuapp.com/subscribe', data.body, { headers: { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': 'https://handy.watch' } }).subscribe(res => {
+    this.httpClient.post('https://handywatch-service.herokuapp.com/subscribe', data.body, { headers: { 'Access-Control-Allow-Origin': 'https://handy.watch', 'Content-Type': 'application/json' } }).subscribe(res => {
       alert('thank you');
     }, err => {
       alert('error');
     });
-
-    alert('thank you');
   }
 }

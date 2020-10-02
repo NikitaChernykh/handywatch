@@ -14,17 +14,6 @@ export class SubscribeSectionComponent implements OnInit {
     email: new FormControl('')
   });
 
-  httpOptions = {
-    headers: new HttpHeaders({
-      'access-control-allow-credentials': 'true',
-      'access-control-allow-headers': 'Authorization,Content-Type,Accept,Origin,User-Agent,DNT,Cache-Control,X-Mx-ReqToken,Keep-Alive,X-Requested-With,If-Modified-Since,X-MailerLite-Account,X-MailerLite-Token',
-      'access-control-allow-methods': 'GET, POST, PUT, DELETE, OPTIONS',
-      'origin': 'https://handy.watch',
-      'content-type': 'application/json',
-    })
-  };
-
-
   constructor(private httpClient: HttpClient) { }
 
   ngOnInit() {
@@ -32,15 +21,17 @@ export class SubscribeSectionComponent implements OnInit {
   }
 
   onSubmit() {
-    const body = { "email": this.emailForm.value.email }
-    this.httpClient
-      .post("https://api.mailerlite.com/api/v2/subscribers", body, this.httpOptions).subscribe(data => {
+    const data = {
+      method: 'POST',
+      body: JSON.stringify({ email: this.emailForm.value.email }),
+      headers: { 'Content-Type': 'application/json' }
+    }
+    this.httpClient.post('https://handywatch-service.herokuapp.com/subscribe', data.body, { headers: { 'Content-Type': 'application/json' } }).subscribe(res => {
+      alert('thank you');
+    }, err => {
+      alert('error');
+    });
 
-        alert("Thank you! You should recive an email with the promo code shortly.");
-
-      },
-        error => { console.log(JSON.stringify(error)) }
-      );
-
+    alert('thank you');
   }
 }

@@ -7,7 +7,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HwButtonComponent } from './components/hw-button/hw-button.component';
 import { HeroSectionComponent } from './landing-page/hero-section/hero-section.component';
-import { HwSwiperComponent } from './components/hw-swiper/hw-swiper.component';
 import { HwContainerComponent } from './components/hw-container/hw-container.component';
 import { QualitySectionComponent } from './landing-page/quality-section/quality-section.component';
 import { QuestionsSectionComponent } from './landing-page/questions-section/questions-section.component';
@@ -26,7 +25,6 @@ import { HwNavigationComponent } from './components/hw-navigation/hw-navigation/
       AppComponent,
       HwContainerComponent,
       HwButtonComponent,
-      HwSwiperComponent,
       HwLinkComponent,
       HwNavigationComponent,
       HeroSectionComponent,

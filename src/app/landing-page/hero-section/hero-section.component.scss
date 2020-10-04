@@ -32,30 +32,17 @@
         margin-bottom: 20px;
     }
 
-    .clock-face-slider {
-        display: flex;
-        justify-content: center;
-        width: 80%;
-        margin: auto;
-        .container {
-            position: relative;
-            width: 100%;
-            min-width: 300px;
-            height: 100%;
-            margin: auto;
-            .watch {
-                margin-bottom: -2px;
-                width: 100%;
-                height: 100%;
-            }
-        }
+    .hero-image{
+        display: none;
     }
 
-    .swiper{
-        position: absolute;
-        width: inherit;
-        left: 0;
-        bottom: 0;
+    .hero-image-mob{
+        display: block;
+        width: 100%;
+        margin: 0;
+        margin-top: -30px;
+        z-index: -1;
+        position: relative;
     }
 
     .padding-container{
@@ -65,18 +52,22 @@
 
     // Small devices (landscape phones)
     @media (min-width: $breakpoint-small-device) { 
-        .clock-face-slider {
+
+        .hero-button{
             display: flex;
             justify-content: center;
-            width: 100%;
-            .container {
-                position: relative;
-                width: 360px;
-                min-width: 320px;
-                height: 100%;
-                margin: auto;
-                
-            }
+            margin-top: -12%;
+            margin-bottom: 70px;
+        }
+    
+        .hero-image {
+            display: block;
+            width: 90%;
+            margin: 35px auto;
+        }
+
+        .hero-image-mob{
+            display: none;
         }
     }
 
@@ -84,18 +75,6 @@
     @media (min-width: $breakpoint-medium-device) { 
         .title {
             font-size: 4.4rem;
-        }
-        .clock-face-slider {
-            display: flex;
-            justify-content: center;
-            width: 100%;
-            .container {
-                position: relative;
-                width: 360px;
-                min-width: 320px;
-                height: 100%;
-                margin: auto;
-            }
         }
     }
 }

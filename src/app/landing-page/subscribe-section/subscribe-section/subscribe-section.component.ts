@@ -20,8 +20,6 @@ export class SubscribeSectionComponent implements OnInit {
 
   ngOnInit() {
     MicroModal.init();
-
-
   }
 
   onClick() {

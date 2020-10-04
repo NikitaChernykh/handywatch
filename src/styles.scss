@@ -6,6 +6,8 @@ $primary-white: hsl(0, 0%, 100%);
 $primary-black: hsl(0, 0%, 0%);
 $primary-fitbit: hsl(180, 100%, 30%);
 $primary-grey: hsl(0, 0%, 40%);
+$primary-green: hsl(141, 73%, 42%);
+$primary-red: hsl(0, 100%, 40%);
 
 /* handy.watch fonts */
 $primary-font: 'Montserrat', sans-serif;
@@ -19,6 +21,10 @@ $breakpoint-extra-large-device: 1440px;
 * {
     margin:0;
     padding:0;
+}
+
+*:focus {
+  outline-color: $primary-color;
 }
 
 .noselect {

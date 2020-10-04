@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
+import MicroModal from 'micromodal';
+import confetti from 'canvas-confetti';
 
 @Component({
   selector: 'subscribe-section',
@@ -17,7 +19,13 @@ export class SubscribeSectionComponent implements OnInit {
   constructor(private httpClient: HttpClient) { }
 
   ngOnInit() {
+    MicroModal.init();
 
+
+  }
+
+  onClick() {
+    MicroModal.close();
   }
 
   onSubmit() {
@@ -27,9 +35,13 @@ export class SubscribeSectionComponent implements OnInit {
       headers: { 'Content-Type': 'application/json' }
     }
     this.httpClient.post('https://handywatch-service.herokuapp.com/subscribe', data.body, { headers: { 'Access-Control-Allow-Origin': 'https://handy.watch', 'Content-Type': 'application/json' } }).subscribe(res => {
-      alert('thank you');
+      MicroModal.show('modal-success');
+      confetti({
+        particleCount: 50,
+        spread: 55
+      });
     }, err => {
-      alert('error');
+      MicroModal.show('modal-error');
     });
   }
 }

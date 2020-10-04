@@ -13,6 +13,59 @@
       <p class="privacy"><img class="lock-icon" src="./../../../../assets/icons/padlock.svg" /> we never share your
         email
         with others</p>
+
+      <!-- SUCCESS MODAL -->
+      <div class="modal-success modal micromodal-slide" id="modal-success" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+          <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+            <header class="modal__header">
+              <h2 class="modal__title" id="modal-1-title">
+              </h2>
+              <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+            </header>
+            <main class="modal__content" id="modal-1-content">
+              <h3 class="modal__title">🥳 Success! <br><br>You should recive email shortly.</h3>
+              <br>
+              <p></p>
+              <p>
+                <b>Confirmation</b> and <b>discount emails</b> are on the way.
+              </p>
+            </main>
+            <footer class="modal__footer">
+              <hw-button class="button noselect" buttonText="ok" (clickAction)="onClick()">
+              </hw-button>
+            </footer>
+          </div>
+        </div>
+      </div>
+      <!-- SUCCESS MODAL END-->
+
+      <!-- ERROR MODAL -->
+      <div class="modal-error modal micromodal-slide" id="modal-error" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+          <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+            <header class="modal__header">
+              <h2 class="modal__title" id="modal-1-title">
+              </h2>
+              <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+            </header>
+            <main class="modal__content" id="modal-1-content">
+              <h3 class="modal__title">😥 Oh no!<br>Something went wrong on our end.</h3>
+              <br>
+              <p>
+                Please, retry later.
+              </p>
+              <p>We are not going to leave you without a dicount.</p>
+              <p>Use promo code: <b>"TRIED"</b> to get <b>15%</b> off!</p>
+            </main>
+            <footer class="modal__footer">
+              <hw-button class="button noselect" buttonText="ok" (clickAction)="onClick()">
+              </hw-button>
+            </footer>
+          </div>
+        </div>
+      </div>
+      <!-- ERROR MODAL END-->
     </div>
   </hw-container>
 </section>

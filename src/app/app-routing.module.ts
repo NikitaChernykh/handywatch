@@ -6,6 +6,7 @@ import { LandingComponent } from './landing-page/landing.component';
 
 const routes: Routes = [
   { path: '', component: LandingComponent },
+  { path: 'bundles', component: LandingComponent },
   { path: 'privacy', component: PrivacyComponent },
 ];
 

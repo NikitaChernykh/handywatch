@@ -3,6 +3,7 @@ import { FormControl, FormGroup } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 import MicroModal from 'micromodal';
 import confetti from 'canvas-confetti';
+import { AnalyticsService } from 'src/app/services/analytics.service';
 
 @Component({
   selector: 'subscribe-section',
@@ -16,7 +17,7 @@ export class SubscribeSectionComponent implements OnInit {
     email: new FormControl('')
   });
 
-  constructor(private httpClient: HttpClient) { }
+  constructor(private httpClient: HttpClient, private analyticService: AnalyticsService) { }
 
   ngOnInit() {
     MicroModal.init();
@@ -24,9 +25,17 @@ export class SubscribeSectionComponent implements OnInit {
 
   onClick() {
     MicroModal.close();
+    this.analyticService.gtmEvent(
+      "Subscribe Section",
+      "Click",
+      "Closed Modal With OK");
   }
 
   onSubmit() {
+    this.analyticService.gtmEvent(
+      "Subscribe Section",
+      "Click",
+      "Submit Button");
     const data = {
       method: 'POST',
       body: JSON.stringify({ email: this.emailForm.value.email }),
@@ -38,8 +47,16 @@ export class SubscribeSectionComponent implements OnInit {
         particleCount: 50,
         spread: 55
       });
+      this.analyticService.gtmEvent(
+        "Subscribe Section",
+        "State",
+        "Success Modal Shown");
     }, err => {
       MicroModal.show('modal-error');
+      this.analyticService.gtmEvent(
+        "Subscribe Section",
+        "State",
+        "Error Modal Shown");
     });
   }
 }

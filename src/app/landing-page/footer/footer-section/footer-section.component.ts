@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AnalyticsService } from 'src/app/services/analytics.service';
 
 @Component({
   selector: 'footer-section',
@@ -6,11 +7,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./footer-section.component.scss']
 })
 export class FooterSectionComponent implements OnInit {
-  todaysYear
-  constructor() { }
+  public todaysYear: number
+
+  constructor(private analyticService: AnalyticsService) { }
 
   ngOnInit() {
     this.todaysYear = new Date().getFullYear();
+  }
+
+  linkClick(linkText) {
+    this.analyticService.gtmEvent(
+      "Footer",
+      "Click",
+      "Link text: " + linkText);
   }
 
 }

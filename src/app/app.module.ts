@@ -18,6 +18,7 @@ import { FooterSectionComponent } from './landing-page/footer/footer-section/foo
 import { PrivacyComponent } from './privacy-page/privacy/privacy.component';
 import { LandingComponent } from './landing-page/landing.component';
 import { HwNavigationComponent } from './components/hw-navigation/hw-navigation/hw-navigation.component';
+import { AnalyticsService } from './services/analytics.service';
 
 
 @NgModule({
@@ -42,7 +43,7 @@ import { HwNavigationComponent } from './components/hw-navigation/hw-navigation/
       ReactiveFormsModule,
       HttpClientModule
    ],
-   providers: [],
+   providers: [AnalyticsService],
    bootstrap: [
       AppComponent
    ]

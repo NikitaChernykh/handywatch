@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { AnalyticsService } from 'src/app/services/analytics.service';
 
 @Component({
   selector: 'hw-link',
@@ -8,9 +9,17 @@ import { Component, OnInit, Input } from '@angular/core';
 export class HwLinkComponent implements OnInit {
   @Input() linkText;
   @Input() url;
-  constructor() { }
+
+  constructor(private analyticService: AnalyticsService) { }
 
   ngOnInit() {
+  }
+
+  linkClick() {
+    this.analyticService.gtmEvent(
+      "Href link with text: " + this.linkText,
+      "Click",
+      "Link URL: " + this.url);
   }
 
 }

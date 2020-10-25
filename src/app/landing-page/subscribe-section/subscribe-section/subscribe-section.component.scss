@@ -15,6 +15,21 @@
         margin: 15px auto;
     }
 
+    .form-error {
+      font-family: $primary-font;
+      color: $primary-red;
+      margin-bottom: 10px;
+      margin-top: 10px;
+    }
+
+    .for-desktop {
+      display: none;
+    }
+
+    .for-mobile {
+      display: block;
+    }
+
     .email-input{
         display: block;
         background-color: #3D51D3;
@@ -86,6 +101,14 @@
 
         .title {
             font-size: 4.4rem;
+        }
+
+        .for-mobile {
+          display: none;
+        }
+
+        .for-desktop{
+          display: block;
         }
 
         .email-form{

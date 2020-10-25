@@ -6,11 +6,17 @@
       <h2 class="sub-title noselect">and get<span class="discount"> 50% </span>discount promo code</h2>
       <form class="email-form" [formGroup]="emailForm" (ngSubmit)="onSubmit()">
         <input type="email" name="email" formControlName="email" class="email-input"
-          placeholder="ENTER YOUR EMAIL ADDRESS" required>
+          placeholder="ENTER YOUR EMAIL ADDRESS" />
+        <div *ngIf="!isValid" class="form-error for-mobile">
+          <i class="fa fa-exclamation-circle"></i> {{emailErrorText}}
+        </div>
         <hw-button class="button noselect" buttonText="Submit" buttonColorType="ligth" type="submit"
           [isLoading]="isLoading">
         </hw-button>
       </form>
+      <div *ngIf="!isValid" class="form-error for-desktop">
+        <i class="fa fa-exclamation-circle"></i> {{emailErrorText}}
+      </div>
       <p class="privacy"><img class="lock-icon" loading=lazy src="./../../../../assets/icons/padlock.svg" /> we never
         share your
         email

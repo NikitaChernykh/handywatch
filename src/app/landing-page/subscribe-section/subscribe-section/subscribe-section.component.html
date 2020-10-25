@@ -7,7 +7,8 @@
       <form class="email-form" [formGroup]="emailForm" (ngSubmit)="onSubmit()">
         <input type="email" name="email" formControlName="email" class="email-input"
           placeholder="ENTER YOUR EMAIL ADDRESS" required>
-        <hw-button class="button noselect" buttonText="Submit" buttonColorType="ligth" type="submit">
+        <hw-button class="button noselect" buttonText="Submit" buttonColorType="ligth" type="submit"
+          [isLoading]="isLoading">
         </hw-button>
       </form>
       <p class="privacy"><img class="lock-icon" loading=lazy src="./../../../../assets/icons/padlock.svg" /> we never

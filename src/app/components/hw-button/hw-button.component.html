@@ -1,1 +1,6 @@
-<button (click)="triggerEvent()" [disabled]="disabled" ngClass={{buttonColorType}} type={{type}}>{{buttonText}}</button>
+<button (click)="triggerEvent()" [disabled]="disabled" ngClass={{buttonColorType}} type={{type}}>
+    <span *ngIf="isLoading">
+        <i class="fa fa-spinner fa-spin"></i> Loading
+    </span>
+    <span *ngIf="!isLoading">{{buttonText}}</span>
+</button>

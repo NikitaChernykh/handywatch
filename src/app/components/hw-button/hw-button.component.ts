@@ -10,6 +10,7 @@ export class HwButtonComponent implements OnInit {
   @Input() buttonColorType = 'dark-light';
   @Input() type = 'button';
   @Input() disabled = false;
+  @Input() isLoading = false;
 
   @Output() clickAction = new EventEmitter<boolean>();
 

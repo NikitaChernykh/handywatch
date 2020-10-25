@@ -12,6 +12,7 @@ import { AnalyticsService } from 'src/app/services/analytics.service';
 })
 
 export class SubscribeSectionComponent implements OnInit {
+  isLoading = false;
   email = new FormControl('');
   emailForm = new FormGroup({
     email: new FormControl('')
@@ -32,6 +33,7 @@ export class SubscribeSectionComponent implements OnInit {
   }
 
   onSubmit() {
+    this.isLoading = true;
     this.analyticService.gtmEvent(
       "Subscribe Section",
       "Click",
@@ -47,12 +49,18 @@ export class SubscribeSectionComponent implements OnInit {
         particleCount: 50,
         spread: 55
       });
+
+      this.isLoading = false;
+
       this.analyticService.gtmEvent(
         "Subscribe Section",
         "State",
         "Success Modal Shown");
     }, err => {
       MicroModal.show('modal-error');
+
+      this.isLoading = false;
+
       this.analyticService.gtmEvent(
         "Subscribe Section",
         "State",

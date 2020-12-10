@@ -27,6 +27,15 @@ $breakpoint-extra-large-device: 1440px;
   outline-color: $primary-color;
 }
 
+.sr-only{
+  position: absolute;
+  left:-10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
 .noselect {
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */

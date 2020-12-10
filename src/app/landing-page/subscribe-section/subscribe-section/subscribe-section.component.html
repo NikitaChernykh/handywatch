@@ -5,7 +5,8 @@
       <h1 class="title noselect">Subscribe Now</h1>
       <h2 class="sub-title noselect">and get<span class="discount"> 50% </span>discount promo code</h2>
       <form class="email-form" [formGroup]="emailForm" (ngSubmit)="onSubmit()">
-        <input type="email" name="email" formControlName="email" class="email-input"
+        <label for="email" class="sr-only">Email</label>
+        <input type="email" id="email" name="email" formControlName="email" class="email-input"
           placeholder="ENTER YOUR EMAIL ADDRESS" />
         <div *ngIf="!isValid" class="form-error for-mobile">
           <i class="fa fa-exclamation-circle"></i> {{emailErrorText}}
@@ -17,7 +18,8 @@
       <div *ngIf="!isValid" class="form-error for-desktop">
         <i class="fa fa-exclamation-circle"></i> {{emailErrorText}}
       </div>
-      <p class="privacy"><img class="lock-icon" loading=lazy src="./../../../../assets/icons/padlock.svg" /> we never
+      <p class="privacy"><img class="lock-icon" loading=lazy alt="" src="./../../../../assets/icons/padlock.svg" /> we
+        never
         share your
         email
         with others</p>
@@ -27,8 +29,8 @@
         <div class="modal__overlay" tabindex="-1" data-micromodal-close>
           <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
             <header class="modal__header">
-              <h2 class="modal__title" id="modal-1-title">
-              </h2>
+              <div class="modal__title" id="modal-1-title">
+              </div>
               <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
             </header>
             <main class="modal__content" id="modal-1-content">
@@ -53,8 +55,8 @@
         <div class="modal__overlay" tabindex="-1" data-micromodal-close>
           <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
             <header class="modal__header">
-              <h2 class="modal__title" id="modal-1-title">
-              </h2>
+              <div class="modal__title" id="modal-1-title">
+              </div>
               <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
             </header>
             <main class="modal__content" id="modal-1-content">
